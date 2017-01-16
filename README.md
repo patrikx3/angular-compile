@@ -14,14 +14,14 @@ npm install --save-dev p3x-ng2-compile-html
 ##Usage
 Check out the example, here [test/angular2/app/Page.ts](test/angular2/app/Page.ts).
 
-```HTML```
+###HTML
 
 ```html
 <div #container>loading ...</div>
 <div [p3xCompileHtml]="data" [p3xCompileHtmlRef]="ref">loading ...</div>
 ```
 
-```TypeScript```
+###TypeScript
 
 ```typescript
 import {
