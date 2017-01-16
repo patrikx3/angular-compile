@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "compilerOptions": {
+      "sourceMap": true
+    },
+    "lib": [
+      "es5",
+      "es6",
+      "dom",
+      "es2015.collection",
+      "es2015.promise",
+      "es2015.core"
+    ]
+  }
+}
