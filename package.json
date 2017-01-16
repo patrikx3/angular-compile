@@ -1,7 +1,7 @@
 {
     "name": "p3x-ng2-compile-html",
-    "version": "1.0.10-13",
-    "version-date": "1/16/2017, 5:54:03 PM",
+    "version": "1.0.13-14",
+    "version-date": "1/16/2017, 6:11:47 PM",
     "description": "Angular 2 Service to compile an HTML into a component Edit",
     "main": "src/index.ts",
     "scripts": {
@@ -46,7 +46,7 @@
     "dependencies": {
         "@angular/core": "^2.4.3",
         "rxjs": "^5.0.3",
-        "zone.js": "^0.7.5",
+        "zone.js": "0.7.2",
         "typescript": "^2.1.5"
     }
 }

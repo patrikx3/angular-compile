@@ -3,31 +3,41 @@ import {
     Injectable,
     ViewChild,
     ViewContainerRef,
-    AfterViewInit
+    OnInit
 } from '@angular/core';
 
 
-import { CompileHtmlService } from '../../../src/CompileHtmlService';
+import {CompileHtmlService, CompileHtmlAttribute} from '../../../src';
 
 @Component({
     selector: 'p3x-ng2-compile-html',
-    template: `<div #container></div>`,
+    template: `
+    <div #container>loading ...</div>
+    <div [p3xCompileHtml]="data" [p3xCompileHtmlRef]="ref">loading ...</div>
+`,
 })
 @Injectable()
-export class Page implements AfterViewInit{
+export class Page implements OnInit {
 
     @ViewChild('container', {read: ViewContainerRef}) container: ViewContainerRef;
 
-    constructor( private compileHtmlService: CompileHtmlService ) {}
+    data: string = `<div>Done</div><a href="javascript:void(0);" (click)="ref.alert('ok')">If click works it says OK!</a>`;
+
+    ref: Page;
+
+    constructor( private compileHtmlService: CompileHtmlService ) {
+        this.ref = this;
+
+    }
 
     alert(string: string ) {
         alert(string);
     }
 
-    ngAfterViewInit() {
+    ngOnInit() {
 
         this.compileHtmlService.compile({
-            template: `<a href="javascript:void(0);" (click)="ref.alert('ok')">If click works it says OK!</a>`,
+            template: this.data,
             container: this.container,
             ref: this,
         })

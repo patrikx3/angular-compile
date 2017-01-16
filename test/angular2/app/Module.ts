@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 
 import {Page } from './Page';
-import {CompileHtmlService} from '../../../src/CompileHtmlService';
+import {CompileHtmlService, CompileHtmlAttribute} from '../../../src';
+
 
 @NgModule({
     imports: [
         BrowserModule,
     ],
     declarations: [
-        Page
+        Page,
+        CompileHtmlAttribute
     ],
     providers: [
         CompileHtmlService

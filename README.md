@@ -14,6 +14,10 @@ npm install --save-dev p3x-ng2-compile-html
 ##Usage
 Check out the example, here [test/angular2/app/Page.ts](test/angular2/app/Page.ts).
 
+```html
+<div [p3xCompileHtml]="data"/>
+```
+
 ## Run
 ```bash
 npm install
@@ -25,7 +29,7 @@ In LIVE version, you import like this:
 import { CompileHtmlService } from 'p3x-ng2-compile-html';
 ```
 
-instead: 
+instead of: 
 ```typescript
 import { CompileHtmlService } from '../../../src/CompileHtmlService';
 ```
