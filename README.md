@@ -46,7 +46,11 @@ import {
  
      @ViewChild('container', {read: ViewContainerRef}) container: ViewContainerRef;
  
-     data: string = `<div>Done</div><a href="javascript:void(0);" (click)="ref.alert('ok')">If click works it says OK!</a>`;
+     data: string = `
+     <div>Done</div>
+     <a href="javascript:void(0);" (click)="ref.alert('ok')">
+     If click works it says OK!
+     </a>`;
  
      ref: Page;
  
