@@ -7,6 +7,7 @@ Angular 2 Service to compile an HTML into a component
 It is only using ```TypeScript``` right now. It can be built though.
 
 ##Install
+  
 ```bash
 npm install p3x-ng2-compile-html
 ```
@@ -15,14 +16,14 @@ npm install p3x-ng2-compile-html
 Check out the example, here [test/angular2/app/Page.ts](test/angular2/app/Page.ts).
 
 ###HTML
-
+  
 ```html
 <div #container>loading ...</div>
 <div [p3xCompileHtml]="data" [p3xCompileHtmlRef]="ref">loading ...</div>
 ```
 
 ###TypeScript
-
+  
 ```typescript
 import {
      Component,
@@ -74,6 +75,7 @@ import {
 ```
 
 ## Run
+   
 ```bash
 npm install
 grunt run
