@@ -11,10 +11,7 @@ import { CompileHtmlService } from '../../../src/CompileHtmlService';
 
 @Component({
     selector: 'p3x-ng2-compile-html',
-    template: `
-faszomba
-<div #container></div>
-`,
+    template: `<div #container></div>`,
 })
 @Injectable()
 export class Page implements AfterViewInit{
