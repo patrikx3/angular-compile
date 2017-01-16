@@ -1,7 +1,7 @@
 {
     "name": "p3x-ng2-compile-html",
-    "version": "1.0.31-15",
-    "version-date": "1/16/2017, 7:08:52 PM",
+    "version": "1.0.33-16",
+    "version-date": "1/16/2017, 8:28:21 PM",
     "description": "Angular 2 Service to compile an HTML into a component Edit",
     "main": "src/index.ts",
     "scripts": {
