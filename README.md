@@ -29,8 +29,8 @@ Check out the example, here [test/angular2/app/Page.ts](test/angular2/app/Page.t
 ###HTML
   
 ```html
-<div #container>loading ...</div>
-<div [p3xCompileHtml]="data" [p3xCompileHtmlRef]="ref">loading ...</div>
+ <div #container></div>
+ <div [p3xCompileHtml]="data2" [p3xCompileHtmlRef]="ref"></div>
 ```
 
 ###TypeScript
