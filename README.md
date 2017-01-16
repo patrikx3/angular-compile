@@ -12,6 +12,17 @@ It is only using ```TypeScript``` right now. It can be built though.
 npm install p3x-ng2-compile-html
 ```
 
+##Test
+   
+```bash
+git clone https://github.com/patrikx3/ng2-compile-html.git
+cd ng2-compile-html
+npm install
+grunt run
+```
+
+[http://localhost:8080](http://localhost:8080)
+
 ##Usage
 Check out the example, here [test/angular2/app/Page.ts](test/angular2/app/Page.ts).
 
@@ -74,11 +85,3 @@ import {
  }
 ```
 
-## Run
-   
-```bash
-npm install
-grunt run
-```
-
-[http://localhost:8080](http://localhost:8080)
