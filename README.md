@@ -12,3 +12,12 @@ npm install --save-dev p3x-ng2-compile-html
 ```
 
 ##Usage
+Check out the example, here [test/angular2/app/Page.ts](test/angular2/app/Page.ts).
+
+## Run
+```bash
+npm install
+grunt run
+```
+
+[http://localhost:8080](http://localhost:8080)
