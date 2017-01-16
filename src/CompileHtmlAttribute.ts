@@ -1,4 +1,4 @@
-import {Directive, ElementRef, Input, Injectable, ViewContainerRef, OnInit} from '@angular/core';
+import {Directive, Input, Injectable, ViewContainerRef, OnInit} from '@angular/core';
 
 import { CompileHtmlService } from './CompileHtmlService';
 
@@ -19,7 +19,6 @@ export class CompileHtmlAttribute {
     }
 
     constructor(
-        private el: ElementRef,
         private container: ViewContainerRef,
         private service: CompileHtmlService
     ) {}
