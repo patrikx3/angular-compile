@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/patrikx3/ng2-compile-html.svg?branch=master)](https://travis-ci.org/patrikx3/ng2-compile-html)
 
-Angular 2 Service to compile an HTML into a component
+Angular 2 Service/Attribute to compile an HTML into a component
 
 It is only using ```TypeScript``` right now. It can be built though.
   
