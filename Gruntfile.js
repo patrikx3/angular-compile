@@ -4,5 +4,6 @@ module.exports = (grunt) => {
     const loader = new builder.Loader(grunt);
     loader.angular2(builder.config.folder.test.angular2.root);
 
-    grunt.registerTask('default', builder.config.task.continuous.angular2);
+    grunt.registerTask('run', builder.config.task.continuous.angular2);
+    grunt.registerTask('default', builder.config.task.build.angular2);
 }
