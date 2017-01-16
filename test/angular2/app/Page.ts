@@ -6,8 +6,7 @@ import {
     OnInit
 } from '@angular/core';
 
-
-import {CompileHtmlService, CompileHtmlAttribute} from '../../../src';
+import {CompileHtmlService } from '../../../src';
 
 @Component({
     selector: 'p3x-ng2-compile-html',
@@ -27,7 +26,6 @@ export class Page implements OnInit {
 
     constructor( private compileHtmlService: CompileHtmlService ) {
         this.ref = this;
-
     }
 
     alert(string: string ) {
@@ -35,7 +33,6 @@ export class Page implements OnInit {
     }
 
     ngOnInit() {
-
         this.compileHtmlService.compile({
             template: this.data,
             container: this.container,
