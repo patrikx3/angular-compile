@@ -85,3 +85,4 @@ import {
  }
 ```
 
+by [Patrik Laszlo](http://patrikx3.tk)
