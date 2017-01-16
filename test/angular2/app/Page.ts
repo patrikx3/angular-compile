@@ -9,7 +9,7 @@ import {
 import {CompileHtmlService } from '../../../src';
 
 @Component({
-    selector: 'p3x-ng2-compile-html',
+    selector: 'p3x-ng2-compile-html-text',
     template: `
     <div #container>loading ...</div>
     <div [p3xCompileHtml]="data" [p3xCompileHtmlRef]="ref">loading ...</div>
