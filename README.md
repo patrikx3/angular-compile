@@ -47,7 +47,7 @@ import {
 import {CompileHtmlService } from '../../../src';
 
 @Component({
-    selector: 'p3x-ng2-compile-html-text',
+    selector: 'p3x-ng2-compile-html-test',
     template: `
     <div #container></div>
     <hr/>
