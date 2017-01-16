@@ -20,4 +20,14 @@ npm install
 grunt run
 ```
 
+In LIVE version, you import like this:
+```typescript
+import { CompileHtmlService } from 'p3x-ng2-compile-html';
+```
+
+instead: 
+```typescript
+import { CompileHtmlService } from '../../../src/CompileHtmlService';
+```
+
 [http://localhost:8080](http://localhost:8080)
