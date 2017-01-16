@@ -8,7 +8,7 @@ It is only using ```TypeScript``` right now. It can be built though.
 
 ##Install
 ```bash
-npm install --save-dev p3x-ng2-compile-html
+npm install p3x-ng2-compile-html
 ```
 
 ##Usage
