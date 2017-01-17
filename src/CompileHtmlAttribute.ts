@@ -14,7 +14,7 @@ export class CompileHtmlAttribute implements OnInit, OnChanges{
 
     update() {
         this.service.compile({
-            template: this.p3xHtml,
+            template: this.p3xHtml || '',
             container: this.container,
             ref: this.p3xCompileHtmlRef,
             imports: this.p3xCompileHtmlImports
