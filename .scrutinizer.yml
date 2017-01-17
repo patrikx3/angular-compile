@@ -16,7 +16,7 @@ build:
   tests:
     override:
       -
-      command: 'grunt'
-        coverage:
-          file: 'build/coverage/clover.xml'
-          format: 'clover'
+        command: 'grunt'
+          coverage:
+            file: 'build/coverage/clover.xml'
+            format: 'clover'
