@@ -20,10 +20,10 @@ build:
       - npm install grunt-cli -g
       - npm install
 
-  tests:
-    override:
-      -
-        command: 'grunt'
-        coverage:
-          file: 'build/coverage/clover.xml'
-          format: 'clover'
+   tests:
+        override:
+            -
+                command: 'grunt'
+                coverage:
+                    file: 'build/coverage/clover.xml'
+                    format: 'clover'
