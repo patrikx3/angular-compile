@@ -1,61 +1,61 @@
 {
-  "name": "p3x-ng2-compile-html",
-  "version": "1.0.50-29",
-  "version-date": "1/17/2017, 7:17:56 PM",
-  "description": "Angular 2 Service to compile an HTML into a component Edit",
-  "main": "src/index.ts",
-  "scripts": {
-    "test": "grunt"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/patrikx3/ng2-compile-html.git"
-  },
-  "keywords": [
-    "p3x",
-    "angular2",
-    "ng2",
-    "compile",
-    "html"
-  ],
-  "author": "Patrik Laszlo <alabard@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/patrikx3/ng2-compile-html/issues"
-  },
-  "homepage": "https://github.com/patrikx3/ng2-compile-html#readme",
-  "devDependencies": {
-    "@angular/common": "^2.4.3",
-    "@angular/compiler": "^2.4.3",
-    "@angular/platform-browser": "^2.4.3",
-    "@angular/platform-browser-dynamic": "^2.4.3",
-    "@types/jasmine": "^2.5.40",
-    "@types/node": "^7.0.0",
-    "angular2-template-loader": "^0.6.0",
-    "awesome-typescript-loader": "^3.0.0-beta.18",
-    "core-js": "^2.4.1",
-    "corifeus-core-builder": "1.0.99-29",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "grunt-karma": "^2.0.0",
-    "grunt-webpack": "^1.0.18",
-    "html-loader": "^0.4.4",
-    "html-webpack-plugin": "^2.26.0",
-    "istanbul-instrumenter-loader": "^1.2.0",
-    "karma": "^1.4.0",
-    "karma-jasmine": "^1.1.0",
-    "karma-phantomjs-launcher": "^1.0.2",
-    "karma-sourcemap-loader": "^0.3.7",
-    "karma-webpack": "^2.0.1",
-    "node-sass-css-importer": "0.0.3",
-    "phantomjs-prebuilt": "^2.1.14",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2",
-    "webpack-merge": "^2.4.0"
-  },
-  "dependencies": {
-    "@angular/core": "^2.4.3",
-    "rxjs": "^5.0.3",
-    "zone.js": "0.7.2",
-    "typescript": "^2.1.5"
-  }
+    "name": "p3x-ng2-compile-html",
+    "version": "1.0.51-30",
+    "version-date": "1/17/2017, 8:04:51 PM",
+    "description": "Angular 2 Service to compile an HTML into a component Edit",
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "grunt"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/patrikx3/ng2-compile-html.git"
+    },
+    "keywords": [
+        "p3x",
+        "angular2",
+        "ng2",
+        "compile",
+        "html"
+    ],
+    "author": "Patrik Laszlo <alabard@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/patrikx3/ng2-compile-html/issues"
+    },
+    "homepage": "https://github.com/patrikx3/ng2-compile-html#readme",
+    "devDependencies": {
+        "@angular/common": "^2.4.3",
+        "@angular/compiler": "^2.4.3",
+        "@angular/platform-browser": "^2.4.3",
+        "@angular/platform-browser-dynamic": "^2.4.3",
+        "@types/jasmine": "^2.5.40",
+        "@types/node": "^7.0.0",
+        "angular2-template-loader": "^0.6.0",
+        "awesome-typescript-loader": "^3.0.0-beta.18",
+        "core-js": "^2.4.1",
+        "corifeus-core-builder": "1.0.100-31",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "grunt-karma": "^2.0.0",
+        "grunt-webpack": "^1.0.18",
+        "html-loader": "^0.4.4",
+        "html-webpack-plugin": "^2.26.0",
+        "istanbul-instrumenter-loader": "^1.2.0",
+        "karma": "^1.4.0",
+        "karma-jasmine": "^1.1.0",
+        "karma-phantomjs-launcher": "^1.0.2",
+        "karma-sourcemap-loader": "^0.3.7",
+        "karma-webpack": "^2.0.1",
+        "node-sass-css-importer": "0.0.3",
+        "phantomjs-prebuilt": "^2.1.14",
+        "webpack": "^1.14.0",
+        "webpack-dev-server": "^1.16.2",
+        "webpack-merge": "^2.4.0"
+    },
+    "dependencies": {
+        "@angular/core": "^2.4.3",
+        "rxjs": "^5.0.3",
+        "zone.js": "0.7.2",
+        "typescript": "^2.1.5"
+    }
 }

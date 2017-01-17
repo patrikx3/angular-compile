@@ -1,0 +1,29 @@
+checks:
+  javascript: true
+filter:
+  excluded_paths:
+    - test/*
+    - dist/*
+    - bower_components/*
+    - node_modules/*
+    - build/*
+    - Gruntfile.js
+    - karma.conf.js
+    - protractor.conf.js
+
+build:
+  environment:
+    node: 7
+
+  dependencies:
+    before:
+      - npm install grunt-cli -g
+      - npm install
+
+  tests:
+    override:
+      -
+        command: 'grunt'
+        coverage:
+          file: 'build/coverage/clover.xml'
+          format: 'clover'
