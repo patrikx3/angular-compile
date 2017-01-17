@@ -12,7 +12,9 @@ export class CompileHtmlService  {
 
     public compile(opts: CompileHtmlServiceOptions) {
 
-        @Component({template: opts.template})
+        @Component({
+            template: opts.template || ''
+        })
         class TemplateComponent {
             ref = opts.ref;
         }
