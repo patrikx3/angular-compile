@@ -6,6 +6,8 @@ Angular 2 Service/Attribute to compile an HTML into a component
 
 It is only using ```TypeScript``` right now. It can be built though.
   
+Right now, only ```zone.js@0.7.2``` is right.  
+  
 ##Install
   
 ```bash
