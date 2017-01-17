@@ -1,7 +1,9 @@
 import { TestBed } from '@angular/core/testing';
+import { inject } from '@angular/core/testing';
 
 import {CompileHtmlAttribute, CompileHtmlService } from '../../src'
 describe('CompileHtml', () => {
+    let service: CompileHtmlService;
     beforeEach(() => {
         TestBed.configureTestingModule({
             declarations: [
@@ -12,8 +14,12 @@ describe('CompileHtml', () => {
             ],
         });
     });
-    it ('should work', () => {
-//        let fixture = TestBed.createComponent(Page);
-//        expect(fixture.componentInstance instanceof Page).toBe(true, 'should create a Page');
+
+    beforeEach(inject([CompileHtmlService], (_service: CompileHtmlService) => {
+        service = _service;
+    }));
+
+    it ('CompileHtmlService', () => {
+        expect(service instanceof CompileHtmlService).toBeTruthy();
     });
 });
