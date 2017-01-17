@@ -49,7 +49,7 @@ export class Page implements OnInit {
     private update2() {
         this.counter2++;
         this.data2 = `
-<div>Attribute</div><a href="javascript:void(0);" (click)="ref.update2()">Click me via a service!</a>
+<div>Attribute</div><a href="javascript:void(0);" (click)="ref.update2()">Click me via an attribute!</a>
 <div>${this.counter2}</div>
 `;
     }

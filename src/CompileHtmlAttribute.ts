@@ -10,11 +10,14 @@ export class CompileHtmlAttribute implements OnInit, OnChanges{
 
     @Input() p3xCompileHtmlRef: any;
 
+    @Input() p3xCompileHtmlImport: any[];
+
     update() {
         this.service.compile({
             template: this.p3xHtml,
             container: this.container,
-            ref: this.p3xCompileHtmlRef
+            ref: this.p3xCompileHtmlRef,
+            imports: this.p3xCompileHtmlImport
         })
     }
 
