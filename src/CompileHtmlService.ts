@@ -3,7 +3,7 @@ import {
     Compiler, NgModule,
     Injectable
 } from '@angular/core';
-import {CompileHtmlServiceOptions} from "./CompileHtmlServiceOptions";
+import {CompileHtmlServiceOptions} from "../typings/CompileHtmlServiceOptions";
 
 @Injectable()
 export class CompileHtmlService  {

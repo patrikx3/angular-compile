@@ -19,7 +19,13 @@ describe('CompileHtml', () => {
         service = _service;
     }));
 
-    it ('CompileHtmlService', () => {
+    it ('CompileHtmlService', (/*done*/) => {
         expect(service instanceof CompileHtmlService).toBeTruthy();
+        /*
+        setTimeout(()=> {
+            console.log('done later');
+            done();
+        }, 2000);
+        */
     });
 });
