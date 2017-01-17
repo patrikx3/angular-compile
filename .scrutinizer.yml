@@ -2,14 +2,7 @@ checks:
   javascript: true
 filter:
   excluded_paths:
-    - test/*
-    - dist/*
-    - bower_components/*
     - node_modules/*
-    - build/*
-    - Gruntfile.js
-    - karma.conf.js
-    - protractor.conf.js
 
 build:
   environment:
