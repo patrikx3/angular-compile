@@ -22,6 +22,7 @@ describe('CompileHtml', () => {
     it ('CompileHtmlService', (/*done*/) => {
         expect(service instanceof CompileHtmlService).toBeTruthy();
         /*
+
         setTimeout(()=> {
             console.log('done later');
             done();

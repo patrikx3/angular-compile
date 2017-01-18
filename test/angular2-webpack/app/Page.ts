@@ -36,8 +36,8 @@ export class Page implements OnInit {
     private update1() {
         this.counter1++;
         this.data1 = `
-<div>Service</div><a href="javascript:void(0);" (click)="ref.update1()">Click me via a service!</a>
-<div>${this.counter1}</div>
+<div>Service</div><a id="button-container" href="javascript:void(0);" (click)="ref.update1()">Click me via a service!</a>
+<div id="counter-container">${this.counter1}</div>
 `;
         this.compileHtmlService.compile({
             template: this.data1,
@@ -49,8 +49,8 @@ export class Page implements OnInit {
     private update2() {
         this.counter2++;
         this.data2 = `
-<div>Attribute</div><a href="javascript:void(0);" (click)="ref.update2()">Click me via an attribute!</a>
-<div>${this.counter2}</div>
+<div>Attribute</div><a id="button-attribute" href="javascript:void(0);" (click)="ref.update2()">Click me via an attribute!</a>
+<div id="counter-attribute">${this.counter2}</div>
 `;
     }
 
