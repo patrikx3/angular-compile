@@ -1,9 +1,7 @@
 # ng2-compile-html
 
 [![Build Status](https://travis-ci.org/patrikx3/ng2-compile-html.svg?branch=master)](https://travis-ci.org/patrikx3/ng2-compile-html)
-
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
-
 [![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
 
 Angular 2 Service/Attribute to compile an HTML into a component
@@ -39,6 +37,9 @@ grunt run
 ```
 
 ###TypeScript
-Check out the example, here [test/angular2/app/Page.ts](test/angular2/app/Page.ts).
+Check out the example, here [test/angular2/app/Page.ts](test/angular2-webpack/app/Page.ts).
+
+###Infi
+Angular 2 tries to camelCase all attributes, for me it is still HTML, so my selectors always ```kebab-case```.
 
 by [Patrik Laszlo](http://patrikx3.tk)
