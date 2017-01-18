@@ -2,15 +2,15 @@ import {Directive, Input, Injectable, ViewContainerRef, OnInit, OnChanges, Simpl
 
 import { CompileHtmlService } from './CompileHtmlService';
 
-@Directive({ selector: '[p3xCompileHtml]' })
+@Directive({ selector: '[p3x-compile-html]' })
 @Injectable()
 export class CompileHtmlAttribute implements OnInit, OnChanges{
 
-    @Input('p3xCompileHtml') p3xHtml: string;
+    @Input('p3x-compile-html') p3xHtml: string;
 
-    @Input() p3xCompileHtmlRef: any;
+    @Input('p3x-compile-html-ref') p3xCompileHtmlRef: any;
 
-    @Input() p3xCompileHtmlImports: any[];
+    @Input('p3x-compile-html-imports') p3xCompileHtmlImports: any[];
 
     update() {
         this.service.compile({

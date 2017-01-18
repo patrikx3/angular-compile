@@ -4,6 +4,8 @@
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
 
+[![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
+
 Angular 2 Service/Attribute to compile an HTML into a component
 
 It is only using ```TypeScript``` right now. It can be built though.
@@ -33,7 +35,7 @@ grunt run
   
 ```html
  <div #container></div>
- <div [p3xCompileHtml]="data2" [p3xCompileHtmlRef]="ref"></div>
+ <div [p3x-compile-html]="data2" [p3x-compile-html-ref]="ref" [p3x-compile-html-imports]="importsLikeMaterialEtc"></div>
 ```
 
 ###TypeScript

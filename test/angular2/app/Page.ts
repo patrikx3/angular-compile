@@ -13,7 +13,7 @@ import {CompileHtmlService } from '../../../src';
     template: `
     <div #container></div>
     <hr/>
-    <div [p3xCompileHtml]="data2" [p3xCompileHtmlRef]="ref"></div>
+    <div [p3x-compile-html]="data2" [p3x-compile-html-ref]="ref"></div>
 `,
 })
 @Injectable()
