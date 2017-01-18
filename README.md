@@ -4,12 +4,12 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
 
+[![Trello](https://img.shields.io/badge/p3x-Trello-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
+
 Angular 2 Service/Attribute to compile an HTML into a component
 
 It is only using ```TypeScript``` right now. It can be built though.
-  
-Right now, only ```zone.js@0.7.2``` show errors right. Probably 0.7.6 will be good.  
-  
+
 ##Install
   
 ```bash
