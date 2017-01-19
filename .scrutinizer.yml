@@ -12,6 +12,7 @@ build:
     before:
       - npm install grunt-cli -g
       - npm install
+      - node_modules/protractor/bin/webdriver-manager update
 
   tests:
     override:
