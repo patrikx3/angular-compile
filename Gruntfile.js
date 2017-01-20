@@ -10,12 +10,12 @@ module.exports = (grunt) => {
 
     grunt.registerTask('default',  builder.config.task.build.angular2);
 
-    grunt.registerTask('cfsc-test', (target) => {
+    grunt.registerTask('cori-test', (target) => {
         switch(target) {
             case 'protractor-run':
                 grunt.task.run(builder.config.task.build.angular2.concat([
-                    'connect:angular2',
-                    'protractor:angular2-chrome',
+                    'connect:cori-angular2',
+                    'protractor:cori-angular2-chrome',
 
                 ]));
                 break;
