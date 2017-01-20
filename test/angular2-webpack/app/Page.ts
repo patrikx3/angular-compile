@@ -14,7 +14,7 @@ import {CompileHtmlService } from '../../../src';
     <div #container></div>
     <hr/>
     <div [p3x-compile-html]="data2" [p3x-compile-html-ref]="ref"></div>
-`,
+`
 })
 @Injectable()
 export class Page implements OnInit {
