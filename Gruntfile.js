@@ -10,14 +10,27 @@ module.exports = (grunt) => {
 
     grunt.registerTask('default',  builder.config.task.build.angular2);
 
-    grunt.registerTask('cori-test', (target) => {
+    grunt.config.merge({
+        watch: {
+
+        }
+    })
+
+    grunt.registerTask('test', (target) => {
         switch(target) {
-            case 'protractor-run':
-                grunt.task.run(builder.config.task.build.angular2.concat([
+            case 'protractor':
+                grunt.task.run([
                     'connect:cori-angular2',
                     'protractor:cori-angular2-chrome',
 
-                ]));
+                ]);
+                break;
+
+            case 'karma':
+                grunt.task.run([
+                    'karma:cori-angular2-run',
+                    'watch:cori-angular2-karma'
+                ]);
                 break;
         }
     });

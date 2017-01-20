@@ -1,7 +1,7 @@
 {
     "name": "p3x-ng2-compile-html",
-    "version": "1.0.70-89",
-    "version-date": "1/20/2017, 3:06:13 PM",
+    "version": "1.0.71-94",
+    "version-date": "1/20/2017, 4:40:37 PM",
     "description": "Angular 2 Service to compile an HTML into a component Edit",
     "main": "src/index.ts",
     "scripts": {
@@ -34,7 +34,7 @@
         "angular2-template-loader": "^0.6.0",
         "awesome-typescript-loader": "^3.0.0-beta.18",
         "core-js": "^2.4.1",
-        "corifeus-builder": "1.0.112-68",
+        "corifeus-builder": "1.0.113-69",
         "extract-text-webpack-plugin": "^1.0.1",
         "grunt-connect": "^0.2.0",
         "grunt-contrib-connect": "^1.0.2",
