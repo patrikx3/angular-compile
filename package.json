@@ -1,7 +1,7 @@
 {
     "name": "p3x-ng2-compile-html",
-    "version": "1.0.65-82",
-    "version-date": "1/19/2017, 11:47:23 AM",
+    "version": "1.0.66-84",
+    "version-date": "1/20/2017, 9:12:40 AM",
     "description": "Angular 2 Service to compile an HTML into a component Edit",
     "main": "src/index.ts",
     "scripts": {
@@ -25,16 +25,16 @@
     },
     "homepage": "https://github.com/patrikx3/ng2-compile-html#readme",
     "devDependencies": {
-        "@angular/common": "^2.4.3",
-        "@angular/compiler": "^2.4.3",
-        "@angular/platform-browser": "^2.4.3",
-        "@angular/platform-browser-dynamic": "^2.4.3",
+        "@angular/common": "^2.4.4",
+        "@angular/compiler": "^2.4.4",
+        "@angular/platform-browser": "^2.4.4",
+        "@angular/platform-browser-dynamic": "^2.4.4",
         "@types/jasmine": "^2.5.41",
         "@types/node": "^7.0.0",
         "angular2-template-loader": "^0.6.0",
         "awesome-typescript-loader": "^3.0.0-beta.18",
         "core-js": "^2.4.1",
-        "corifeus-core-builder": "1.0.108-55",
+        "corifeus-builder": "1.0.109-63",
         "extract-text-webpack-plugin": "^1.0.1",
         "grunt-connect": "^0.2.0",
         "grunt-contrib-connect": "^1.0.2",
@@ -57,7 +57,7 @@
         "webpack-merge": "^2.4.0"
     },
     "dependencies": {
-        "@angular/core": "^2.4.3",
+        "@angular/core": "^2.4.4",
         "rxjs": "^5.0.3",
         "zone.js": "0.7.6",
         "typescript": "^2.1.5"
