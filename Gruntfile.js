@@ -1,4 +1,4 @@
-const builder = require('corifeus-core-builder');
+const builder = require('corifeus-builder');
 module.exports = (grunt) => {
 
     //node_modules\.bin\webdriver-manager update
