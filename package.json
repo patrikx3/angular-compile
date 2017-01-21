@@ -34,7 +34,7 @@
         "angular2-template-loader": "^0.6.0",
         "awesome-typescript-loader": "^3.0.0-beta.18",
         "core-js": "^2.4.1",
-        "corifeus-builder": "1.0.113-69",
+        "corifeus-builder": "1.0.136-9",
         "extract-text-webpack-plugin": "^1.0.1",
         "grunt-connect": "^0.2.0",
         "grunt-contrib-connect": "^1.0.2",
