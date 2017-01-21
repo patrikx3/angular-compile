@@ -12,3 +12,4 @@
 *.iws
 .travis.yml
 .scrutinizer.yml
+Gruntfile.js
