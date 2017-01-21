@@ -4,11 +4,12 @@ describe('CompileHtml', () => {
     browser.get(`index.html`);
 
     const clicker = (button, counter) => {
-        const total = 20;
+        const total = 5;
         for(let i =0; i < total - 1; i++) {
             button.click();
             browser.waitForAngular();
         }
+
         const count = counter.getText();
         expect(count).toEqual(total.toString());
     }
