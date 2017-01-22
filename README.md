@@ -1,10 +1,11 @@
-<!--@corifeus-header-->
+[//]: #@corifeus-header
 
 [![Build Status](https://travis-ci.org/patrikx3/ng2-compile-html.svg?branch=master)](https://travis-ci.org/patrikx3/ng2-compile-html)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-p3x-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
 
-<!--@corifeus-header:end-->
+[//]: #corifeus-header:end
+
 
 # ng2-compile-html
 
@@ -45,6 +46,7 @@ Check out the example, here [test/angular2/app/Page.ts](test/angular2-webpack/ap
 Angular 2 tries to camelCase all attributes, for me it is still HTML, so my selectors always ```kebab-case```.
 
 
-<!--@corifeus-footer-->
+
+[//]: #@corifeus-footer
 [by Patrik Laszlo](http://patrikx3.tk)
-<!--@corifeus-footer:end-->
+[//]: #@corifeus-footer:end
