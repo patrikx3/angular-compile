@@ -27,6 +27,7 @@ npm install p3x-ng2-compile-html
 git clone https://github.com/patrikx3/ng2-compile-html.git
 cd ng2-compile-html
 npm install
+node_modules/.bin/webdriver-manager update
 grunt run
 ```
 
