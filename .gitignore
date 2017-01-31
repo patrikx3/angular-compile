@@ -1,6 +1,2 @@
-/.idea
 /node_modules
 /build
-*.iml
-*.ipr
-*.iws
