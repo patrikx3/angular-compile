@@ -21,7 +21,7 @@ It is only using ```TypeScript``` right now. It can be built though.
 npm install p3x-ng2-compile-html
 ```
 
-##Test
+## Dev environment end test
    
 ```bash
 git clone https://github.com/patrikx3/ng2-compile-html.git
