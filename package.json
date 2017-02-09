@@ -1,9 +1,9 @@
 {
     "name": "p3x-ng2-compile-html",
-    "version": "1.1.92-119",
+    "version": "1.1.93-136",
     "corifeus": {
         "prefix": "p3x-",
-        "time": "2/6/2017, 5:40:00 PM"
+        "time": "2/10/2017, 12:26:47 AM"
     },
     "description": "Angular 2 Service to compile an HTML into a component Edit",
     "main": "src/index.ts",
@@ -31,16 +31,16 @@
     },
     "homepage": "https://github.com/patrikx3/ng2-compile-html#readme",
     "devDependencies": {
-        "@angular/common": "^2.4.6",
-        "@angular/compiler": "^2.4.6",
-        "@angular/platform-browser": "^2.4.6",
-        "@angular/platform-browser-dynamic": "^2.4.6",
+        "@angular/common": "^2.4.7",
+        "@angular/compiler": "^2.4.7",
+        "@angular/platform-browser": "^2.4.7",
+        "@angular/platform-browser-dynamic": "^2.4.7",
         "@types/jasmine": "^2.5.41",
         "@types/node": "^7.0.5",
-        "angular2-template-loader": "^0.6.1",
-        "awesome-typescript-loader": "^3.0.3",
+        "angular2-template-loader": "^0.6.2",
+        "awesome-typescript-loader": "^3.0.4-rc.0",
         "core-js": "^2.4.1",
-        "corifeus-builder": "1.0.203-127",
+        "corifeus-builder": "1.0.211-131",
         "extract-text-webpack-plugin": "^2.0.0-rc.2",
         "grunt-connect": "^0.2.0",
         "grunt-contrib-connect": "^1.0.2",
@@ -49,10 +49,10 @@
         "grunt-webpack": "^2.0.1",
         "html-loader": "^0.4.4",
         "html-webpack-plugin": "^2.28.0",
-        "istanbul-instrumenter-loader": "^1.2.0",
+        "istanbul-instrumenter-loader": "^2.0.0",
         "jasmine-core": "^2.5.2",
         "karma": "^1.4.1",
-        "karma-coverage": "^1.1.1",
+        "karma-coverage-istanbul-reporter": "^0.2.0",
         "karma-jasmine": "^1.1.0",
         "karma-phantomjs-launcher": "^1.0.2",
         "karma-sourcemap-loader": "^0.3.7",
@@ -65,9 +65,9 @@
         "webpack-merge": "^2.6.1"
     },
     "dependencies": {
-        "@angular/core": "^2.4.6",
+        "@angular/core": "^2.4.7",
         "rxjs": "^5.1.0",
         "zone.js": "0.7.6",
-        "typescript": "^2.1.5"
+        "typescript": "^2.1.6"
     }
 }
