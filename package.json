@@ -1,8 +1,9 @@
 {
-    "name": "ng2-compile-html",
-    "version": "1.1.108-143",
+    "name": "p3x-ng2-compile-html",
+    "version": "1.1.110-144",
     "corifeus": {
-        "time": "2/24/2017, 9:51:22 AM"
+        "prefix": "p3x-",
+        "time": "2/24/2017, 9:56:29 AM"
     },
     "description": "Compile an HTML Angular 2 Service/Attribute to into a component/HTML",
     "main": "src/index.ts",

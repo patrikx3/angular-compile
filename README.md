@@ -8,30 +8,14 @@
 
 [//]: #corifeus-header:end
 
-# ng2-compile-html  
-
-###The NPM is moved from   
-   
-```text
-p3x-ng2-compile-html
-```   
-   
-to   
-   
-```text
-ng2-compile-html
-```
-
-
-
-#Compile an HTML Angular 2 Service/Attribute to into a component/HTML
+##Compile an HTML Angular 2 Service/Attribute to into a component/HTML
 
 It is only using ```TypeScript``` right now. It can be built though.
 
 ##Install
   
 ```bash
-npm install ng2-compile-html
+npm install p3x-ng2-compile-html
 ```
 
 ## Dev environment end test
