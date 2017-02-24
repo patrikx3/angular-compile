@@ -28,7 +28,7 @@ git clone https://github.com/patrikx3/ng2-compile-html.git
 cd ng2-compile-html
 npm install
 node_modules/.bin/webdriver-manager update
-grunt run
+grunt default|run
 ```
 
 [http://localhost:8080](http://localhost:8080)
