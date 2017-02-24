@@ -24,7 +24,7 @@ ng2-compile-html
 
 
 
-#Angular 2 Service/Attribute to compile an HTML into a component
+#Compile an HTML Angular 2 Service/Attribute to into a component/HTML
 
 It is only using ```TypeScript``` right now. It can be built though.
 
