@@ -11,6 +11,7 @@
 # ng2-compile-html
 
 ###The NPM is moved from 
+
 ```p3x-ng2-compile-html```   
 
 to   
