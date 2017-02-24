@@ -10,13 +10,18 @@
 
 # ng2-compile-html  
 
-###The NPM is moved from 
+###The NPM is moved from   
    
-```p3x-ng2-compile-html```   
+```text
+p3x-ng2-compile-html
+```   
    
 to   
    
-```ng2-compile-html```.
+```text
+ng2-compile-html
+```
+
 
 
 Angular 2 Service/Attribute to compile an HTML into a component
