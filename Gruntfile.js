@@ -16,8 +16,7 @@ module.exports = (grunt) => {
 `,
                 files: [
                 'artifacts/**/*.md',
-                '*.md',
-                '!LICENSE.md'
+                '*.md'
             ]
         },
         footer: {
@@ -25,8 +24,7 @@ module.exports = (grunt) => {
                 replace: `[by Patrik Laszlo](http://patrikx3.tk)`,
                 files: [
                 'artifacts/**/*.md',
-                '*.md',
-                '!LICENSE.md'
+                '*.md'
             ]
         }
     })
