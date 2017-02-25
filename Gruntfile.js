@@ -21,7 +21,11 @@ module.exports = (grunt) => {
         },
         footer: {
             footer: true,
-                replace: `[by Patrik Laszlo](http://patrikx3.tk)`,
+                replace: `
+[by Patrik Laszlo](http://patrikx3.tk)
+
+\${pkg.name} v\${pkg.version} on \${pkg.corifeus.time }
+`,
                 files: [
                 'artifacts/**/*.md',
                 '*.md'
