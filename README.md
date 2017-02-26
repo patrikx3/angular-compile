@@ -5,6 +5,8 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-p3x-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
 
+[![NPM](https://nodei.co/npm/p3x-ng2-compile-html.png)](https://nodei.co/npm/p3x-ng2-compile-html/)
+
 
 [//]: #corifeus-header:end
 
@@ -52,7 +54,7 @@ Angular 2 tries to camelCase all attributes, for me it is still HTML, so my sele
 
 [by Patrik Laszlo](http://patrikx3.tk)
 
-p3x-ng2-compile-html v1.1.111-145 on 2/25/2017, 3:38:10 PM
+p3x-ng2-compile-html v1.1.112-147 on 2/26/2017, 1:39:27 AM
 
 
 [//]: #@corifeus-footer:end

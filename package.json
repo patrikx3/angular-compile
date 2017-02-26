@@ -1,9 +1,9 @@
 {
     "name": "p3x-ng2-compile-html",
-    "version": "1.1.111-145",
+    "version": "1.1.112-147",
     "corifeus": {
         "prefix": "p3x-",
-        "time": "2/25/2017, 3:38:10 PM"
+        "time": "2/26/2017, 1:39:27 AM"
     },
     "description": "Compile an HTML Angular 2 Service/Attribute to into a component/HTML",
     "main": "src/index.ts",
@@ -40,7 +40,7 @@
         "angular2-template-loader": "^0.6.2",
         "awesome-typescript-loader": "^3.0.7",
         "core-js": "^2.4.1",
-        "corifeus-builder": "1.0.218-159",
+        "corifeus-builder": "1.0.218-160",
         "extract-text-webpack-plugin": "^2.0.0",
         "grunt-connect": "^0.2.0",
         "grunt-contrib-connect": "^1.0.2",
