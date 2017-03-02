@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 
-import {Page } from './Page';
+import {Page } from './page';
 import {CompileHtmlService, CompileHtmlAttribute} from '../../../src';
 
 

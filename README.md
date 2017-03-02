@@ -54,7 +54,7 @@ Angular 2 tries to camelCase all attributes, for me it is still HTML, so my sele
 
 [by Patrik Laszlo](http://patrikx3.tk)
 
-p3x-ng2-compile-html v1.1.113-149 on 2/26/2017, 1:41:33 AM
+p3x-ng2-compile-html v1.1.114-203 on 3/3/2017, 12:04:35 AM
 
 
 [//]: #@corifeus-footer:end

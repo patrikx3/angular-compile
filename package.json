@@ -1,9 +1,9 @@
 {
     "name": "p3x-ng2-compile-html",
-    "version": "1.1.113-149",
+    "version": "1.1.114-203",
     "corifeus": {
         "prefix": "p3x-",
-        "time": "2/26/2017, 1:41:33 AM"
+        "time": "3/3/2017, 12:04:35 AM"
     },
     "description": "Compile an HTML Angular 2 Service/Attribute to into a component/HTML",
     "main": "src/index.ts",
@@ -31,16 +31,17 @@
     },
     "homepage": "https://github.com/patrikx3/ng2-compile-html#readme",
     "devDependencies": {
-        "@angular/common": "^2.4.8",
-        "@angular/compiler": "^2.4.8",
-        "@angular/platform-browser": "^2.4.8",
-        "@angular/platform-browser-dynamic": "^2.4.8",
+        "@angular/common": "^2.4.9",
+        "@angular/compiler": "^2.4.9",
+        "@angular/platform-browser": "^2.4.9",
+        "@angular/platform-browser-dynamic": "^2.4.9",
+        "@angular/router": "^3.4.9",
         "@types/jasmine": "^2.5.43",
         "@types/node": "^7.0.5",
         "angular2-template-loader": "^0.6.2",
-        "awesome-typescript-loader": "^3.0.7",
+        "awesome-typescript-loader": "^3.0.8",
         "core-js": "^2.4.1",
-        "corifeus-builder": "1.0.218-160",
+        "corifeus-builder": "1.0.237-183",
         "extract-text-webpack-plugin": "^2.0.0",
         "grunt-connect": "^0.2.0",
         "grunt-contrib-connect": "^1.0.2",
@@ -65,7 +66,7 @@
         "webpack-merge": "^3.0.0"
     },
     "dependencies": {
-        "@angular/core": "^2.4.8",
+        "@angular/core": "^2.4.9",
         "rxjs": "^5.2.0",
         "zone.js": "0.7.7",
         "typescript": "^2.2.1"
