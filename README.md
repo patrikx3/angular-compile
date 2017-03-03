@@ -3,12 +3,15 @@
 
 [![Build Status](https://travis-ci.org/patrikx3/ng2-compile-html.svg?branch=master)](https://travis-ci.org/patrikx3/ng2-compile-html)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-p3x-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
+[![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-Corifeus-026aa7.svg)](https://trello.com/b/3NArfcD1/corifeus)
 
-[![NPM](https://nodei.co/npm/p3x-ng2-compile-html.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/p3x-ng2-compile-html/)
+---
+
 
 
 [//]: #corifeus-header:end
+
+[![NPM](https://nodei.co/npm/\p3x-ng2-compile-html.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/\p3x-ng2-compile-html/)
 
 ##Compile an HTML Angular 2 Service/Attribute to into a component/HTML
 
@@ -52,9 +55,11 @@ Angular 2 tries to camelCase all attributes, for me it is still HTML, so my sele
 [//]: #@corifeus-footer
 
 
-[by Patrik Laszlo](http://patrikx3.tk)
+---
+P3X-NG2-COMPILE-HTML Build v1.1.115-205 on 3/3/2017, 1:00:20 PM
+ 
+by [Patrik Laszlo](http://patrikx3.tk)
 
-p3x-ng2-compile-html v1.1.114-203 on 3/3/2017, 12:04:35 AM
 
 
 [//]: #@corifeus-footer:end
