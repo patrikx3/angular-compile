@@ -43,7 +43,7 @@ grunt default|run
 ```
 
 ###TypeScript
-Check out the example, here [test/angular2-webpack/angular2/page.ts](test/angular2-webpack/page.ts).
+Check out the example, here [test/angular2-webpack/angular2/page.ts](test/angular2-webpack/angular2/page.ts).
 
 ### Example 2
 Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-web-pages/blob/master/src/angular2/layout/cory-page.ts), [HTML with imports](https://github.com/patrikx3/corifeus-web-pages/blob/master/src/angular2/layout/cory-page.html)
