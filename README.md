@@ -43,7 +43,7 @@ grunt default|run
 ```
 
 ###TypeScript
-Check out the example, here [test/angular2-webpack/app/Page.ts](test/angular2-webpack/app/Page.ts).
+Check out the example, here [test/angular2-webpack/app/page.ts](test/angular2-webpack/app/page.ts).
 
 ###Info
 Angular 2 tries to camelCase all attributes, for me it is still HTML, so my selectors always ```kebab-case```.
