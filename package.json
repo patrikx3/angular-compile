@@ -1,9 +1,9 @@
 {
     "name": "p3x-ng2-compile-html",
-    "version": "1.1.116-206",
+    "version": "1.1.117-208",
     "corifeus": {
         "prefix": "p3x-",
-        "time": "3/3/2017, 1:18:15 PM"
+        "time": "3/7/2017, 1:54:38 PM"
     },
     "description": "Compile an HTML Angular 2 Service/Attribute to into a component/HTML",
     "main": "src/index.ts",
@@ -39,10 +39,10 @@
         "@types/jasmine": "^2.5.43",
         "@types/node": "^7.0.5",
         "angular2-template-loader": "^0.6.2",
-        "awesome-typescript-loader": "^3.0.8",
+        "awesome-typescript-loader": "^3.1.1",
         "core-js": "^2.4.1",
-        "corifeus-builder": "1.0.241-206",
-        "extract-text-webpack-plugin": "^2.0.0",
+        "corifeus-builder": "1.0.244-210",
+        "extract-text-webpack-plugin": "^2.1.0",
         "grunt-connect": "^0.2.0",
         "grunt-contrib-connect": "^1.0.2",
         "grunt-karma": "^2.0.0",
@@ -53,7 +53,7 @@
         "istanbul-instrumenter-loader": "^2.0.0",
         "jasmine-core": "^2.5.2",
         "karma": "^1.5.0",
-        "karma-coverage-istanbul-reporter": "^0.2.3",
+        "karma-coverage-istanbul-reporter": "^0.3.0",
         "karma-jasmine": "^1.1.0",
         "karma-phantomjs-launcher": "^1.0.2",
         "karma-sourcemap-loader": "^0.3.7",
@@ -63,7 +63,7 @@
         "phantomjs-prebuilt": "^2.1.14",
         "webpack": "^2.2.1",
         "webpack-dev-server": "^2.4.1",
-        "webpack-merge": "^3.0.0"
+        "webpack-merge": "^4.0.0"
     },
     "dependencies": {
         "@angular/core": "^2.4.9",

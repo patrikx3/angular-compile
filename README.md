@@ -43,7 +43,7 @@ grunt default|run
 ```
 
 ###TypeScript
-Check out the example, here [test/angular2/app/Page.ts](test/angular2-webpack/app/Page.ts).
+Check out the example, here [test/angular2-webpack/app/Page.ts](test/angular2-webpack/app/Page.ts).
 
 ###Info
 Angular 2 tries to camelCase all attributes, for me it is still HTML, so my selectors always ```kebab-case```.
@@ -54,7 +54,7 @@ Angular 2 tries to camelCase all attributes, for me it is still HTML, so my sele
 
 
 ---
-P3X-NG2-COMPILE-HTML Build v1.1.116-206 on 3/3/2017, 1:18:15 PM
+**P3X-NG2-COMPILE-HTML** Build v1.1.117-208 on 3/7/2017, 1:54:38 PM
  
 by [Patrik Laszlo](http://patrikx3.tk)
 
