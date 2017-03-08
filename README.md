@@ -12,7 +12,7 @@
 
 ----
 ## Issues / new features
-As time is important, I cannot provide free fixes or new features. You can easily add in your own , just fork and I am open to merge as well.  I am also be bought.
+As in my own time, I develop my own programs therefore I cannot provide free fixes or new features anytime. You can easily add in your own , just fork and I am open to merge as well.  Although, my time can be purchased.
 
 ----
 
