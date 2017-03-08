@@ -10,6 +10,11 @@
 
 [//]: #corifeus-header:end
 
+----
+## Issues / new features
+As time is important, I cannot provide free fixes or new features. You can easily add in your own , just fork and I am open to merge as well.  I am also be bought.
+
+----
 
 ##Compile an HTML Angular 2 Service/Attribute to into a component/HTML
 
