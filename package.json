@@ -1,9 +1,9 @@
 {
     "name": "p3x-ng2-compile-html",
-    "version": "1.1.117-208",
+    "version": "1.1.126-209",
     "corifeus": {
         "prefix": "p3x-",
-        "time": "3/7/2017, 1:54:38 PM"
+        "time": "3/11/2017, 1:32:05 AM"
     },
     "description": "Compile an HTML Angular 2 Service/Attribute to into a component/HTML",
     "main": "src/index.ts",
@@ -36,10 +36,10 @@
         "@angular/platform-browser": "^2.4.9",
         "@angular/platform-browser-dynamic": "^2.4.9",
         "@angular/router": "^3.4.9",
-        "@types/jasmine": "^2.5.43",
-        "@types/node": "^7.0.5",
+        "@types/jasmine": "^2.5.44",
+        "@types/node": "^7.0.8",
         "angular2-template-loader": "^0.6.2",
-        "awesome-typescript-loader": "^3.1.1",
+        "awesome-typescript-loader": "^3.1.2",
         "core-js": "^2.4.1",
         "corifeus-builder": "1.0.244-210",
         "extract-text-webpack-plugin": "^2.1.0",
@@ -55,7 +55,7 @@
         "karma": "^1.5.0",
         "karma-coverage-istanbul-reporter": "^0.3.0",
         "karma-jasmine": "^1.1.0",
-        "karma-phantomjs-launcher": "^1.0.2",
+        "karma-phantomjs-launcher": "^1.0.4",
         "karma-sourcemap-loader": "^0.3.7",
         "karma-webpack": "^2.0.2",
         "node-sass-css-importer": "0.0.3",
@@ -68,7 +68,7 @@
     "dependencies": {
         "@angular/core": "^2.4.9",
         "rxjs": "^5.2.0",
-        "zone.js": "0.7.7",
+        "zone.js": "0.8.0",
         "typescript": "^2.2.1"
     }
 }
