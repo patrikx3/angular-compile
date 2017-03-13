@@ -11,10 +11,6 @@
 [//]: #@corifeus-header:end
 
 
-
-## Issues / new features
-As in my own time, I develop my own programs therefore I cannot provide free fixes or new features anytime. You can easily add in your own , just fork and I am open to merge as well.  Although, my time can be purchased.
-
 ##Compile an HTML Angular 2 Service/Attribute to into a component/HTML
 
 It is only using ```TypeScript``` right now. It can be built though.
@@ -61,7 +57,7 @@ Angular 2 tries to camelCase all attributes, for me it is still HTML, so my sele
 
 
 ---
-[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.127-213 on 3/12/2017, 11:23:23 AM
+[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.128-216 on 2017-03-13T09:09:03.415Z
 
 [Patrik Laszlo](http://patrikx3.tk)
  
