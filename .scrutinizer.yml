@@ -17,7 +17,7 @@ build:
   tests:
     override:
       -
-        command: 'grunt karma:cory-angular2'
+        command: 'grunt coverage'
         coverage:
           file: 'build/coverage/clover.xml'
           format: 'clover'

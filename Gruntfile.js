@@ -26,6 +26,8 @@ module.exports = (grunt) => {
 
     grunt.registerTask('default',  builder.config.task.build.angular2);
 
+    grunt.registerTask('coverage', 'karma:cory-angular2');
+
    //cori-test:angular2-protractor
    // cori-test:angular2-karma
 
