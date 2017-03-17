@@ -15,5 +15,6 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
   - npm install grunt-cli -g
-  - npm install
+  - npm install yarn -g
+  - yarn install
   - ./node_modules/protractor/bin/webdriver-manager update
