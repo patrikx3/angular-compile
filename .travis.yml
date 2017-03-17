@@ -16,4 +16,4 @@ before_script:
   - sleep 3 # give xvfb some time to start
   - npm install grunt-cli -g
   - npm install
-  - ./node_modules/.bin/webdriver-manager update
+  - ./node_modules/protractor/bin/webdriver-manager update
