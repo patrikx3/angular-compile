@@ -11,8 +11,7 @@ build:
   dependencies:
     before:
       - npm install grunt-cli -g
-      - npm install yarn -g
-      - yarn install
+      - npm install
       - node_modules/protractor/bin/webdriver-manager update
 
   tests:
