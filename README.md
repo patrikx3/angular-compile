@@ -18,16 +18,16 @@ It is only using ```TypeScript``` right now. It can be built though.
 ##Install
   
 ```bash
-npm install -g yarn
-yarn install p3x-ng2-compile-html
+npm install p3x-ng2-compile-html
 ```
 
 ## Dev environment end test
    
 ```bash
+npm install -g yarn
 git clone https://github.com/patrikx3/ng2-compile-html.git
 cd ng2-compile-html
-npm install
+yarn install
 node_modules/.bin/webdriver-manager update
 grunt default|run
 ```
@@ -58,7 +58,7 @@ Angular 2 tries to camelCase all attributes, for me it is still HTML, so my sele
 
 
 ---
-[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.131-229 on 3/17/2017, 7:43:09 PM
+[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.132-230 on 3/17/2017, 7:43:58 PM
 
 [Corifeus](http://github.com/patrikx3/corifeus) by [Patrik Laszlo](http://patrikx3.tk)
  
