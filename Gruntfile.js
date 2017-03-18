@@ -1,7 +1,7 @@
-const builder = require('corifeus-builder');
 module.exports = (grunt) => {
 
-    //node_modules\.bin\webdriver-manager update
+    //node_modules/protractor/bin/webdriver-manager update
+    const builder = require('corifeus-builder-angular2');
 
     const loader = new builder.Loader(grunt);
     loader.angular2(builder.config.folder.test.angular2Webpack.root);

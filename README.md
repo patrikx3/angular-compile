@@ -58,7 +58,7 @@ Angular 2 tries to camelCase all attributes, for me it is still HTML, so my sele
 
 
 ---
-[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.132-230 on 3/17/2017, 7:43:58 PM
+[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.137-240 on 3/18/2017, 3:21:27 PM
 
 [Corifeus](http://github.com/patrikx3/corifeus) by [Patrik Laszlo](http://patrikx3.tk)
  
