@@ -1,11 +1,11 @@
 [//]: #@corifeus-header
 
 
-[![Build Status](https://travis-ci.org/patrikx3/ng2-compile-html.svg?branch=master)](https://travis-ci.org/patrikx3/ng2-compile-html)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/ng2-compile-html/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-p3x-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
+[![Build Status](https://travis-ci.org/patrikx3/angular-compile-html.svg?branch=master)](https://travis-ci.org/patrikx3/angular-compile-html)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/angular-compile-html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile-html/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/angular-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile-html/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-p3x-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
 
-[![NPM](https://nodei.co/npm/p3x-ng2-compile-html.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/p3x-ng2-compile-html/)
+[![NPM](https://nodei.co/npm/p3x-angular-compile-html.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/p3x-angular-compile-html/)
 
 
 [//]: #@corifeus-header:end
@@ -18,15 +18,15 @@ It is only using ```TypeScript``` right now. It can be built though.
 ##Install
   
 ```bash
-npm install p3x-ng2-compile-html
+npm install p3x-angular-compile-html
 ```
 
 ## Dev environment end test
    
 ```bash
 npm install -g yarn
-git clone https://github.com/patrikx3/ng2-compile-html.git
-cd ng2-compile-html
+git clone https://github.com/patrikx3/angular-compile-html.git
+cd angular-compile-html
 yarn install
 node_modules/.bin/webdriver-manager update
 grunt default|run
@@ -58,7 +58,7 @@ Angular 2 tries to camelCase all attributes, for me it is still HTML, so my sele
 
 
 ---
-[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.140-246 on 3/24/2017, 5:31:03 PM
+[**P3X-angular-compile-html**](https://patrikx3.github.com/angular-compile-html) Build v1.1.140-246 on 3/24/2017, 5:31:03 PM
 
 [Corifeus](http://github.com/patrikx3/corifeus) by [Patrik Laszlo](http://patrikx3.tk)
  

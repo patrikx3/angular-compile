@@ -1,5 +1,5 @@
 {
-    "name": "p3x-ng2-compile-html",
+    "name": "p3x-angular-compile-html",
     "version": "1.1.140-246",
     "corifeus": {
         "prefix": "p3x-",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/patrikx3/ng2-compile-html.git"
+        "url": "git+https://github.com/patrikx3/angular-compile-html.git"
     },
     "keywords": [
         "p3x",
@@ -28,9 +28,9 @@
     "author": "Patrik Laszlo <alabard@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/patrikx3/ng2-compile-html/issues"
+        "url": "https://github.com/patrikx3/angular-compile-html/issues"
     },
-    "homepage": "https://github.com/patrikx3/ng2-compile-html#readme",
+    "homepage": "https://github.com/patrikx3/angular-compile-html#readme",
     "devDependencies": {
         "corifeus-builder-angular": "^1.0.62-88",
         "corifeus-web": "^1.0.70-92"
