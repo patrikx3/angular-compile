@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@angular/animations@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-4.0.0.tgz#f6efb67ca3f3816d2dbf19b8f570371f2d205edc"
+
 "@angular/common@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.0.0.tgz#ca18983222fdab4ecaa7a8b99eda6ff661e6dc92"
@@ -70,8 +74,8 @@
   resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-2.0.41.tgz#b87ba051011f99edbe586d8f97282e7786e01a6d"
 
 "@types/lodash@^4.14.57":
-  version "4.14.57"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.57.tgz#f0095fb15ec1004455613f3ad73766583e62f830"
+  version "4.14.58"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.58.tgz#18d45863b6119c1ffffe935c1f51fe044c8c4102"
 
 "@types/node@^6.0.46":
   version "6.0.66"
@@ -1041,10 +1045,11 @@ corifeus-builder@^1.5.333-319:
     should "^11.2.1"
     time-grunt "^1.4.0"
 
-corifeus-web@^1.0.70-92:
-  version "1.0.70-92"
-  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-1.0.70-92.tgz#a89c6cd56efafe051e22272e4ad9c13b5325866f"
+corifeus-web@^1.0.71-93:
+  version "1.0.71-93"
+  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-1.0.71-93.tgz#c62acf890b133613678da7d9b5d98fd111442fee"
   dependencies:
+    "@angular/animations" "^4.0.0"
     "@angular/forms" "~4.0.0"
     "@angular/http" "^4.0.0"
     "@angular/router" "^4.0.0"
@@ -5412,9 +5417,16 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
-ws@1.1.2, ws@^1.0.1:
+ws@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.2.tgz#8a244fa052401e08c9886cf44a85189e1fd4067f"
+  dependencies:
+    options ">=0.0.5"
+    ultron "1.0.x"
+
+ws@^1.0.1:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.4.tgz#57f40d036832e5f5055662a397c4de76ed66bf61"
   dependencies:
     options ">=0.0.5"
     ultron "1.0.x"

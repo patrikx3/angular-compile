@@ -33,7 +33,7 @@
     "homepage": "https://github.com/patrikx3/angular-compile-html#readme",
     "devDependencies": {
         "corifeus-builder-angular": "^1.0.62-88",
-        "corifeus-web": "^1.0.70-92"
+        "corifeus-web": "^1.0.71-93"
     },
     "dependencies": {}
 }
