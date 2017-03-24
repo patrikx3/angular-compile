@@ -97,7 +97,11 @@
   version "2.53.42"
   resolved "https://registry.yarnpkg.com/@types/selenium-webdriver/-/selenium-webdriver-2.53.42.tgz#74cb77fb6052edaff2a8984ddafd88d419f25cac"
 
-abbrev@1, abbrev@1.0.x:
+abbrev@1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
+
+abbrev@1.0.x:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.0.9.tgz#91b4792588a7738c25f35dd6f63752a2f8776135"
 
@@ -971,9 +975,9 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-corifeus-builder-angular@^1.0.62-88:
-  version "1.0.62-88"
-  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-1.0.62-88.tgz#7f57791ea565866ea862f9cbe224b1d7523863ad"
+corifeus-builder-angular@^1.0.64-92:
+  version "1.0.64-92"
+  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-1.0.64-92.tgz#792d1c989084a5e9c92bd605ef7803ff89849a50"
   dependencies:
     "@angular/common" "^4.0.0"
     "@angular/compiler" "^4.0.0"
@@ -2751,19 +2755,19 @@ js-tokens@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
 
-js-yaml@3.x, js-yaml@~3.5.2:
-  version "3.5.5"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.5.5.tgz#0377c38017cabc7322b0d1fbcd25a491641f2fbe"
-  dependencies:
-    argparse "^1.0.2"
-    esprima "^2.6.0"
-
-js-yaml@^3.7.0:
+js-yaml@3.x, js-yaml@^3.7.0:
   version "3.8.2"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.2.tgz#02d3e2c0f6beab20248d412c352203827d786721"
   dependencies:
     argparse "^1.0.7"
     esprima "^3.1.1"
+
+js-yaml@~3.5.2:
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.5.5.tgz#0377c38017cabc7322b0d1fbcd25a491641f2fbe"
+  dependencies:
+    argparse "^1.0.2"
+    esprima "^2.6.0"
 
 js-yaml@~3.7.0:
   version "3.7.0"
@@ -4383,7 +4387,13 @@ requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
 
-resolve@^1.1.6, resolve@~1.1.0:
+resolve@^1.1.6:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.3.2.tgz#1f0442c9e0cbb8136e87b9305f932f46c7f28235"
+  dependencies:
+    path-parse "^1.0.5"
+
+resolve@~1.1.0:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
 
