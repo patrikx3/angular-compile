@@ -1,10 +1,10 @@
 module.exports = (grunt) => {
 
     //node_modules/protractor/bin/webdriver-manager update
-    const builder = require('corifeus-builder-angular2');
+    const builder = require('corifeus-builder-angular');
 
-    const loader = new builder.Loader(grunt);
-    loader.angular2(builder.config.folder.test.angular2Webpack.root);
+    const loader = new builder.loader(grunt);
+    loader.angular(builder.config.folder.test.angularWebpack.root);
 
     const copyReplace = grunt.config.get('cory-replace');
     copyReplace.header = {
@@ -22,14 +22,14 @@ module.exports = (grunt) => {
     };
     grunt.config.set('cory-replace', copyReplace );
 
-    grunt.registerTask('run', builder.config.task.run.angular2);
+    grunt.registerTask('run', builder.config.task.run.angular);
 
-    grunt.registerTask('default',  builder.config.task.build.angular2);
+    grunt.registerTask('default',  builder.config.task.build.angular);
 
-    grunt.registerTask('coverage', 'karma:cory-angular2');
+    grunt.registerTask('coverage', 'karma:cory-angular');
 
-   //cori-test:angular2-protractor
-   // cori-test:angular2-karma
+   //cori-test:angular-protractor
+   // cori-test:angular-karma
 
 
 }
