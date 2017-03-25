@@ -44,7 +44,7 @@ grunt default|run
 ```
 
 ### TypeScript
-Check out the example, here [test/angular-webpack/angular/page.ts](test/angular-webpack/angular/page.ts).
+Check out the example, here [test/angular-webpack/angular/page.ts](https://github.com/patrikx3/angular-compile-html/blob/master/test/angular-webpack/angular/page.ts).
 
 ### Example 2
 Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-web-pages/blob/master/src/angular/modules/cory-page.ts)
