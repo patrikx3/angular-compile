@@ -52,7 +52,7 @@ grunt default|run
 Check out the example, here [test/angular-webpack/angular/page.ts](https://github.com/patrikx3/angular-compile-html/blob/master/test/angular-webpack/angular/page.ts).
 
 ### Example 2
-Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-web-pages/blob/master/src/angular/modules/cory-page.ts)
+Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
 ### Info
 Angular 2/4/x tries to camelCase all attributes, for me it is still HTML, so my selectors always ```kebab-case```.
@@ -63,7 +63,7 @@ Angular 2/4/x tries to camelCase all attributes, for me it is still HTML, so my 
 
 
 ---
-[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.146-250 on 3/27/2017, 10:33:49 AM
+[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.154-250 on 3/27/2017, 2:00:30 PM
 
 [Corifeus](http://github.com/patrikx3/corifeus) by [Patrik Laszlo](http://patrikx3.tk)
  
