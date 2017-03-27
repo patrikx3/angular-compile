@@ -10,6 +10,11 @@
 
 [//]: #@corifeus-header:end
 
+# Name change
+```bash
+p3x-ng2-compile-html => p3x-angular-compile-html
+```
+
 
 ## Compile an HTML Angular 2 Service/Attribute to into a component/HTML
 
@@ -58,7 +63,7 @@ Angular 2 tries to camelCase all attributes, for me it is still HTML, so my sele
 
 
 ---
-[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.144-248 on 3/24/2017, 5:41:53 PM
+[**P3X-NG2-COMPILE-HTML**](https://patrikx3.github.com/ng2-compile-html) Build v1.1.146-250 on 3/27/2017, 10:33:49 AM
 
 [Corifeus](http://github.com/patrikx3/corifeus) by [Patrik Laszlo](http://patrikx3.tk)
  
