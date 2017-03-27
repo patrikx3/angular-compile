@@ -16,7 +16,7 @@ p3x-ng2-compile-html => p3x-angular-compile-html
 ```
 
 
-## Compile an HTML Angular 2 Service/Attribute to into a component/HTML
+## Compile an HTML Angular 2/4/x Service/Attribute to into a component/HTML
 
 It is only using ```TypeScript``` right now. It can be built though.
 
@@ -55,7 +55,7 @@ Check out the example, here [test/angular-webpack/angular/page.ts](https://githu
 Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
 ### Info
-Angular 2 tries to camelCase all attributes, for me it is still HTML, so my selectors always ```kebab-case```.
+Angular 2/4/x tries to camelCase all attributes, for me it is still HTML, so my selectors always ```kebab-case```.
 
 
 
