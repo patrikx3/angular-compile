@@ -33,7 +33,7 @@ npm install -g yarn
 git clone https://github.com/patrikx3/angular-compile-html.git
 cd angular-compile-html
 yarn install
-node_modules/.bin/webdriver-manager update
+node node_modules/protractor/bin/webdriver-manager update
 grunt default|run
 ```
 
@@ -63,7 +63,7 @@ Angular 2/4/x tries to camelCase all attributes, for me it is still HTML, so my 
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v1.1.155-252 on 3/27/2017, 2:15:00 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v1.1.156-253 on 3/27/2017, 8:12:13 PM
 
 [Corifeus](http://github.com/patrikx3/corifeus) by [Patrik Laszlo](http://patrikx3.tk)
  
