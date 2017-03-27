@@ -1,5 +1,6 @@
 module.exports = (grunt) => {
 
+    //node node_modules/protractor/bin/webdriver-manager update
     //node_modules/protractor/bin/webdriver-manager update
     const builder = require('corifeus-builder-angular');
 
