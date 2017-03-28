@@ -63,7 +63,7 @@ Angular 2/4/x tries to camelCase all attributes, for me it is still HTML, so my 
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v1.1.156-253 on 3/27/2017, 8:12:13 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v1.1.157-254 on 3/28/2017, 11:06:55 AM
 
 [Corifeus](http://github.com/patrikx3/corifeus) by [Patrik Laszlo](http://patrikx3.tk)
  
