@@ -13,9 +13,10 @@
 # AOT
 Right now, Angular V4 AOT is broken with JIT together. It will take some time for it to mature. Please use JIT alone. I keep an eye on it. 
 
-Reference:
-https://github.com/angular/angular/issues/15510
-https://github.com/angular/angular/issues/11780
+##Reference
+https://github.com/angular/angular/issues/15510  
+https://github.com/angular/angular/issues/11780  
+
 
 
 # Name change
@@ -71,7 +72,7 @@ Angular 2+ uses camelCase attributes, for me it is still HTML, so my selectors a
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v1.1.159-259 on 4/13/2017, 3:20:50 AM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v1.1.160-260 on 4/13/2017, 4:14:10 AM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
