@@ -13,7 +13,7 @@
 # AOT
 Right now, Angular V4 AOT is broken with JIT together. It will take some time for it to mature. Please use JIT alone. I keep an eye on it. 
 
-##Reference
+## Reference
 https://github.com/angular/angular/issues/15510  
 https://github.com/angular/angular/issues/11780  
 
