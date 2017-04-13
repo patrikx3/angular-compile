@@ -20,6 +20,22 @@ module.exports = (grunt) => {
             '*.md'
         ]
     };
+    copyReplace.footer = {
+        footer: true,
+        replace: `
+---
+[**\${pkg.name.toUpperCase()}**](https://patrikx3.github.com/\${git.repo}) Build v\${pkg.version} on \${pkg.corifeus.time }
+
+by [Patrik Laszlo](http://patrikx3.tk) 
+`,
+        files: [
+            'artifacts/**/*.md',
+            '*.md',
+            '!node_modules',
+            '!build',
+            '!LICENSE.md',
+        ]
+    }
     grunt.config.set('cory-replace', copyReplace );
 
     grunt.registerTask('run', builder.config.task.run.angular);

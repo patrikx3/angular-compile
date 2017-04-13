@@ -10,13 +10,21 @@
 
 [//]: #@corifeus-header:end
 
+# AOT
+Right now, Angular V4 AOT is broken with JIT together. It will take some time for it to mature. Please use JIT alone. I keep an eye on it. 
+
+Reference:
+https://github.com/angular/angular/issues/15510
+https://github.com/angular/angular/issues/11780
+
+
 # Name change
 ```bash
 p3x-ng2-compile-html => p3x-angular-compile-html
 ```
 
 
-## Compile an HTML Angular 2/4/x Service/Attribute to into a component/HTML
+## Compile an HTML Angular 2+ Service/Attribute to into a component/HTML
 
 It is only using ```TypeScript``` right now. It can be built though.
 
@@ -55,7 +63,7 @@ Check out the example, here [test/angular-webpack/angular/page.ts](https://githu
 Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
 ### Info
-Angular 2/4/x tries to camelCase all attributes, for me it is still HTML, so my selectors always ```kebab-case```.
+Angular 2+ uses camelCase attributes, for me it is still HTML, so my selectors always ```kebab-case```.
 
 
 
@@ -63,10 +71,9 @@ Angular 2/4/x tries to camelCase all attributes, for me it is still HTML, so my 
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v1.1.157-254 on 3/28/2017, 11:06:55 AM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v1.1.159-259 on 4/13/2017, 3:20:50 AM
 
-[Corifeus](http://github.com/patrikx3/corifeus) by [Patrik Laszlo](http://patrikx3.tk)
- 
+by [Patrik Laszlo](http://patrikx3.tk) 
 
 
 [//]: #@corifeus-footer:end
