@@ -1,42 +1,43 @@
 {
-    "name": "p3x-angular-compile-html",
-    "version": "1.1.161-261",
-    "corifeus": {
-        "prefix": "p3x-",
-        "time": "4/13/2017, 4:15:59 AM",
-        "time-stamp": 1492049759514
-    },
-    "description": "Compile an HTML Angular 2 Service/Attribute to into a component/HTML",
-    "main": "src/index.ts",
-    "scripts": {
-        "test": "grunt"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/patrikx3/angular-compile-html.git"
-    },
-    "keywords": [
-        "p3x",
-        "angular",
-        "ng",
-        "compile",
-        "html",
-        "angular2",
-        "angular 2",
-        "ng2"
-    ],
-    "author": "Patrik Laszlo <alabard@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/patrikx3/angular-compile-html/issues"
-    },
-    "homepage": "https://patrikx3.github.io/angular-compile-html/",
-    "devDependencies": {
-        "corifeus-builder-angular": "^1.0.92-118",
-        "corifeus-web": "^1.0.100-116"
-    },
-    "dependencies": {},
-    "engines": {
-        "node": ">=7.8.0"
-    }
+  "name": "p3x-angular-compile-html",
+  "version": "4.0.162-283",
+  "corifeus": {
+    "prefix": "p3x-",
+    "time": "4/16/2017, 6:02:12 PM",
+    "time-stamp": 1492358532777
+  },
+  "description": "Compile an HTML Angular 2 Service/Attribute to into a component/HTML",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrikx3/angular-compile-html.git"
+  },
+  "keywords": [
+    "p3x",
+    "angular",
+    "ng",
+    "compile",
+    "html",
+    "angular2",
+    "angular 2",
+    "ng2",
+    "dynamic"
+  ],
+  "author": "Patrik Laszlo <alabard@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrikx3/angular-compile-html/issues"
+  },
+  "homepage": "https://patrikx3.github.io/angular-compile-html/",
+  "devDependencies": {
+    "corifeus-builder-angular": "^4.0.112-158",
+    "corifeus-web": "^4.0.108-118"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=7.8.0"
+  }
 }

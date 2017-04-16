@@ -9,11 +9,11 @@ import {
 import {CompileHtmlService } from '../../../src';
 
 @Component({
-    selector: 'p3x-ng2-compile-html-test',
+    selector: 'p3x-compile-test',
     template: `
     <div #container></div>
     <hr/>
-    <div [p3x-compile-html]="data2" [p3x-compile-html-ref]="ref"></div>
+    <div [p3x-compile]="data2" [p3x-compile-ref]="ref"></div>
 `
 })
 @Injectable()

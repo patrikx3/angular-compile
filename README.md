@@ -10,24 +10,15 @@
 
 [//]: #@corifeus-header:end
 
-# AOT
-Right now, Angular V4 AOT is broken with JIT together. It will take some time for it to mature. Please use JIT alone. I keep an eye on it. 
+# AOT + JIT
+Working it out right now, so it only works with JIT for the moment. 
 
 ## Reference
 https://github.com/angular/angular/issues/15510  
 https://github.com/angular/angular/issues/11780  
 
-
-
-# Name change
-```bash
-p3x-ng2-compile-html => p3x-angular-compile-html
-```
-
-
-## Compile an HTML Angular 2+ Service/Attribute to into a component/HTML
-
-It is only using ```TypeScript``` right now. It can be built though.
+# Dynamic component
+Service / attribute to compile an HTML string into an Angular 2+ to into a component. It is pure ```TypeScript```.
 
 ## Install
   
@@ -54,7 +45,7 @@ grunt default|run
   
 ```html
  <div #container></div>
- <div [p3x-compile-html]="data2" [p3x-compile-html-ref]="ref" [p3x-compile-html-imports]="importsLikeMaterialEtc"></div>
+ <div [p3x-compile]="data2" [p3x-compile-ref]="ref" [p3x-compile-imports]="importsLikeMaterialEtc"></div>
 ```
 
 ### TypeScript
@@ -67,12 +58,24 @@ Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corife
 Angular 2+ uses camelCase attributes, for me it is still HTML, so my selectors always ```kebab-case```.
 
 
+### AOT INFO
+```typesciprt
+import {Compiler } from '@angular/core';
+import {JitCompilerFactory} from '@angular/compiler';
+export function createJitCompiler () {
+    return new JitCompilerFactory([{useDebug: false, useJit: true}]).createCompiler();
+}
+
+const = providers: [
+        { provide: Compiler, useFactory:  createJitCompiler},
+   ]
+```
 
 [//]: #@corifeus-footer
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v1.1.160-260 on 4/13/2017, 4:14:10 AM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.162-283 on 4/16/2017, 6:02:12 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
