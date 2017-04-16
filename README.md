@@ -75,7 +75,7 @@ const = providers: [
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.162-283 on 4/16/2017, 6:02:12 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.163-285 on 4/16/2017, 10:17:02 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 

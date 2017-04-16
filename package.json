@@ -1,10 +1,10 @@
 {
   "name": "p3x-angular-compile-html",
-  "version": "4.0.162-283",
+  "version": "4.0.163-285",
   "corifeus": {
     "prefix": "p3x-",
-    "time": "4/16/2017, 6:02:12 PM",
-    "time-stamp": 1492358532777
+    "time": "4/16/2017, 10:17:02 PM",
+    "time-stamp": 1492373822401
   },
   "description": "Compile an HTML Angular 2 Service/Attribute to into a component/HTML",
   "main": "src/index.ts",
@@ -33,8 +33,8 @@
   },
   "homepage": "https://patrikx3.github.io/angular-compile-html/",
   "devDependencies": {
-    "corifeus-builder-angular": "^4.0.112-158",
-    "corifeus-web": "^4.0.108-118"
+    "corifeus-builder-angular": "^4.0.116-169",
+    "corifeus-web": "^4.0.112-130"
   },
   "dependencies": {},
   "engines": {

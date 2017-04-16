@@ -2,7 +2,11 @@ module.exports = (grunt) => {
 
     //node node_modules/protractor/bin/webdriver-manager update
     const builder = require('corifeus-builder-angular');
+/*
+ webdriver-manager/selenium/update-config.json
+ node_modules/protractor/bin/webdriver-manager update
 
+ */
     const loader = new builder.loader(grunt);
     loader.angular(builder.config.folder.test.angularWebpack.root);
 
