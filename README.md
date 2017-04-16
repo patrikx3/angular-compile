@@ -17,8 +17,8 @@ Working it out right now, so it only works with JIT for the moment.
 https://github.com/angular/angular/issues/15510  
 https://github.com/angular/angular/issues/11780  
 
-# Dynamic component
-Service / attribute to compile an HTML string into an Angular 2+ to into a component. It is pure ```TypeScript```.
+# Use case
+Dynamic compile HTML string for Angular 2+. 
 
 ## Install
   
@@ -45,7 +45,7 @@ grunt default|run
   
 ```html
  <div #container></div>
- <div [p3x-compile]="data2" [p3x-compile-ref]="ref" [p3x-compile-imports]="importsLikeMaterialEtc"></div>
+ <div [p3x-compile]="string" [p3x-compile-ref]="youGetInYourTemplateAsRef" [p3x-compile-imports]="importsLikeMaterialEtcArray"></div>
 ```
 
 ### TypeScript
@@ -54,28 +54,13 @@ Check out the example, here [test/angular-webpack/angular/page.ts](https://githu
 ### Example 2
 Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
-### Info
-Angular 2+ uses camelCase attributes, for me it is still HTML, so my selectors always ```kebab-case```.
 
-
-### AOT INFO
-```typesciprt
-import {Compiler } from '@angular/core';
-import {JitCompilerFactory} from '@angular/compiler';
-export function createJitCompiler () {
-    return new JitCompilerFactory([{useDebug: false, useJit: true}]).createCompiler();
-}
-
-const = providers: [
-        { provide: Compiler, useFactory:  createJitCompiler},
-   ]
-```
 
 [//]: #@corifeus-footer
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.163-285 on 4/16/2017, 10:17:02 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.164-286 on 4/16/2017, 10:36:43 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
