@@ -11,9 +11,10 @@
 [//]: #@corifeus-header:end
 
 # AOT + JIT
-Working it out right now, so it only works with JIT for the moment. 
+Mixing pure JIT (anything) + AOT at the once is not support by Google.
 
 ## Reference
+https://github.com/angular/angular/issues/16033#issuecomment-294537684   
 https://github.com/angular/angular/issues/15510  
 https://github.com/angular/angular/issues/11780  
 
@@ -54,13 +55,22 @@ Check out the example, here [test/angular-webpack/angular/page.ts](https://githu
 ### Example 2
 Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
+## INFO AOT TEST
 
+```bash
+# aot test http://localhost:9999
+yarn install
+grunt aot-test --verbose
+
+# pure jit http://localhost:8080
+grunt run
+```
 
 [//]: #@corifeus-footer
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.164-286 on 4/16/2017, 10:36:43 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.166-304 on 4/17/2017, 8:48:26 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 

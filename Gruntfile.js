@@ -46,6 +46,10 @@ by [Patrik Laszlo](http://patrikx3.tk)
 
     grunt.registerTask('default',  builder.config.task.build.angular);
 
+    grunt.registerTask('aot', builder.config.task.build.angularAot);
+
+    grunt.registerTask('aot-test', ['webpack:cory-build-aot', 'cory-test-connect']);
+
     grunt.registerTask('coverage', 'karma:cory-angular');
 
    //cori-test:angular-protractor
