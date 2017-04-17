@@ -10,16 +10,20 @@
 
 [//]: #@corifeus-header:end
 
-# AOT + JIT
-Mixing pure JIT (anything) + AOT at the once is not support by Google.
+# AOT + JIT mix
+Mixing pure JIT + AOT at the once is not support by Google. There some use cases that work with JIT, but for pure dynamic component construction is not working right now in v4 and this implementation uses that. 
 
 ## Reference
 https://github.com/angular/angular/issues/16033#issuecomment-294537684   
 https://github.com/angular/angular/issues/15510  
 https://github.com/angular/angular/issues/11780  
 
+# JIT
+There are no issues.
+
+
 # Use case
-Dynamic compile HTML string for Angular 2+. 
+Dynamic compile HTML string for Angular v4. 
 
 ## Install
   
@@ -34,8 +38,7 @@ npm install -g yarn
 git clone https://github.com/patrikx3/angular-compile-html.git
 cd angular-compile-html
 yarn install
-node node_modules/protractor/bin/webdriver-manager update
-grunt default|run
+grunt run|default
 ```
 
 [http://localhost:8080](http://localhost:8080)
@@ -58,8 +61,10 @@ Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corife
 ## INFO AOT TEST
 
 ```bash
-# aot test http://localhost:9999
+git clone https://github.com/patrikx3/angular-compile-html.git
 yarn install
+
+# aot test http://localhost:9999
 grunt aot-test --verbose
 
 # pure jit http://localhost:8080
@@ -70,7 +75,7 @@ grunt run
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.166-304 on 4/17/2017, 8:48:26 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.167-307 on 4/17/2017, 11:56:50 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
