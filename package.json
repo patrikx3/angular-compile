@@ -1,43 +1,43 @@
 {
-  "name": "p3x-angular-compile-html",
-  "version": "4.0.171-378",
-  "corifeus": {
-    "prefix": "p3x-",
-    "time": "4/18/2017, 9:05:51 PM",
-    "time-stamp": 1492542351441
-  },
-  "description": "Dynamic compile HTML string for Angular 2+",
-  "main": "src/index.ts",
-  "scripts": {
-    "test": "grunt"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/patrikx3/angular-compile-html.git"
-  },
-  "keywords": [
-    "p3x",
-    "angular",
-    "ng",
-    "compile",
-    "html",
-    "angular2",
-    "angular 2",
-    "ng2",
-    "dynamic"
-  ],
-  "author": "Patrik Laszlo <alabard@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/patrikx3/angular-compile-html/issues"
-  },
-  "homepage": "https://patrikx3.github.io/angular-compile-html/",
-  "devDependencies": {
-    "corifeus-builder-angular": "^4.0.151-258",
-    "corifeus-web": "^4.0.145-218"
-  },
-  "dependencies": {},
-  "engines": {
-    "node": ">=7.8.0"
-  }
+    "name": "p3x-angular-compile-html",
+    "version": "4.0.172-387",
+    "corifeus": {
+        "prefix": "p3x-",
+        "time": "4/18/2017, 9:42:55 PM",
+        "time-stamp": 1492544575585
+    },
+    "description": "Dynamic compile HTML string for Angular 2+",
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "grunt"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/patrikx3/angular-compile-html.git"
+    },
+    "keywords": [
+        "p3x",
+        "angular",
+        "ng",
+        "compile",
+        "html",
+        "angular2",
+        "angular 2",
+        "ng2",
+        "dynamic"
+    ],
+    "author": "Patrik Laszlo <alabard@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/patrikx3/angular-compile-html/issues"
+    },
+    "homepage": "https://patrikx3.github.io/angular-compile-html/",
+    "devDependencies": {
+        "corifeus-builder-angular": "^4.0.151-258",
+        "corifeus-web": "^4.0.145-218"
+    },
+    "dependencies": {},
+    "engines": {
+        "node": ">=7.8.0"
+    }
 }
