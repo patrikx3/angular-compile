@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -8,9 +9,6 @@
     "experimentalDecorators": true,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
-    "compilerOptions": {
-      "sourceMap": true
-    },
     "lib": [
       "es5",
       "es6",
@@ -18,6 +16,13 @@
       "es2015.collection",
       "es2015.promise",
       "es2015.core"
-    ]
+    ],
+    "exclude": [
+      "src/angular/boot-aot.ts",
+      "test/angular-webpack/angular/boot-aot.ts"
+    ],
+    "paths": {
+      "*": [ "node_modules/@types/*", "*"]
+    }
   }
 }
