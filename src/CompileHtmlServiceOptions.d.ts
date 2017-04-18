@@ -6,7 +6,9 @@ export interface CompileHtmlServiceOptions {
     template: string;
     container: ViewContainerRef;
     imports?: any[];
-    ref?: any
+    context?: any,
+    onCompiled?: any,
+    onError?: any;
 }
 
 

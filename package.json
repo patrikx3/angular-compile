@@ -1,10 +1,10 @@
 {
   "name": "p3x-angular-compile-html",
-  "version": "4.0.168-308",
+  "version": "4.0.169-377",
   "corifeus": {
     "prefix": "p3x-",
-    "time": "4/18/2017, 2:10:10 AM",
-    "time-stamp": 1492474210799
+    "time": "4/18/2017, 7:05:28 PM",
+    "time-stamp": 1492535128524
   },
   "description": "Dynamic compile HTML string for Angular 2+",
   "main": "src/index.ts",
@@ -33,8 +33,8 @@
   },
   "homepage": "https://patrikx3.github.io/angular-compile-html/",
   "devDependencies": {
-    "corifeus-builder-angular": "^4.0.139-227",
-    "corifeus-web": "^4.0.130-203"
+    "corifeus-builder-angular": "^4.0.150-256",
+    "corifeus-web": "^4.0.144-216"
   },
   "dependencies": {},
   "engines": {

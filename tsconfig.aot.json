@@ -16,5 +16,13 @@
       "es2015.promise",
       "es2015.core"
     ]
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useWebpackText": true
+  },
+  "angularCompilerOptions": {
+    "genDir": ".",
+    "skipMetadataEmit" : true
   }
 }

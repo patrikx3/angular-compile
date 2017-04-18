@@ -10,18 +10,24 @@
 
 [//]: #@corifeus-header:end
 
-# AOT + JIT mix
-Mixing pure JIT + AOT at once is not support by Google. There some use cases that work with JIT + AOT, but for pure dynamic component/module construction is not working right now in v4 and this implementation uses that.   
-  
-For now, unfortunately, you can work this component with JIT only and turn off AOT.  
+# AOT
+Right now Angular does not mix JIT + AOT at once. If you want to create components on the fly, you need JIT and turn off AOT. 
 
 ## Reference
-https://github.com/angular/angular/issues/16033#issuecomment-294537684   
+https://github.com/angular/angular/issues/16033
+   
+```bash
+Hello,
+we don't support mixing JIT and AOT right now. A better way of doing dynamic content is using ComponentFactoryResolver and ViewContainerRef.
+
+It will probably not work with AoT then, as tbosch said, mixing JIT and AOT is not supported (yet?).
+```   
+   
 https://github.com/angular/angular/issues/15510  
 https://github.com/angular/angular/issues/11780  
 
 # JIT
-There are no issues. You can do anything you want (component / module / anything).
+There are no issues. You can do anything you want (component / module / everything).
 
 
 # Use case
@@ -51,7 +57,10 @@ grunt run|default
   
 ```html
  <div #container></div>
- <div [p3x-compile]="string" [p3x-compile-ref]="youGetInYourTemplateAsRef" [p3x-compile-imports]="importsLikeMaterialEtcArray"></div>
+ <div   [p3x-compile]="string" 
+        [p3x-compile-ctx]="youGetAContextToDoWithItAnything"
+        [p3x-compile-imports]="importsLikeMaterialEtcArray">        
+</div>
 ```
 
 ### TypeScript
@@ -77,7 +86,7 @@ grunt run
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.168-308 on 4/18/2017, 2:10:10 AM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.169-377 on 4/18/2017, 7:05:28 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 

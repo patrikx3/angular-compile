@@ -2,8 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 
 import {Page } from './page';
-import {CompileHtmlService, CompileHtmlAttribute} from '../../../src';
+import {
+    CompileHtmlService,
+    CompileHtmlAttribute,
+} from '../../../src';
 
+
+// FIXME requires with AOT
+import { Compiler } from '@angular/core';
+import {JitCompilerFactory} from '@angular/compiler';
+export function createJitCompiler () {
+    return new JitCompilerFactory([{useDebug: false, useJit: true}]).createCompiler();
+}
 
 @NgModule({
     imports: [
@@ -11,10 +21,12 @@ import {CompileHtmlService, CompileHtmlAttribute} from '../../../src';
     ],
     declarations: [
         Page,
-        CompileHtmlAttribute
+        CompileHtmlAttribute,
     ],
     providers: [
-        CompileHtmlService
+        // FIXME requires with AOT
+        { provide: Compiler, useFactory:  createJitCompiler},
+        CompileHtmlService,
     ],
     bootstrap: [ Page ]
 })

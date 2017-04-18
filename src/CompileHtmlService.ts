@@ -1,49 +1,62 @@
 import {
     Component,
-    Compiler, NgModule,
+    NgModule,
     Injectable,
-    Injector,
+    Compiler,
     ReflectiveInjector
 } from '@angular/core';
-import { COMPILER_PROVIDERS }  from '@angular/compiler';
 
-import {CompileHtmlServiceOptions} from "../typings/CompileHtmlServiceOptions";
+import {CompileHtmlServiceOptions} from "./CompileHtmlServiceOptions";
 
 
 @Injectable()
 export class CompileHtmlService  {
 
-    private injector: Injector;
-    private compiler: Compiler;
-
-    constructor(injector: Injector) {
-        this.injector = ReflectiveInjector.resolveAndCreate(COMPILER_PROVIDERS, injector);
-        this.compiler = this.injector.get(Compiler);
+    // TODO add in cache - enable/disable
+    constructor(private compiler: Compiler) {
     }
 
-    public compile(opts: CompileHtmlServiceOptions) {
+    public async compile(opts: CompileHtmlServiceOptions) {
 
         try {
-            @Component({
-                template: opts.template || ''
-            })
-            class TemplateComponent {
-                ref = opts.ref;
+            const componentDecorator = {
+                selector: 'p3x-dynamic-component',
+                template: opts.template || '',
+                styles: [``],
+            };
+            const metadata = new Component(componentDecorator);
+            const cmpClass = class {
+                context = opts.context
             }
+            const decoratedCmp = Component(metadata)(cmpClass);
+
             @NgModule({
                 imports: opts.imports,
-                declarations: [TemplateComponent]
+                declarations: [
+                    decoratedCmp,
+                ],
+                entryComponents: [
+                    decoratedCmp
+                ]
             })
             class TemplateModule {}
-            const compiled = this.compiler.compileModuleAndAllComponentsSync(TemplateModule);
+
+            const compiled = await this.compiler.compileModuleAndAllComponentsAsync(TemplateModule);
             const factory = compiled.componentFactories.find((comp) =>
-                comp.componentType === TemplateComponent
+                comp.componentType === decoratedCmp
             );
             opts.container.clear();
-            opts.container.createComponent(factory);
-
+            const injector = ReflectiveInjector.fromResolvedProviders([], opts.container.parentInjector);
+            const cmpRef = opts.container.createComponent(factory, -1, injector, []);
+            if (opts.onCompiled) {
+                opts.onCompiled(factory);
+            }
         } catch (e) {
-            console.error(e);
+            if (opts.onError) {
+                opts.onError(e)
+            } else {
+                console.error(e);
+            }
         }
     }
 }

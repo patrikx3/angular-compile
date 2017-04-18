@@ -6,18 +6,21 @@ import { CompileHtmlService } from './CompileHtmlService';
 @Injectable()
 export class CompileHtmlAttribute implements OnInit, OnChanges{
 
-    @Input('p3x-compile') p3xHtml: string;
+    @Input('p3x-compile')
+    html: string;
 
-    @Input('p3x-compile-ref') p3xCompileHtmlRef: any;
+    @Input('p3x-compile-ctx')
+    context: any;
 
-    @Input('p3x-compile-imports') p3xCompileHtmlImports: any[];
+    @Input('p3x-compile-imports')
+    imports: any[];
 
-    update() {
-        this.service.compile({
-            template: this.p3xHtml,
+    async update() {
+        await this.service.compile({
+            template: this.html,
             container: this.container,
-            ref: this.p3xCompileHtmlRef,
-            imports: this.p3xCompileHtmlImports
+            context: this.context,
+            imports: this.imports
         })
     }
 
