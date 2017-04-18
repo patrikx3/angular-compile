@@ -87,7 +87,7 @@ grunt run
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.173-388 on 4/18/2017, 10:57:07 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.174-389 on 4/18/2017, 11:17:12 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
