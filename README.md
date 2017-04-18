@@ -11,7 +11,9 @@
 [//]: #@corifeus-header:end
 
 # AOT + JIT mix
-Mixing pure JIT + AOT at the once is not support by Google. There some use cases that work with JIT, but for pure dynamic component construction is not working right now in v4 and this implementation uses that. 
+Mixing pure JIT + AOT at once is not support by Google. There some use cases that work with JIT + AOT, but for pure dynamic component/module construction is not working right now in v4 and this implementation uses that.   
+  
+For now, unfortunately, you can work this component with JIT only and turn off AOT.  
 
 ## Reference
 https://github.com/angular/angular/issues/16033#issuecomment-294537684   
@@ -19,7 +21,7 @@ https://github.com/angular/angular/issues/15510
 https://github.com/angular/angular/issues/11780  
 
 # JIT
-There are no issues.
+There are no issues. You can do anything you want (component / module / anything).
 
 
 # Use case
@@ -75,7 +77,7 @@ grunt run
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.167-307 on 4/17/2017, 11:56:50 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.168-308 on 4/18/2017, 2:10:10 AM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
