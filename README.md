@@ -11,7 +11,8 @@
 [//]: #@corifeus-header:end
 
 # AOT
-Right now Angular does not mix JIT + AOT at once. If you want to create components on the fly, you need JIT and turn off AOT. 
+Right now, Angular does not mix JIT + AOT at once. If you want to create components on the fly, you need JIT and turn off AOT.   
+I use pure JIT. Besides, to reduce my bundle I use gzip compression on the server. It was 2.5MB, I reduced it with Nginx 600KB!!! :) (Ahh, AOT is bigger bundle, was 2.75MB, so in the end for me it was slower even and GZIP is fast.) 
 
 ## Reference
 https://github.com/angular/angular/issues/16033
@@ -86,7 +87,7 @@ grunt run
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.172-386 on 4/18/2017, 9:39:03 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.173-388 on 4/18/2017, 10:57:07 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
