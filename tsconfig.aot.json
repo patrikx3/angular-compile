@@ -17,6 +17,15 @@
       "es2015.core"
     ]
   },
+  "includes": [
+    "src/angular/**/*",
+    "test/angular-webpack/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/angular/boot.ts",
+    "test/angular-webpack/angular/boot.ts"
+  ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,
     "useWebpackText": true

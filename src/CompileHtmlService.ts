@@ -20,9 +20,7 @@ export class CompileHtmlService  {
 
         try {
             const componentDecorator = {
-                selector: 'p3x-dynamic-component',
                 template: opts.template || '',
-                styles: [``],
             };
             const metadata = new Component(componentDecorator);
             const cmpClass = class {

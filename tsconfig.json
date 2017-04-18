@@ -17,12 +17,17 @@
       "es2015.promise",
       "es2015.core"
     ],
-    "exclude": [
-      "src/angular/boot-aot.ts",
-      "test/angular-webpack/angular/boot-aot.ts"
-    ],
     "paths": {
       "*": [ "node_modules/@types/*", "*"]
     }
-  }
+  },
+  "includes": [
+    "src/angular/**/*",
+    "test/angular-webpack/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/angular/boot-aot.ts",
+    "test/angular-webpack/angular/boot-aot.ts"
+  ]
 }

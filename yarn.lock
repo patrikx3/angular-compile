@@ -992,9 +992,9 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-corifeus-builder-angular@^4.0.144-230:
-  version "4.0.144-230"
-  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-4.0.144-230.tgz#e3894e84997ffd2ab1de926140c0d379db58df12"
+corifeus-builder-angular@^4.0.151-258:
+  version "4.0.151-258"
+  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-4.0.151-258.tgz#22a60e937bb7fc6e1ca3b304338f2aeb5c915f34"
   dependencies:
     "@angular/common" "^4.0.2"
     "@angular/compiler" "^4.0.2"
@@ -1010,7 +1010,7 @@ corifeus-builder-angular@^4.0.144-230:
     awesome-typescript-loader "^3.1.2"
     cheerio "^0.22.0"
     core-js "^2.4.1"
-    corifeus-builder "^1.5.396-472"
+    corifeus-builder "^1.5.405-494"
     css-loader "^0.28.0"
     extract-text-webpack-plugin "^2.1.0"
     file-loader "^0.11.1"
@@ -1048,9 +1048,9 @@ corifeus-builder-angular@^4.0.144-230:
     webpack-merge "^4.1.0"
     zone.js "0.8.5"
 
-corifeus-builder@^1.5.396-472:
-  version "1.5.396-472"
-  resolved "https://registry.yarnpkg.com/corifeus-builder/-/corifeus-builder-1.5.396-472.tgz#61e0e662ac49fdc743370bb373ef85c472f2a8d3"
+corifeus-builder@^1.5.405-494:
+  version "1.5.405-494"
+  resolved "https://registry.yarnpkg.com/corifeus-builder/-/corifeus-builder-1.5.405-494.tgz#221b70cdbbc50bd3de9f7f101f3673648403e3b8"
   dependencies:
     fs-extra "^2.1.2"
     grunt "^1.0.1"
@@ -1067,9 +1067,9 @@ corifeus-builder@^1.5.396-472:
     should "^11.2.1"
     time-grunt "^1.4.0"
 
-corifeus-web@^4.0.139-206:
-  version "4.0.139-206"
-  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-4.0.139-206.tgz#613cc82b88bc6a95d80e45f9852f4f8e271ffa79"
+corifeus-web@^4.0.145-218:
+  version "4.0.145-218"
+  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-4.0.145-218.tgz#9660244ce084b20887923b9e6bec80fe96d11340"
   dependencies:
     "@angular/animations" "^4.0.2"
     "@angular/forms" "~4.0.2"
