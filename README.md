@@ -25,6 +25,13 @@ yarn add p3x-angular-compile-html
 Since AOT is pre-compiled, Google does not support JIT at once together with AOT, so if you want dynamic components on the fly, just turn off AOT and you are done. 
 
 If you want AOT and still need component on the fly, you probably want to re-architect your code to leave out dynamic compilation.
+  
+If you still think AOT + JIT is working, here is the info: https://github.com/angular/angular/issues/16033
+
+```bash
+Hello,
+we don't support mixing JIT and AOT right now. A better way of doing dynamic content is using ComponentFactoryResolver and ViewContainerRef.
+```
 
 ## Help
 If you want very small bundle, use ```gzip```.
@@ -41,11 +48,8 @@ If you want very small bundle, use ```gzip```.
 </div>
 ```
 
-### TypeScript
+### Example
 Check out the example, here [test/angular-webpack/angular/page.ts](https://github.com/patrikx3/angular-compile-html/blob/master/test/angular-webpack/angular/page.ts).
-
-### Example 2
-Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
 ## Dev environment end test
    
@@ -65,7 +69,7 @@ grunt run|default
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.176-406 on 4/19/2017, 10:03:36 AM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.177-416 on 4/19/2017, 1:22:43 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
