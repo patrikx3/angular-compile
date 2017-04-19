@@ -7,7 +7,6 @@ import {
     CompileHtmlAttribute,
 } from '../../../src';
 
-
 // FIXME requires with AOT
 import { Compiler } from '@angular/core';
 import {JitCompilerFactory} from '@angular/compiler';

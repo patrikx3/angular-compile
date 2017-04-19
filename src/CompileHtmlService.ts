@@ -3,7 +3,8 @@ import {
     NgModule,
     Injectable,
     Compiler,
-    ReflectiveInjector
+    ReflectiveInjector,
+    ComponentFactoryResolver
 } from '@angular/core';
 
 import {CompileHtmlServiceOptions} from "./CompileHtmlServiceOptions";
@@ -16,12 +17,16 @@ export class CompileHtmlService  {
 
 
 
-    constructor(private compiler: Compiler) {
+    constructor(
+        private compiler: Compiler,
+        private _componentFactoryResolver: ComponentFactoryResolver
+    ) {
     }
 
     public async compile(opts: CompileHtmlServiceOptions) {
 
         try {
+            /*
             const componentDecorator = {
                 template: opts.template || '',
             };
@@ -49,8 +54,28 @@ export class CompileHtmlService  {
             opts.container.clear();
             const injector = ReflectiveInjector.fromResolvedProviders([], opts.container.parentInjector);
             const cmpRef = opts.container.createComponent(factory, -1, injector, []);
+            */
+
+            @Component({
+                template: opts.template || ''
+            })
+            class TemplateComponent {
+                context = opts.context;
+            }
+            @NgModule({
+                imports: opts.imports,
+                declarations: [TemplateComponent]
+            })
+            class TemplateModule {}
+            const compiled = await this.compiler.compileModuleAndAllComponentsAsync(TemplateModule);
+            const factory = compiled.componentFactories.find((comp) =>
+                comp.componentType === TemplateComponent
+            );
+            opts.container.clear();
+            const cmpRef = opts.container.createComponent(factory);
+
             if (opts.onCompiled) {
-                opts.onCompiled(factory);
+                opts.onCompiled(cmpRef);
             }
         } catch (e) {
             if (opts.onError) {

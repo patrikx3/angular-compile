@@ -10,47 +10,24 @@
 
 [//]: #@corifeus-header:end
 
-# AOT
-Right now, Angular does not mix JIT + AOT at once. If you want to create components on the fly, you need JIT and turn off AOT.   
-I use pure JIT. Besides, to reduce my bundle I use gzip compression on the server. It was 2.5MB, I reduced it with Nginx 600KB!!! :) (Ahh, AOT is bigger bundle, was 2.75MB, so in the end for me it was slower even and GZIP is fast.) 
-
-## Reference
-https://github.com/angular/angular/issues/16033
-   
-```bash
-Hello,
-we don't support mixing JIT and AOT right now. A better way of doing dynamic content is using ComponentFactoryResolver and ViewContainerRef.
-
-It will probably not work with AoT then, as tbosch said, mixing JIT and AOT is not supported (yet?).
-```   
-   
-https://github.com/angular/angular/issues/15510  
-https://github.com/angular/angular/issues/11780  
-
-# JIT
-There are no issues. You can do anything you want (component / module / everything).
-
-
 # Use case
 Dynamic compile HTML string for Angular v4. 
 
 ## Install
   
 ```bash
-npm install p3x-angular-compile-html
+npm install --save p3x-angular-compile-html
+# or
+yarn add p3x-angular-compile-html
 ```
 
-## Dev environment end test
-   
-```bash
-npm install -g yarn
-git clone https://github.com/patrikx3/angular-compile-html.git
-cd angular-compile-html
-yarn install
-grunt run|default
-```
+## AOT
+Since AOT is pre-compiled, Google does not support JIT at once together with AOT, so if you want dynamic components on the fly, just turn off AOT and you are done. 
 
-[http://localhost:8080](http://localhost:8080)
+If you want AOT and still need component on the fly, you probably want to re-architect your code to leave out dynamic compilation.
+
+## Help
+If you want very small bundle, use ```gzip```.
 
 ## Usage
 
@@ -70,24 +47,25 @@ Check out the example, here [test/angular-webpack/angular/page.ts](https://githu
 ### Example 2
 Corifeus Web Pages: [Typescript with imports](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
-## INFO AOT TEST
-
+## Dev environment end test
+   
 ```bash
+npm install -g yarn
 git clone https://github.com/patrikx3/angular-compile-html.git
+cd angular-compile-html
 yarn install
-
-# aot test http://localhost:9999
-grunt aot-test --verbose
-
-# pure jit http://localhost:8080
-grunt run
+grunt run|default
 ```
+
+[http://localhost:8080](http://localhost:8080)
+
+
 
 [//]: #@corifeus-footer
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.174-389 on 4/18/2017, 11:17:12 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.176-406 on 4/19/2017, 10:03:36 AM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
