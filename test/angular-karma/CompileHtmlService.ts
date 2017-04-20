@@ -1,11 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 import { inject } from '@angular/core/testing';
 
-import {CompileHtmlAttribute, CompileHtmlService } from '../../src'
+import {CompileHtmlAttribute, CompileHtmlService, P3XCompileHtmlModule } from '../../src'
 describe('CompileHtml', () => {
     let service: CompileHtmlService;
     beforeEach(() => {
         TestBed.configureTestingModule({
+            imports: [
+                P3XCompileHtmlModule
+            ],
             declarations: [
                 CompileHtmlAttribute
             ],
@@ -20,6 +23,7 @@ describe('CompileHtml', () => {
     }));
 
     it ('CompileHtmlService', (/*done*/) => {
+        console.info(service);
         expect(service instanceof CompileHtmlService).toBeTruthy();
         /*
         setTimeout(()=> {

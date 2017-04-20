@@ -6,13 +6,6 @@ import {
     P3XCompileHtmlModule
 } from '../../../src';
 
-// FIXME requires with AOT
-import { Compiler } from '@angular/core';
-import {JitCompilerFactory} from '@angular/compiler';
-export function createJitCompiler () {
-    return new JitCompilerFactory([{useDebug: false, useJit: true}]).createCompiler();
-}
-
 @NgModule({
     imports: [
         BrowserModule,
@@ -22,8 +15,6 @@ export function createJitCompiler () {
         Page,
     ],
     providers: [
-        // FIXME requires with AOT
-        { provide: Compiler, useFactory:  createJitCompiler},
     ],
     bootstrap: [ Page ]
 })

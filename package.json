@@ -1,10 +1,10 @@
 {
   "name": "p3x-angular-compile-html",
-  "version": "4.0.180-464",
+  "version": "4.0.181-471",
   "corifeus": {
     "prefix": "p3x-",
-    "time": "4/20/2017, 12:54:50 PM",
-    "time-stamp": 1492685690580
+    "time": "4/20/2017, 1:25:25 PM",
+    "time-stamp": 1492687525820
   },
   "description": "Dynamic compile HTML string for Angular 2+",
   "main": "src/index.ts",
