@@ -71,6 +71,7 @@ export class CompileHtmlService  {
             const factory = compiled.componentFactories.find((comp) =>
                 comp.componentType === TemplateComponent
             );
+            opts.container.clear();
             const cmpRef = opts.container.createComponent(factory);
 
             if (opts.onCompiled) {
