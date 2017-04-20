@@ -52,6 +52,11 @@ If you want very small bundle, use ```gzip```.
 ### Example
 Check out the example, here [test/angular-webpack/angular/page.ts](https://github.com/patrikx3/angular-compile-html/blob/master/test/angular-webpack/angular/page.ts).
 
+### Deployed example
+[Corifeus Pages (JIT + AOT at once)](https://pages.corifeus.tk)
+  
+[https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
+
 ## Dev environment end test
    
 ```bash
