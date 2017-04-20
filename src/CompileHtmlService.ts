@@ -9,6 +9,8 @@ import {
 import {CompileHtmlServiceOptions} from "./CompileHtmlServiceOptions";
 
 
+const cache = {};
+
 @Injectable()
 export class CompileHtmlService  {
 
@@ -54,24 +56,34 @@ export class CompileHtmlService  {
             const injector = ReflectiveInjector.fromResolvedProviders([], opts.container.parentInjector);
             const cmpRef = opts.container.createComponent(factory, -1, injector, []);
             */
+            const cacheKey = JSON.stringify(opts);
+            let factory : any;
+            if (cache.hasOwnProperty(cacheKey)) {
+                factory = cache[cacheKey];
+            } else {
 
-            @Component({
-                template: opts.template || ''
-            })
-            class TemplateComponent {
-                context = opts.context;
+                cache[cacheKey] = new Promise(async(resolve) => {
+                    @Component({
+                        template: opts.template || ''
+                    })
+                    class TemplateComponent {
+                        context = opts.context;
+                    }
+                    @NgModule({
+                        imports: opts.imports,
+                        declarations: [TemplateComponent]
+                    })
+                    class TemplateModule {}
+                    const compiled = await this.compiler.compileModuleAndAllComponentsAsync(TemplateModule);
+                    factory = compiled.componentFactories.find((comp) =>
+                        comp.componentType === TemplateComponent
+                    );
+                    resolve(factory);
+                })
             }
-            @NgModule({
-                imports: opts.imports,
-                declarations: [TemplateComponent]
-            })
-            class TemplateModule {}
-            const compiled = await this.compiler.compileModuleAndAllComponentsAsync(TemplateModule);
-            const factory = compiled.componentFactories.find((comp) =>
-                comp.componentType === TemplateComponent
-            );
+
             opts.container.clear();
-            const cmpRef = opts.container.createComponent(factory);
+            const cmpRef = opts.container.createComponent(await factory);
 
             if (opts.onCompiled) {
                 opts.onCompiled(cmpRef);

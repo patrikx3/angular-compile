@@ -7,8 +7,8 @@ export interface CompileHtmlServiceOptions {
     container: ViewContainerRef;
     imports?: any[];
     context?: any,
-    onCompiled?: any,
-    onError?: any;
+    onCompiled?: Function,
+    onError?: Function;
 }
 
 

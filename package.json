@@ -1,42 +1,42 @@
 {
-  "name": "p3x-angular-compile-html",
-  "version": "4.0.184-474",
-  "corifeus": {
-    "prefix": "p3x-",
-    "time": "4/20/2017, 10:58:02 PM",
-    "time-stamp": 1492721882398
-  },
-  "description": "Dynamic compile HTML string for Angular",
-  "main": "src/index.ts",
-  "scripts": {
-    "test": "grunt"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/patrikx3/angular-compile-html.git"
-  },
-  "keywords": [
-    "p3x",
-    "angular",
-    "ng",
-    "compile",
-    "html",
-    "angular",
-    "dynamic",
-    "aot"
-  ],
-  "author": "Patrik Laszlo <alabard@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/patrikx3/angular-compile-html/issues"
-  },
-  "homepage": "https://patrikx3.github.io/angular-compile-html/",
-  "devDependencies": {
-    "corifeus-builder-angular": "^4.0.158-271",
-    "corifeus-web": "^4.0.152-234"
-  },
-  "dependencies": {},
-  "engines": {
-    "node": ">=7.8.0"
-  }
+    "name": "p3x-angular-compile-html",
+    "version": "4.0.186-475",
+    "corifeus": {
+        "prefix": "p3x-",
+        "time": "4/20/2017, 11:57:38 PM",
+        "time-stamp": 1492725458468
+    },
+    "description": "Dynamic compile HTML string for Angular",
+    "main": "src/index.ts",
+    "scripts": {
+        "test": "grunt"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/patrikx3/angular-compile-html.git"
+    },
+    "keywords": [
+        "p3x",
+        "angular",
+        "ng",
+        "compile",
+        "html",
+        "angular",
+        "dynamic",
+        "aot"
+    ],
+    "author": "Patrik Laszlo <alabard@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/patrikx3/angular-compile-html/issues"
+    },
+    "homepage": "https://patrikx3.github.io/angular-compile-html/",
+    "devDependencies": {
+        "corifeus-builder-angular": "^4.0.158-271",
+        "corifeus-web": "^4.0.152-234"
+    },
+    "dependencies": {},
+    "engines": {
+        "node": ">=7.8.0"
+    }
 }
