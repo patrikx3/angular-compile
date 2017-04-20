@@ -1,3 +1,5 @@
+// you need unlinked npm-s!!!
+
 import { TestBed } from '@angular/core/testing';
 import { inject } from '@angular/core/testing';
 
@@ -6,22 +8,24 @@ describe('CompileHtml', () => {
     let service: CompileHtmlService;
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [ CompileHtmlService ], // declare the test component
+            imports: [
+                P3XCompileHtmlModule
+            ],
+            declarations: [
+                CompileHtmlAttribute
+            ],
+            providers: [
+                CompileHtmlService
+            ],
         });
-
-        let fixture = TestBed.createComponent(CompileHtmlService);
-
     });
 
-    /*
     beforeEach(inject([CompileHtmlService], (_service: CompileHtmlService) => {
         service = _service;
-        expect(service !== null).toBeTruthy();
     }));
-*/
 
     it ('CompileHtmlService', (/*done*/) => {
-//        expect(service instanceof CompileHtmlService).toBeTruthy();
+        expect(service instanceof CompileHtmlService).toBeTruthy();
         /*
         setTimeout(()=> {
             console.log('done later');
