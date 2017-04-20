@@ -11,7 +11,7 @@
 [//]: #@corifeus-header:end
 
 # Use case
-Dynamic compile HTML string for Angular v4. 
+Dynamic compile HTML string for Angular. 
 
 ## Install
   

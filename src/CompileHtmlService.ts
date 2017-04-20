@@ -3,8 +3,7 @@ import {
     NgModule,
     Injectable,
     Compiler,
-    ReflectiveInjector,
-    ComponentFactoryResolver
+
 } from '@angular/core';
 
 import {CompileHtmlServiceOptions} from "./CompileHtmlServiceOptions";
@@ -19,7 +18,7 @@ export class CompileHtmlService  {
 
     constructor(
         private compiler: Compiler,
-        private _componentFactoryResolver: ComponentFactoryResolver
+
     ) {
     }
 
