@@ -3,8 +3,7 @@ import { BrowserModule }  from '@angular/platform-browser';
 
 import {Page } from './page';
 import {
-    CompileHtmlService,
-    CompileHtmlAttribute,
+    P3XCompileHtml
 } from '../../../src';
 
 // FIXME requires with AOT
@@ -17,15 +16,14 @@ export function createJitCompiler () {
 @NgModule({
     imports: [
         BrowserModule,
+        P3XCompileHtml
     ],
     declarations: [
         Page,
-        CompileHtmlAttribute,
     ],
     providers: [
         // FIXME requires with AOT
         { provide: Compiler, useFactory:  createJitCompiler},
-        CompileHtmlService,
     ],
     bootstrap: [ Page ]
 })
