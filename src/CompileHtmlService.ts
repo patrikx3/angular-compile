@@ -56,34 +56,22 @@ export class CompileHtmlService  {
             const injector = ReflectiveInjector.fromResolvedProviders([], opts.container.parentInjector);
             const cmpRef = opts.container.createComponent(factory, -1, injector, []);
             */
-            const cacheKey = JSON.stringify(opts);
-            let factory : any;
-            if (cache.hasOwnProperty(cacheKey)) {
-                factory = cache[cacheKey];
-            } else {
-
-                cache[cacheKey] = new Promise(async(resolve) => {
-                    @Component({
-                        template: opts.template || ''
-                    })
-                    class TemplateComponent {
-                        context = opts.context;
-                    }
-                    @NgModule({
-                        imports: opts.imports,
-                        declarations: [TemplateComponent]
-                    })
-                    class TemplateModule {}
-                    const compiled = await this.compiler.compileModuleAndAllComponentsAsync(TemplateModule);
-                    factory = compiled.componentFactories.find((comp) =>
-                        comp.componentType === TemplateComponent
-                    );
-                    resolve(factory);
-                })
+            @Component({
+                template: opts.template || ''
+            })
+            class TemplateComponent {
+                context = opts.context;
             }
-
-            opts.container.clear();
-            const cmpRef = opts.container.createComponent(await factory);
+            @NgModule({
+                imports: opts.imports,
+                declarations: [TemplateComponent]
+            })
+            class TemplateModule {}
+            const compiled = await this.compiler.compileModuleAndAllComponentsAsync(TemplateModule);
+            const factory = compiled.componentFactories.find((comp) =>
+                comp.componentType === TemplateComponent
+            );
+            const cmpRef = opts.container.createComponent(factory);
 
             if (opts.onCompiled) {
                 opts.onCompiled(cmpRef);
