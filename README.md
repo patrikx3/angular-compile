@@ -22,7 +22,7 @@ yarn add p3x-angular-compile-html
 ```
 
 ## AOT + JIT
-It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 fold faster. The ``@ngtools/webpack`` is AOT the ```awesome-typescript-loader``` is JIT only. 
+It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 folds faster. The ``@ngtools/webpack`` is AOT the ```awesome-typescript-loader``` is JIT only. 
   
 The solution: I am using the ```@angular/compiler``` and the ```awesome-typescipt-loader``` together and it works. Miracle!
 
