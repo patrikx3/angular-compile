@@ -24,5 +24,5 @@ import { NgModule, ModuleWithProviders } from '@angular/core';
 
     ]
 })
-export class P3XCompileHtml {
+export class P3XCompileHtmlModule {
 }

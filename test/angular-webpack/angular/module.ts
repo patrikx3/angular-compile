@@ -3,7 +3,7 @@ import { BrowserModule }  from '@angular/platform-browser';
 
 import {Page } from './page';
 import {
-    P3XCompileHtml
+    P3XCompileHtmlModule
 } from '../../../src';
 
 // FIXME requires with AOT
@@ -16,7 +16,7 @@ export function createJitCompiler () {
 @NgModule({
     imports: [
         BrowserModule,
-        P3XCompileHtml
+        P3XCompileHtmlModule
     ],
     declarations: [
         Page,
