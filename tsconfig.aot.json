@@ -4,7 +4,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": false,
-    "emitDecoratorMetadata": false,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -24,14 +24,11 @@
   "exclude": [
     "node_modules",
     "src/angular/boot.ts",
-    "test/angular-webpack/angular/boot.ts"
+    "test/angular-webpack/angular/boot.ts",
+    "build/browser"
   ],
-  "awesomeTypescriptLoaderOptions": {
-    "forkChecker": true,
-    "useWebpackText": true
-  },
   "angularCompilerOptions": {
-    "genDir": ".",
+    "genDir": "build/aot",
     "skipMetadataEmit" : true
   }
 }

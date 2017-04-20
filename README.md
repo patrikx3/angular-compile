@@ -21,19 +21,20 @@ npm install --save p3x-angular-compile-html
 yarn add p3x-angular-compile-html
 ```
 
-## AOT
-Since AOT is pre-compiled, Google does not support JIT at once together with AOT, so if you want dynamic components on the fly, just turn off AOT and you are done. 
-
-If you want AOT and still need component on the fly, you probably want to re-architect your code to leave out dynamic compilation.
+## AOT + JIT
+It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 fold faster. The ``@ngtools/webpack`` is AOT the ```awesome-typescript-loader``` is JIT only. 
   
-If you still think AOT + JIT is working, here is the info: https://github.com/angular/angular/issues/16033
+The solution: I am using the ```@angular/compiler``` and the ```awesome-typescipt-loader``` together and it works. Miracle!
 
+To make it work, just fork my repo: https://github.com/patrikx3/corifeus-app-web-pages
+
+You put all code into ```src/angular```.
 ```bash
-Hello,
-we don't support mixing JIT and AOT right now. A better way of doing dynamic content is using ComponentFactoryResolver and ViewContainerRef.
+grunt aot-awesome
 ```
+Voila!
 
-## Help
+### Help
 If you want very small bundle, use ```gzip```.
 
 ## Usage
@@ -69,7 +70,7 @@ grunt run|default
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.177-416 on 4/19/2017, 1:22:43 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.178-458 on 4/20/2017, 10:32:28 AM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
