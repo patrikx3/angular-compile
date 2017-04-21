@@ -26,10 +26,6 @@
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.0.2.tgz#195153f8623b59f07c30b3b8954e14842c3959c3"
 
-"@angular/forms@~4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-4.0.2.tgz#9094f46983298681bbaf0dcc17dcf8f7be6f35a3"
-
 "@angular/http@^4.0.2":
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.0.2.tgz#8c61b9ff52748c5dcb52b57046829d34d66662ec"
@@ -72,6 +68,10 @@
 "@types/jquery@^2.0.41":
   version "2.0.41"
   resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-2.0.41.tgz#b87ba051011f99edbe586d8f97282e7786e01a6d"
+
+"@types/js-cookie@^2.0.28":
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.0.28.tgz#d6a9136d699257970fc74d899cd7b12a608d14da"
 
 "@types/lodash@^4.14.62":
   version "4.14.62"
@@ -992,9 +992,9 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-corifeus-builder-angular@^4.0.151-258:
-  version "4.0.151-258"
-  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-4.0.151-258.tgz#22a60e937bb7fc6e1ca3b304338f2aeb5c915f34"
+corifeus-builder-angular@^4.0.171-280:
+  version "4.0.171-280"
+  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-4.0.171-280.tgz#6e36146898a1bb4d916b974d560651f960741703"
   dependencies:
     "@angular/common" "^4.0.2"
     "@angular/compiler" "^4.0.2"
@@ -1010,7 +1010,7 @@ corifeus-builder-angular@^4.0.151-258:
     awesome-typescript-loader "^3.1.2"
     cheerio "^0.22.0"
     core-js "^2.4.1"
-    corifeus-builder "^1.5.405-494"
+    corifeus-builder "^1.5.422-516"
     css-loader "^0.28.0"
     extract-text-webpack-plugin "^2.1.0"
     file-loader "^0.11.1"
@@ -1046,11 +1046,11 @@ corifeus-builder-angular@^4.0.151-258:
     webpack "^2.4.1"
     webpack-dev-server "^2.4.2"
     webpack-merge "^4.1.0"
-    zone.js "0.8.5"
+    zone.js "^0.8.5"
 
-corifeus-builder@^1.5.405-494:
-  version "1.5.405-494"
-  resolved "https://registry.yarnpkg.com/corifeus-builder/-/corifeus-builder-1.5.405-494.tgz#221b70cdbbc50bd3de9f7f101f3673648403e3b8"
+corifeus-builder@^1.5.422-516:
+  version "1.5.422-516"
+  resolved "https://registry.yarnpkg.com/corifeus-builder/-/corifeus-builder-1.5.422-516.tgz#b88f5d56cd1d6929e9bff80564c2b192cc7560d8"
   dependencies:
     fs-extra "^2.1.2"
     grunt "^1.0.1"
@@ -1067,21 +1067,21 @@ corifeus-builder@^1.5.405-494:
     should "^11.2.1"
     time-grunt "^1.4.0"
 
-corifeus-web@^4.0.145-218:
-  version "4.0.145-218"
-  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-4.0.145-218.tgz#9660244ce084b20887923b9e6bec80fe96d11340"
+corifeus-web@^4.0.172-267:
+  version "4.0.172-267"
+  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-4.0.172-267.tgz#bac478b8b34af9f48050b700381f4e6eeef3114d"
   dependencies:
     "@angular/animations" "^4.0.2"
-    "@angular/forms" "~4.0.2"
     "@angular/http" "^4.0.2"
     "@angular/router" "^4.0.2"
     "@types/isomorphic-fetch" "^0.0.33"
     "@types/jquery" "^2.0.41"
+    "@types/js-cookie" "^2.0.28"
     "@types/lodash" "^4.14.62"
     jquery "^3.2.1"
+    js-cookie "^2.1.4"
     lodash "^4.17.4"
     moment "^2.18.1"
-    ngx-cookie "^1.0.0"
 
 create-ecdh@^4.0.0:
   version "4.0.0"
@@ -2772,6 +2772,10 @@ js-base64@^2.1.9:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
 
+js-cookie@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-2.1.4.tgz#da4ec503866f149d164cf25f579ef31015025d8d"
+
 js-tokens@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
@@ -3377,10 +3381,6 @@ ncname@1.0.x:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
-
-ngx-cookie@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ngx-cookie/-/ngx-cookie-1.0.0.tgz#004fc653febd849b4dd3ee2c63c4cf171f464da9"
 
 no-case@^2.2.0:
   version "2.3.1"
@@ -5614,6 +5614,6 @@ yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
-zone.js@0.8.5:
+zone.js@^0.8.5:
   version "0.8.5"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.5.tgz#7906e017482cbff4c3f079c5c34305ce941f5ba2"
