@@ -6,7 +6,7 @@
         "time": "4/22/2017, 12:30:23 AM",
         "time-stamp": 1492813823383
     },
-    "description": "Dynamic compile HTML string for Angular",
+    "description": "Angular Dynamic Compile service + directive / attribute",
     "main": "src/index.ts",
     "scripts": {
         "test": "grunt"
