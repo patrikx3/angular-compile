@@ -1,17 +1,17 @@
 [//]: #@corifeus-header
 
 
-[![Build Status](https://travis-ci.org/patrikx3/angular-compile-html.svg?branch=master)](https://travis-ci.org/patrikx3/angular-compile-html)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/angular-compile-html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile-html/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/angular-compile-html/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile-html/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-p3x-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
+[![Build Status](https://travis-ci.org/patrikx3/angular-compile.svg?branch=master)](https://travis-ci.org/patrikx3/angular-compile)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/angular-compile/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/angular-compile/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-p3x-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
 
-[![NPM](https://nodei.co/npm/p3x-angular-compile-html.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/p3x-angular-compile-html/)
+[![NPM](https://nodei.co/npm/p3x-angular-compile.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/p3x-angular-compile/)
 
 
 [//]: #@corifeus-header:end
 
 # Use case
-Dynamic compile HTML string for Angular. 
+Dynamic compile components by a string template for Angular. You can provide a context, that you can use with anything (for clicking for free etc..) 
 
 ## Install
   
@@ -54,6 +54,30 @@ If you want very small bundle, use ```gzip```.
 </div>
 ```
 
+### Options
+```typescript
+export enum CacheType {
+    Template,
+    Json
+}
+
+export interface CompileOptions {
+    template: string;
+    container: ViewContainerRef;
+    imports?: any[];
+    context?: any,
+    onCompiled?: Function,
+    onError?: Function;
+    cache?: CacheType,
+}
+
+export interface Cache {
+    type: CacheType,
+    template?: string,
+    json?: object
+}
+```
+
 ### Example
 Check out the example, here [test/angular-webpack/angular/page.ts](https://github.com/patrikx3/angular-compile-html/blob/master/test/angular-webpack/angular/page.ts).
 
@@ -66,8 +90,8 @@ Check out the example, here [test/angular-webpack/angular/page.ts](https://githu
    
 ```bash
 npm install -g yarn
-git clone https://github.com/patrikx3/angular-compile-html.git
-cd angular-compile-html
+git clone https://github.com/patrikx3/angular-compile.git
+cd angular-compile
 yarn install
 grunt run|default
 ```
@@ -80,7 +104,7 @@ grunt run|default
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.193-485 on 4/22/2017, 12:18:04 AM
+[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.0.198-490 on 4/22/2017, 12:44:39 AM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
