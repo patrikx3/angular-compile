@@ -16,9 +16,9 @@ Dynamic compile HTML string for Angular.
 ## Install
   
 ```bash
-npm install --save p3x-angular-compile-html
+npm install --save p3x-angular-compile
 # or
-yarn add p3x-angular-compile-html
+yarn add p3x-angular-compile
 ```
 
 ## AOT + JIT
@@ -28,7 +28,12 @@ The solution: I am using the ```@angular/compiler``` and the ```awesome-typescip
 
 To make it work, just fork my repo: https://github.com/patrikx3/corifeus-app-web-pages
 
-You put all code into ```src/angular```.
+or
+
+Use ```corifeus-builder-angular```
+
+You put all code into ```src/angular```. That's it.
+
 ```bash
 grunt aot-awesome
 ```
@@ -75,7 +80,7 @@ grunt run|default
 
 
 ---
-[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.181-469 on 4/20/2017, 1:17:08 PM
+[**P3X-ANGULAR-COMPILE-HTML**](https://patrikx3.github.com/angular-compile-html) Build v4.0.193-485 on 4/22/2017, 12:18:04 AM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
