@@ -9,7 +9,6 @@ describe('CompileHtml', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             imports: [
-                P3XCompileHtmlModule
             ],
             declarations: [
                 CompileHtmlAttribute
