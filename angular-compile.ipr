@@ -36,10 +36,10 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/angular-compile-html.iml" filepath="$PROJECT_DIR$/angular-compile-html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/angular-compile.iml" filepath="$PROJECT_DIR$/angular-compile.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" default="false">
+  <component name="ProjectRootManager">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="PropertiesComponent">
@@ -55,17 +55,6 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-  </component>
-  <component name="WebResourcesPaths">
-    <contentEntries>
-      <entry url="file://$PROJECT_DIR$">
-        <entryData>
-          <resourceRoots>
-            <path value="file://$PROJECT_DIR$/typings" />
-          </resourceRoots>
-        </entryData>
-      </entry>
-    </contentEntries>
   </component>
   <component name="masterDetails">
     <states>
