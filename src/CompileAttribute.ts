@@ -1,10 +1,10 @@
 import {Directive, Input, Injectable, ViewContainerRef, OnInit, OnChanges, SimpleChanges} from '@angular/core';
 
-import { CompileHtmlService } from './CompileHtmlService';
+import { CompileService } from './CompileService';
 
 @Directive({ selector: '[p3x-compile]' })
 @Injectable()
-export class CompileHtmlAttribute implements OnInit, OnChanges{
+export class CompileAttribute implements OnInit, OnChanges{
 
     @Input('p3x-compile')
     html: string;
@@ -34,6 +34,6 @@ export class CompileHtmlAttribute implements OnInit, OnChanges{
 
     constructor(
         private container: ViewContainerRef,
-        private service: CompileHtmlService
+        private service: CompileService
     ) {}
 }

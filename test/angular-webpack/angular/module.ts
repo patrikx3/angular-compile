@@ -3,13 +3,13 @@ import { BrowserModule }  from '@angular/platform-browser';
 
 import {Page } from './page';
 import {
-    P3XCompileHtmlModule
+    CompileModule
 } from '../../../src';
 
 @NgModule({
     imports: [
         BrowserModule,
-        P3XCompileHtmlModule
+        CompileModule
     ],
     declarations: [
         Page,

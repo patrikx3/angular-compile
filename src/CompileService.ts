@@ -6,13 +6,13 @@ import {
 
 } from '@angular/core';
 
-import {CompileHtmlServiceOptions} from "./CompileHtmlServiceOptions";
+import {CompileOptions} from "./Types";
 
 
 const cache = {};
 
 @Injectable()
-export class CompileHtmlService  {
+export class CompileService  {
 
     // TODO add in cache - enable/disable
 
@@ -24,7 +24,7 @@ export class CompileHtmlService  {
     ) {
     }
 
-    public async compile(opts: CompileHtmlServiceOptions) {
+    public async compile(opts: CompileOptions) {
 
         try {
             /*

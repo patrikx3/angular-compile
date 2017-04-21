@@ -6,7 +6,7 @@ import {
     OnInit
 } from '@angular/core';
 
-import {CompileHtmlService } from '../../../src';
+import {CompileService } from '../../../src';
 
 @Component({
     selector: 'p3x-compile-test',
@@ -29,7 +29,7 @@ export class Page implements OnInit {
     counter1 : number = 0;
     counter2 : number = 0;
 
-    constructor( private compileHtmlService: CompileHtmlService ) {
+    constructor( private compileHtmlService: CompileService ) {
       this.context = this;
     }
 

@@ -3,28 +3,28 @@
 import { TestBed } from '@angular/core/testing';
 import { inject } from '@angular/core/testing';
 
-import {CompileHtmlAttribute, CompileHtmlService, P3XCompileHtmlModule } from '../../src'
+import {CompileAttribute, CompileService, CompileModule } from '../../src'
 describe('CompileHtml', () => {
-    let service: CompileHtmlService;
+    let service: CompileService;
     beforeEach(() => {
         TestBed.configureTestingModule({
             imports: [
             ],
             declarations: [
-                CompileHtmlAttribute
+                CompileAttribute
             ],
             providers: [
-                CompileHtmlService
+                CompileService
             ],
         });
     });
 
-    beforeEach(inject([CompileHtmlService], (_service: CompileHtmlService) => {
+    beforeEach(inject([CompileService], (_service: CompileService) => {
         service = _service;
     }));
 
-    it ('CompileHtmlService', (/*done*/) => {
-        expect(service instanceof CompileHtmlService).toBeTruthy();
+    it ('CompileService', (/*done*/) => {
+        expect(service instanceof CompileService).toBeTruthy();
         /*
         setTimeout(()=> {
             console.log('done later');
