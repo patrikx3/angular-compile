@@ -23,8 +23,8 @@
   ],
   "exclude": [
     "node_modules",
-    "src/angular/bundle.ts",
-    "test/angular-webpack/angular/bundle.ts",
+    "src/angular/boot.ts",
+    "test/angular-webpack/angular/boot.ts",
     "build/browser"
   ],
   "angularCompilerOptions": {
