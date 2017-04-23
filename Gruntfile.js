@@ -42,13 +42,13 @@ by [Patrik Laszlo](http://patrikx3.tk)
     }
     grunt.config.set('cory-replace', copyReplace );
 
-    grunt.registerTask('run', builder.config.task.run.angular);
+    grunt.registerTask('run', builder.config.task.run.angularAotJit);
 
     grunt.registerTask('default',  builder.config.task.build.angular);
 
     grunt.registerTask('aot', builder.config.task.build.angularAot);
 
-    grunt.registerTask('aot-awesome', builder.config.task.build.angularAotAwesome);
+    grunt.registerTask('aot-jit', builder.config.task.build.angularAotJit);
 
     grunt.registerTask('aot-test', ['webpack:cory-build-aot', 'cory-test-connect']);
 
