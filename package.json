@@ -1,10 +1,10 @@
 {
   "name": "p3x-angular-compile",
-  "version": "4.0.201-498",
+  "version": "4.0.203-499",
   "corifeus": {
     "prefix": "p3x-",
-    "time": "4/23/2017, 4:03:20 PM",
-    "time-stamp": 1492956200997
+    "time": "4/23/2017, 6:06:28 PM",
+    "time-stamp": 1492963588582
   },
   "description": "Angular Dynamic Compile service + directive / attribute",
   "main": "src/index.ts",
