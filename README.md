@@ -1,12 +1,10 @@
 [//]: #@corifeus-header
 
-
 [![Build Status](https://travis-ci.org/patrikx3/angular-compile.svg?branch=master)](https://travis-ci.org/patrikx3/angular-compile)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/angular-compile/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/angular-compile/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-p3x-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
 
 [![NPM](https://nodei.co/npm/p3x-angular-compile.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/p3x-angular-compile/)
-
 
 [//]: #@corifeus-header:end
 
@@ -55,12 +53,9 @@ If you want very small bundle, use ```gzip```.
 ```
 
 ### Options
-```typescript
-export enum CacheType {
-    Template,
-    Json
-}
+The templates are cached.
 
+```typescript
 export interface CompileOptions {
     template: string;
     container: ViewContainerRef;
@@ -68,13 +63,6 @@ export interface CompileOptions {
     context?: any,
     onCompiled?: Function,
     onError?: Function;
-    cache?: CacheType,
-}
-
-export interface Cache {
-    type: CacheType,
-    template?: string,
-    json?: object
 }
 ```
 
@@ -102,11 +90,9 @@ grunt run|default
 
 [//]: #@corifeus-footer
 
-
 ---
-[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.0.198-490 on 4/22/2017, 12:44:39 AM
+[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.0.200-495 on 4/23/2017, 12:58:49 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
-
 
 [//]: #@corifeus-footer:end

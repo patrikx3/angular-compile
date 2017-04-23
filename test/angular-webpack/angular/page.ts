@@ -12,14 +12,23 @@ import {CompileService } from '../../../src';
     selector: 'p3x-compile-test',
     template: `    
     <div #container></div>
+
+    <div #container2></div>
     <hr/>
     <div [p3x-compile]="data2" [p3x-compile-ctx]="context"></div>
-    `
+
+    <div [p3x-compile]="data2" [p3x-compile-ctx]="context"></div>
+
+    <div [p3x-compile]="data2" [p3x-compile-ctx]="context"></div>
+
+    <div [p3x-compile]="data2" [p3x-compile-ctx]="context"></div>
+`
 })
 @Injectable()
 export class Page implements OnInit {
 
     @ViewChild('container', {read: ViewContainerRef}) container: ViewContainerRef;
+    @ViewChild('container2', {read: ViewContainerRef}) container2: ViewContainerRef;
 
     data1: string;
     data2: string;
@@ -37,20 +46,36 @@ export class Page implements OnInit {
         this.counter1++;
         this.data1 = `
 <div>Service</div><a id="button-container" href="javascript:void(0);" (click)="context.update1()">Click me via a service!</a>
-<div id="counter-container">${this.counter1}</div>
+<div id="counter-container">{{ context.counter1}}</div>
 `;
-        this.compileHtmlService.compile({
-            template: this.data1,
-            container: this.container,
-            context: this,
-        })
+        Promise.all([
+            this.compileHtmlService.compile({
+                template: this.data1,
+                container: this.container,
+                context: this,
+                onCompiled: (cmp : any) => {
+                    console.log('container1 compiled, same template ');
+                }
+
+            })
+            ,
+            this.compileHtmlService.compile({
+                template: this.data1,
+                container: this.container2,
+                context: this,
+                onCompiled: (cmp : any) => {
+                    console.log('container2 compiled, same template');
+                }
+            })
+
+        ])
     }
 
     private update2() {
         this.counter2++;
         this.data2 = `
 <div>Attribute</div><a id="button-attribute" href="javascript:void(0);" (click)="context.update2()">Click me via an attribute!</a>
-<div id="counter-attribute">${this.counter2}</div>
+<div id="counter-attribute">{{ context.counter2}}</div>
 `;
     }
     ngOnInit() {
