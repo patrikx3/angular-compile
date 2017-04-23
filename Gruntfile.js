@@ -42,9 +42,9 @@ by [Patrik Laszlo](http://patrikx3.tk)
     }
     grunt.config.set('cory-replace', copyReplace );
 
-    grunt.registerTask('run', builder.config.task.run.angularAotJit);
+    grunt.registerTask('run', builder.config.task.run.angular);
 
-    grunt.registerTask('default',  builder.config.task.build.angular);
+    grunt.registerTask('default',  builder.config.task.build.angularAotJit);
 
     grunt.registerTask('aot', builder.config.task.build.angularAot);
 
