@@ -57,25 +57,13 @@
     magic-string "^0.19.0"
     source-map "^0.5.6"
 
-"@types/isomorphic-fetch@^0.0.33":
-  version "0.0.33"
-  resolved "https://registry.yarnpkg.com/@types/isomorphic-fetch/-/isomorphic-fetch-0.0.33.tgz#3ea1b86f8b73e6a7430d01d4dbd5b1f63fd72718"
-
 "@types/jasmine@^2.5.47":
   version "2.5.47"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.5.47.tgz#bbba9bcf0e95e7890c6f4a47394e8bacaa960eb6"
 
-"@types/jquery@^2.0.41":
-  version "2.0.41"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-2.0.41.tgz#b87ba051011f99edbe586d8f97282e7786e01a6d"
-
 "@types/js-cookie@^2.0.28":
   version "2.0.28"
   resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.0.28.tgz#d6a9136d699257970fc74d899cd7b12a608d14da"
-
-"@types/lodash@^4.14.62":
-  version "4.14.62"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.62.tgz#8674f9861582148a60b7a89cb260f11378d11683"
 
 "@types/node@^6.0.46":
   version "6.0.68"
@@ -992,9 +980,9 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-corifeus-builder-angular@^4.0.193-312:
-  version "4.0.193-312"
-  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-4.0.193-312.tgz#e5b0d4a4bb47146cc8d0e49f62603f0bc90549c4"
+corifeus-builder-angular@^4.0.204-321:
+  version "4.0.204-321"
+  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-4.0.204-321.tgz#1fdeaf674f41fc8dbf0d0fbd66f0cf724b707f58"
   dependencies:
     "@angular/common" "^4.0.2"
     "@angular/compiler" "^4.0.2"
@@ -1010,7 +998,7 @@ corifeus-builder-angular@^4.0.193-312:
     awesome-typescript-loader "^3.1.2"
     cheerio "^0.22.0"
     core-js "^2.4.1"
-    corifeus-builder "^1.5.433-570"
+    corifeus-builder "^1.5.435-596"
     css-loader "^0.28.0"
     extract-text-webpack-plugin "^2.1.0"
     file-loader "^0.11.1"
@@ -1046,9 +1034,9 @@ corifeus-builder-angular@^4.0.193-312:
     webpack-merge "^4.1.0"
     zone.js "^0.8.5"
 
-corifeus-builder@^1.5.433-570:
-  version "1.5.433-570"
-  resolved "https://registry.yarnpkg.com/corifeus-builder/-/corifeus-builder-1.5.433-570.tgz#a7ed1ad65bd561a230b07a1338c0cdef1b6a9994"
+corifeus-builder@^1.5.435-596:
+  version "1.5.435-596"
+  resolved "https://registry.yarnpkg.com/corifeus-builder/-/corifeus-builder-1.5.435-596.tgz#1a469e1883b71717352211c33f0a6528b9ef658c"
   dependencies:
     chalk "^1.1.3"
     corifeus-utils "^1.0.38-68"
@@ -1075,20 +1063,15 @@ corifeus-utils@^1.0.38-68:
     mz "^2.6.0"
     timestring "^3.2.0"
 
-corifeus-web@^4.0.189-273:
-  version "4.0.189-273"
-  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-4.0.189-273.tgz#81e3c92b2374974cb5c8f17174dbaea92bcfc6bc"
+corifeus-web@^4.0.207-295:
+  version "4.0.207-295"
+  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-4.0.207-295.tgz#dc95851176a1eb8d28ffcb7e42db00e1f995202b"
   dependencies:
     "@angular/animations" "^4.0.2"
     "@angular/http" "^4.0.2"
     "@angular/router" "^4.0.2"
-    "@types/isomorphic-fetch" "^0.0.33"
-    "@types/jquery" "^2.0.41"
     "@types/js-cookie" "^2.0.28"
-    "@types/lodash" "^4.14.62"
-    jquery "^3.2.1"
     js-cookie "^2.1.4"
-    lodash "^4.17.4"
     moment "^2.18.1"
 
 create-ecdh@^4.0.0:
@@ -2751,10 +2734,6 @@ jodid25519@^1.0.0:
   resolved "https://registry.yarnpkg.com/jodid25519/-/jodid25519-1.0.2.tgz#06d4912255093419477d425633606e0e90782967"
   dependencies:
     jsbn "~0.1.0"
-
-jquery@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
 js-base64@^2.1.9:
   version "2.1.9"

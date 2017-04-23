@@ -1,10 +1,10 @@
 {
   "name": "p3x-angular-compile",
-  "version": "4.0.204-500",
+  "version": "4.0.206-501",
   "corifeus": {
     "prefix": "p3x-",
-    "time": "4/23/2017, 6:14:27 PM",
-    "time-stamp": 1492964067142
+    "time": "4/23/2017, 8:37:36 PM",
+    "time-stamp": 1492972656110
   },
   "description": "Angular Dynamic Compile service + directive / attribute",
   "main": "src/index.ts",
@@ -33,7 +33,7 @@
   "homepage": "https://patrikx3.github.io/angular-compile/",
   "devDependencies": {
     "corifeus-builder-angular": "^4.0.204-321",
-    "corifeus-web": "^4.0.202-286"
+    "corifeus-web": "^4.0.207-295"
   },
   "dependencies": {},
   "engines": {
