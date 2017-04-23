@@ -1,4 +1,3 @@
 /node_modules
 /build
-/src/**/*.js
-/test/angular-webpack/**/*.js
+

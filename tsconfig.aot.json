@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "build/aot",
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
@@ -30,7 +31,7 @@
     "build/browser"
   ],
   "angularCompilerOptions": {
-    "genDir": "build/aot",
+    "genDir": "./build/aot",
     "skipMetadataEmit" : true
   }
 }

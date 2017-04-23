@@ -20,22 +20,12 @@ yarn add p3x-angular-compile
 ```
 
 ## AOT + JIT
-It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 folds faster. The ``@ngtools/webpack`` is AOT the ```awesome-typescript-loader``` is JIT only. 
+It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 folds faster. The ``@ngtools/webpack`` is AOT and the ```awesome-typescript-loader``` is JIT only. 
   
-The solution: I am using the ```@angular/compiler``` and the ```awesome-typescipt-loader``` together and it works. Miracle!
+The solution can be architect with the ```@angular/compiler``` and the ```awesome-typescipt-loader``` together. A miracle!
 
-To make it work, just fork my repo: https://github.com/patrikx3/corifeus-app-web-pages
-
-or
-
-Use ```corifeus-builder-angular```
-
-You put all code into ```src/angular```. That's it.
-
-```bash
-grunt aot-awesome
-```
-Voila!
+Example here:
+[More info about AOT + JIT](https://pages.corifeus.tk/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
 
 ### Help
 If you want very small bundle, use ```gzip```.
@@ -91,7 +81,7 @@ grunt run|default
 [//]: #@corifeus-footer
 
 ---
-[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.0.200-495 on 4/23/2017, 12:58:49 PM
+[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.0.201-498 on 4/23/2017, 4:03:20 PM
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 
