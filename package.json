@@ -32,8 +32,8 @@
   },
   "homepage": "https://patrikx3.github.io/angular-compile/",
   "devDependencies": {
-    "corifeus-builder-angular": "^4.0.193-312",
-    "corifeus-web": "^4.0.189-273"
+    "corifeus-builder-angular": "^4.0.203-318",
+    "corifeus-web": "^4.0.201-284"
   },
   "dependencies": {},
   "engines": {
