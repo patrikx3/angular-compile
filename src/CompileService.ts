@@ -36,6 +36,7 @@ export class CompileService  {
 
     private async createFactory(opts: CompileOptions) {
         const cacheKey = opts.template;
+
         if (Object.keys(cache).includes(cacheKey)) {
             return cache[cacheKey];
         }

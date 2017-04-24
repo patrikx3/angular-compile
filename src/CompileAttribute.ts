@@ -16,6 +16,9 @@ export class CompileAttribute implements OnInit, OnChanges{
     imports: any[];
 
     async update() {
+        if (this.html === undefined) {
+            return;
+        }
         await this.service.compile({
             template: this.html,
             container: this.container,
