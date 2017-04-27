@@ -22,7 +22,7 @@ yarn add p3x-angular-compile
 ## AOT + JIT
 It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 folds faster. The ``@ngtools/webpack`` is AOT and the ```awesome-typescript-loader``` is JIT only. 
   
-The solution can be architect with the ```@angular/compiler``` and the ```awesome-typescipt-loader``` together. A miracle!
+The solution can be architect with the ```@angular/compiler``` and the ```awesome-typescript-loader``` together. A miracle!
 
 Example here:
 [More info about AOT + JIT](https://pages.corifeus.tk/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
