@@ -2,7 +2,7 @@
 import { CompileService } from "./CompileService";
 import { CompileAttribute} from "./CompileAttribute";
 
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { Compiler } from '@angular/core';
 import {JitCompilerFactory} from '@angular/compiler';
