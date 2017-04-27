@@ -2,45 +2,49 @@
 # yarn lockfile v1
 
 
-"@angular/common@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.0.3.tgz#17472895eb425f2812b3a79162b5b494d2506a5b"
+"@angular/common@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.1.0.tgz#4370f569e51ddd99963b7f4aa58c1a5dcc5fea52"
 
-"@angular/compiler-cli@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.0.3.tgz#691f280bc4d6611a88d6555f43e57032a0d34300"
+"@angular/compiler-cli@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.1.0.tgz#727aaada8bfd94285e9818995925048f7fdf1200"
   dependencies:
-    "@angular/tsc-wrapped" "4.0.3"
+    "@angular/tsc-wrapped" "4.1.0"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.0.3.tgz#8b3cad338ac539328e10a6a4bfaa057094f7bc89"
+"@angular/compiler@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.1.0.tgz#be1ade5b6aec81f03c29d52bcb95925a28900dcb"
 
-"@angular/core@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.0.3.tgz#61be21db6aa5778e33159ffd38cbbebaf16120d9"
+"@angular/core@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.1.0.tgz#72ec173316879571880c9c483ed6dfc0caab94b0"
 
-"@angular/http@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.0.3.tgz#efbb701a215ec7704c021676484b85ed47392f4b"
+"@angular/forms@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-4.1.0.tgz#8eae2a45c4ba064b377f9280e59c012b5dac6b80"
 
-"@angular/platform-browser-dynamic@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-4.0.3.tgz#5fa3b98f725999b631d7d7174e6e43dcbf6aa9ac"
+"@angular/http@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.1.0.tgz#7ba0c4d044dee964021b7cf19cb146a2c31577a5"
 
-"@angular/platform-browser@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.0.3.tgz#170b18d5af4ee02b248aa6a1f1e0584ac841681e"
+"@angular/platform-browser-dynamic@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-4.1.0.tgz#0250d82d4abd36be60bb31fc7448ac6e28036690"
 
-"@angular/router@^4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-4.0.3.tgz#24184e9b1266c4ad017b2be81573464b1e4c5dfa"
+"@angular/platform-browser@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.1.0.tgz#b981386be1a36f2af7f0679447fd97b7267b25de"
 
-"@angular/tsc-wrapped@4.0.3":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.0.3.tgz#a5fea6a87df9c348faa5577c3698c8a363082781"
+"@angular/router@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-4.1.0.tgz#dd3563662f95ca3aa3dd9ff13c6ed4bea1d90b06"
+
+"@angular/tsc-wrapped@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.1.0.tgz#07cbd61d91adde4c2daf9a41605152952b8832b3"
   dependencies:
     tsickle "^0.21.0"
 
@@ -65,9 +69,9 @@
   version "6.0.70"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.70.tgz#f6e04b859205ee3611849921f09819701dbfa5e8"
 
-"@types/node@^7.0.13":
-  version "7.0.13"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.13.tgz#1b0a53fe9ef9c3a5d061b126cc9b915bca43a3f5"
+"@types/node@^7.0.14":
+  version "7.0.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.14.tgz#1470fa002a113316ac9d9ad163fc738c7a0de2a4"
 
 "@types/promise@^7.1.30":
   version "7.1.30"
@@ -80,6 +84,10 @@
 "@types/selenium-webdriver@^2.53.35", "@types/selenium-webdriver@~2.53.39":
   version "2.53.42"
   resolved "https://registry.yarnpkg.com/@types/selenium-webdriver/-/selenium-webdriver-2.53.42.tgz#74cb77fb6052edaff2a8984ddafd88d419f25cac"
+
+"@types/tinycolor2@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@types/tinycolor2/-/tinycolor2-1.1.1.tgz#aa0d6c4df72fdeb4b9e5116512d992b90519c508"
 
 abbrev@1, abbrev@1.0.x:
   version "1.0.9"
@@ -976,25 +984,25 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-corifeus-builder-angular@^4.0.214-332:
-  version "4.0.214-332"
-  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-4.0.214-332.tgz#74518ffad655b68058159136a7facf7de614e6bc"
+corifeus-builder-angular@^4.0.220-339:
+  version "4.0.220-339"
+  resolved "https://registry.yarnpkg.com/corifeus-builder-angular/-/corifeus-builder-angular-4.0.220-339.tgz#133b18930560f146ef2da1c2e0ad29df6f918821"
   dependencies:
-    "@angular/common" "^4.0.3"
-    "@angular/compiler" "^4.0.3"
-    "@angular/compiler-cli" "^4.0.3"
-    "@angular/core" "^4.0.3"
-    "@angular/platform-browser" "^4.0.3"
-    "@angular/platform-browser-dynamic" "^4.0.3"
+    "@angular/common" "^4.1.0"
+    "@angular/compiler" "^4.1.0"
+    "@angular/compiler-cli" "^4.1.0"
+    "@angular/core" "^4.1.0"
+    "@angular/platform-browser" "^4.1.0"
+    "@angular/platform-browser-dynamic" "^4.1.0"
     "@ngtools/webpack" "^1.3.1"
     "@types/jasmine" "^2.5.47"
-    "@types/node" "^7.0.13"
+    "@types/node" "^7.0.14"
     "@types/promise" "^7.1.30"
     angular2-template-loader "^0.6.2"
     awesome-typescript-loader "^3.1.2"
     cheerio "^0.22.0"
     core-js "^2.4.1"
-    corifeus-builder "^1.5.441-615"
+    corifeus-builder "^1.5.446-619"
     css-loader "^0.28.0"
     extract-text-webpack-plugin "^2.1.0"
     file-loader "^0.11.1"
@@ -1026,13 +1034,13 @@ corifeus-builder-angular@^4.0.214-332:
     typescript "^2.2.2"
     url-loader "^0.5.8"
     webpack "^2.4.1"
-    webpack-dev-server "^2.4.4"
+    webpack-dev-server "^2.4.5"
     webpack-merge "^4.1.0"
-    zone.js "^0.8.8"
+    zone.js "^0.8.9"
 
-corifeus-builder@^1.5.441-615:
-  version "1.5.441-615"
-  resolved "https://registry.yarnpkg.com/corifeus-builder/-/corifeus-builder-1.5.441-615.tgz#c7f7195dd17af6b9d6072755791055029301bfd1"
+corifeus-builder@^1.5.446-619:
+  version "1.5.446-619"
+  resolved "https://registry.yarnpkg.com/corifeus-builder/-/corifeus-builder-1.5.446-619.tgz#17cf9f89a0fa6cb55f0cccccb24a1dcf3a9b3475"
   dependencies:
     chalk "^1.1.3"
     corifeus-utils "^1.0.49-92"
@@ -1059,15 +1067,18 @@ corifeus-utils@^1.0.49-92:
     mz "^2.6.0"
     timestring "^4.0.0"
 
-corifeus-web@^4.0.221-333:
-  version "4.0.221-333"
-  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-4.0.221-333.tgz#ec715b36d59fbdd214c917290a3b0cfb3230c8e8"
+corifeus-web@^4.1.244-375:
+  version "4.1.244-375"
+  resolved "https://registry.yarnpkg.com/corifeus-web/-/corifeus-web-4.1.244-375.tgz#8d5a3ecef0b526d52746d7f882bbb6aae520cb38"
   dependencies:
-    "@angular/http" "^4.0.3"
-    "@angular/router" "^4.0.3"
+    "@angular/forms" "^4.1.0"
+    "@angular/http" "^4.1.0"
+    "@angular/router" "^4.1.0"
     "@types/js-cookie" "^2.0.28"
+    "@types/tinycolor2" "^1.1.1"
     js-cookie "^2.1.4"
     moment "^2.18.1"
+    tinycolor2 "^1.4.1"
 
 create-ecdh@^4.0.0:
   version "4.0.0"
@@ -2379,13 +2390,9 @@ iconv-lite@0.4.13:
   version "0.4.13"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
 
-iconv-lite@0.4.15:
+iconv-lite@0.4.15, iconv-lite@~0.4.13:
   version "0.4.15"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
-
-iconv-lite@~0.4.13:
-  version "0.4.16"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.16.tgz#65de3beeb39e2960d67f049f1634ffcbcde9014b"
 
 icss-replace-symbols@^1.0.2:
   version "1.0.2"
@@ -2747,19 +2754,19 @@ js-tokens@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
 
-js-yaml@3.x, js-yaml@~3.5.2:
-  version "3.5.5"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.5.5.tgz#0377c38017cabc7322b0d1fbcd25a491641f2fbe"
-  dependencies:
-    argparse "^1.0.2"
-    esprima "^2.6.0"
-
-js-yaml@^3.7.0:
+js-yaml@3.x, js-yaml@^3.7.0:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.8.3.tgz#33a05ec481c850c8875929166fe1beb61c728766"
   dependencies:
     argparse "^1.0.7"
     esprima "^3.1.1"
+
+js-yaml@~3.5.2:
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.5.5.tgz#0377c38017cabc7322b0d1fbcd25a491641f2fbe"
+  dependencies:
+    argparse "^1.0.2"
+    esprima "^2.6.0"
 
 js-yaml@~3.7.0:
   version "3.7.0"
@@ -5017,6 +5024,10 @@ tiny-lr@^0.2.1:
     parseurl "~1.3.0"
     qs "~5.1.0"
 
+tinycolor2@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
+
 tmp@0.0.24:
   version "0.0.24"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.0.24.tgz#d6a5e198d14a9835cc6f2d7c3d9e302428c8cf12"
@@ -5302,9 +5313,9 @@ webpack-dev-middleware@^1.0.11, webpack-dev-middleware@^1.10.2:
     path-is-absolute "^1.0.0"
     range-parser "^1.0.3"
 
-webpack-dev-server@^2.4.4:
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-2.4.4.tgz#1adb41640970421ec7b866e82384e8cebeed85de"
+webpack-dev-server@^2.4.5:
+  version "2.4.5"
+  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-2.4.5.tgz#31384ce81136be1080b4b4cde0eb9b90e54ee6cf"
   dependencies:
     ansi-html "0.0.7"
     chokidar "^1.6.0"
@@ -5431,16 +5442,9 @@ wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
-ws@1.1.2:
+ws@1.1.2, ws@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.2.tgz#8a244fa052401e08c9886cf44a85189e1fd4067f"
-  dependencies:
-    options ">=0.0.5"
-    ultron "1.0.x"
-
-ws@^1.0.1:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-1.1.4.tgz#57f40d036832e5f5055662a397c4de76ed66bf61"
   dependencies:
     options ">=0.0.5"
     ultron "1.0.x"
@@ -5558,6 +5562,6 @@ yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
 
-zone.js@^0.8.8:
-  version "0.8.8"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.8.tgz#354f02bb7241af834bb83b310308a89ad012d3af"
+zone.js@^0.8.9:
+  version "0.8.9"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.9.tgz#34aaa9a3ec6d0e4acebd1b761adafa590473638b"
