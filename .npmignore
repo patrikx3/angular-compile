@@ -1,0 +1,22 @@
+# not me adding
+/.idea
+/artifacts
+/build
+/Gemfile
+/_layouts
+/_site
+/_includes
+/test
+/node_modules
+/*.iml
+/*.ipr
+/*.iws
+/.travis.yml
+/.scrutinizer.yml
+    /Gruntfile.js
+
+# Corifeus / P3X
+/src
+/tsconfig*
+
+# need to allow ts for awesome=typscript-loader

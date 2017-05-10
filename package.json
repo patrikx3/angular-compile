@@ -1,0 +1,45 @@
+{
+    "name": "p3x-angular-compile",
+    "version": "4.1.245-605",
+    "corifeus": {
+        "prefix": "p3x-",
+        "time": "5/6/2017, 5:39:50 PM",
+        "time-stamp": 1494085190709,
+        "publish": true,
+        "type": "p3x"
+    },
+    "description": "Angular Dynamic Compile service and directive",
+    "main": "dist/index.js",
+    "typings": "dist/index",
+    "scripts": {
+        "test": "grunt"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/patrikx3/angular-compile.git"
+    },
+    "keywords": [
+        "p3x",
+        "angular",
+        "ng",
+        "compile",
+        "html",
+        "angular",
+        "dynamic",
+        "aot"
+    ],
+    "author": "Patrik Laszlo <alabard@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/patrikx3/angular-compile/issues"
+    },
+    "homepage": "https://patrikx3.github.io/angular-compile/",
+    "devDependencies": {
+        "corifeus-builder-angular": "^4.1.286-399",
+        "corifeus-web": "^4.1.288-410"
+    },
+    "dependencies": {},
+    "engines": {
+        "node": ">=7.8.0"
+    }
+}

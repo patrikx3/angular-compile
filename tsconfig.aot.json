@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": "build/aot",
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": [
+      "es5",
+      "es6",
+      "dom",
+      "es2015.collection",
+      "es2015.promise",
+      "es2015.core"
+    ]
+  },
+  "includes": [
+    "src/angular/**/*",
+    "test/angular-webpack/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/angular/boot.ts",
+    "test/angular-webpack/angular/boot.ts",
+    "build/browser"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "./build/aot",
+    "skipMetadataEmit" : true
+  }
+}
