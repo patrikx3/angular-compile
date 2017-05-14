@@ -1,12 +1,11 @@
 {
     "name": "p3x-angular-compile",
-    "version": "4.1.245-605",
+    "version": "4.1.253-10",
     "corifeus": {
         "prefix": "p3x-",
-        "time": "5/6/2017, 5:39:50 PM",
-        "time-stamp": 1494085190709,
         "publish": true,
-        "type": "p3x"
+        "type": "p3x",
+        "code": "Wheel"
     },
     "description": "Angular Dynamic Compile service and directive",
     "main": "dist/index.js",
@@ -33,10 +32,10 @@
     "bugs": {
         "url": "https://github.com/patrikx3/angular-compile/issues"
     },
-    "homepage": "https://patrikx3.github.io/angular-compile/",
+    "homepage": "https://pages.corifeus.tk/angular-compile",
     "devDependencies": {
-        "corifeus-builder-angular": "^4.1.286-399",
-        "corifeus-web": "^4.1.288-410"
+        "corifeus-builder-angular": "^4.1.318-22",
+        "corifeus-web": "^4.1.310-23"
     },
     "dependencies": {},
     "engines": {

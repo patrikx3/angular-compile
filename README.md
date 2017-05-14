@@ -1,18 +1,20 @@
 [//]: #@corifeus-header
 
-[![Build Status](https://travis-ci.org/patrikx3/angular-compile.svg?branch=master)](https://travis-ci.org/patrikx3/angular-compile)  [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/angular-compile/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/angular-compile/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile/?branch=master)  [![Trello](https://img.shields.io/badge/Trello-p3x-026aa7.svg)](https://trello.com/b/gqKHzZGy/p3x)
 
-  
-[![NPM](https://nodei.co/npm/p3x-angular-compile.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/p3x-angular-compile/)
-------
+---
 
 # Angular Dynamic Compile service and directive
 
 ### Node Version Requirement 
-``` >=7.8.0 ```  
+``` 
+>=7.8.0 
+```  
    
 The ```async``` and ```await``` keywords are required.
 
+Install NodeJs:    
+https://nodejs.org/en/download/package-manager/    
+  
 # Description
 
 
@@ -25,7 +27,7 @@ Dynamic compile components by a string template for Angular. You can provide a c
 
 ## NPM & Version
 It is a ```CommonJS``` bundle.
-The version reflects the Angular version (```AngularMajor.AngularMinor.P3xBuild-P3xCommit```).
+The version reflects the Angular version (```AngularMajor.AngularMinor.Build-Commit```).
 
 ## Install
   
@@ -98,7 +100,7 @@ grunt run|default
 [//]: #@corifeus-footer
 
 ---
-[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.1.245-604 on 5/6/2017, 5:38:16 PM
+[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.1.247-5
 
 by [Patrik Laszlo](http://patrikx3.tk) 
 

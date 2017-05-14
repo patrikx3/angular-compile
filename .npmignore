@@ -13,7 +13,7 @@
 /*.iws
 /.travis.yml
 /.scrutinizer.yml
-    /Gruntfile.js
+/Gruntfile.js
 
 # Corifeus / P3X
 /src
