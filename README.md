@@ -116,7 +116,7 @@ grunt run|default
 [//]: #@corifeus-footer
 
 ---
-[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.1.334-31
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.336-32
 
 [Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
 
