@@ -1,23 +1,39 @@
 [//]: #@corifeus-header
 
+  [![Build Status](https://travis-ci.org/patrikx3/angular-compile.svg?branch=master)](https://travis-ci.org/patrikx3/angular-compile)  [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/patrikx3/angular-compile/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile/?branch=master)  [![Code Coverage](https://scrutinizer-ci.com/g/patrikx3/angular-compile/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/patrikx3/angular-compile/?branch=master) 
 
+  
+[![NPM](https://nodei.co/npm/p3x-angular-compile.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/p3x-angular-compile/)
 ---
 
+ 
 # Angular Dynamic Compile service and directive
+
+## Issues / Support
+This is an open source project. Time is a precious thing, so I have rarely time to give support and fix issues for someone else. I fix a bug, when I have an error that I need. If you got an issue, error or bug, I hope someone will have time to do it for you, otherwise, you are on your own.
+
+Though, if I know the solution, I will tell you. Besides, core errors will be fixed by me.
+
+***If you want to extend, fix bugs or add in new features, I promptly merge pull requests or you can become a ```patrikx3``` member.***
 
 ### Node Version Requirement 
 ``` 
 >=7.8.0 
 ```  
    
+### Built on Node 
+``` 
+v7.10.0
+```   
+   
 The ```async``` and ```await``` keywords are required.
 
 Install NodeJs:    
 https://nodejs.org/en/download/package-manager/    
   
-# Description
+# Description  
 
-
+                        
 [//]: #@corifeus-header:end
 
 # Use case
@@ -100,8 +116,9 @@ grunt run|default
 [//]: #@corifeus-footer
 
 ---
-[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.1.247-5
+[**P3X-ANGULAR-COMPILE**](https://patrikx3.github.com/angular-compile) Build v4.1.326-27
 
-by [Patrik Laszlo](http://patrikx3.tk) 
+[Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
+
 
 [//]: #@corifeus-footer:end

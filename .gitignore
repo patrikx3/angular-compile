@@ -1,4 +1,8 @@
 /node_modules
 /build
-/dist
 /yarn.lock
+
+/dist
+
+.idea/workspace.xml
+.idea/tasks.xml
