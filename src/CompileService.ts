@@ -33,18 +33,18 @@ let SingletonDefaultModule: NgModule;
 @Injectable()
 export class CompileService  {
 
-
     constructor(
         private compiler: Compiler,
         @Optional() config: CompileServiceConfig,
     ) {
-        if (config !== undefined) {
-            SingletonDefaultModule = config.module;
+        if (config !== undefined && config !== null) {
+            if (config.module !== undefined && config.module !== null) {
+                SingletonDefaultModule = config.module;
+            }
         }
     }
 
     public async compile(opts: CompileOptions) {
-
         try {
             const factory = await this.createFactory(opts);
             opts.container.clear();
@@ -65,6 +65,7 @@ export class CompileService  {
         if (Object.keys(cache).indexOf(cacheKey) > -1) {
             return cache[cacheKey];
         }
+
         cache[cacheKey] = new Promise(async(resolve) => {
             @Component({
                 template: opts.template
@@ -73,13 +74,11 @@ export class CompileService  {
                 context: any
             }
 
-            let module : NgModule;
+            let module : NgModule = {};
             if (opts.module !== undefined) {
                 module = Object.assign({}, opts.module);
-            } else {
-                module = Object.assign({}, SingletonDefaultModule) || {
-//                 imports: opts.imports,
-                };
+            } else if (SingletonDefaultModule !== undefined && SingletonDefaultModule !== null) {
+                module = Object.assign({}, SingletonDefaultModule);
             }
             module.imports = module.imports || [];
             module.imports.push( CommonModule );
@@ -110,6 +109,5 @@ export class CompileService  {
             resolve(factory);
         })
         return cache[cacheKey];
-
     }
 }
