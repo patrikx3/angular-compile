@@ -8,6 +8,7 @@ import {
     SimpleChanges,
     Type,
     ModuleWithProviders,
+    NgModule,
 } from '@angular/core';
 
 import { CompileService } from './CompileService';
@@ -22,6 +23,9 @@ export class CompileAttribute implements OnInit, OnChanges{
     @Input('p3x-compile-ctx')
     context:  any;
 
+    @Input('p3x-compile-module')
+    module:  NgModule;
+
     @Input('p3x-compile-imports')
     imports: Array<Type<any> | ModuleWithProviders | any[]>;
 
@@ -34,7 +38,8 @@ export class CompileAttribute implements OnInit, OnChanges{
             template: this.html,
             container: this.container,
             context: this.context,
-            imports: this.imports
+            imports: this.imports,
+            module: this.module
         })
     }
 

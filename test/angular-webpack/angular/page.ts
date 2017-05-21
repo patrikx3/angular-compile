@@ -3,7 +3,9 @@ import {
     Injectable,
     ViewChild,
     ViewContainerRef,
-    OnInit
+    OnInit,
+    NgModule,
+    CUSTOM_ELEMENTS_SCHEMA,
 } from '@angular/core';
 
 import {CompileService } from '../../../src';
@@ -15,13 +17,24 @@ import {CompileService } from '../../../src';
 
     <div #container2></div>
     <hr/>
-    <div [p3x-compile]="data2" [p3x-compile-ctx]="context"></div>
+    <div [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
 
-    <div [p3x-compile]="data2" [p3x-compile-ctx]="context"></div>
+    <div [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
 
-    <div [p3x-compile]="data2" [p3x-compile-ctx]="context"></div>
+    <div [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
 
-    <div [p3x-compile]="data2" [p3x-compile-ctx]="context"></div>
+    <div [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
+        
+    <hr/>
+    Hidden
+    <div *ngIf="false" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
+    <div></div>
+    (you should nothing above, only hidden)
+    <div></div>
+    <hr/>
+    Visible
+    <div *ngIf="true" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
+
 `
 })
 @Injectable()
@@ -33,13 +46,10 @@ export class Page implements OnInit {
     data1: string;
     data2: string;
 
-    context: Page;
-
     counter1 : number = 0;
     counter2 : number = 0;
 
     constructor( private compileHtmlService: CompileService ) {
-      this.context = this;
     }
 
     private async update1() {

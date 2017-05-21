@@ -66,32 +66,74 @@ If you want very small bundle, use ```gzip```.
 
 ## Usage
 
-### HTML
+```typescript
+// the module settings
+@NgModule({
+    imports: [
+        CompileModule.forRoot({
+            module: {
+                schemas: [CUSTOM_ELEMENTS_SCHEMA]
+            }
+        })
+    ],
+    declarations: [
+        Page,
+    ],
+    providers: [
+    ],
+    bootstrap: [ Page ]
+})
+export class Module { };
+```
   
 ```html
- <div #container></div>
- <div   [p3x-compile]="string" 
-        [p3x-compile-ctx]="youGetAContextToDoWithItAnything"
-        [p3x-compile-imports]="importsLikeMaterialEtcArray">        
-</div>
+ <div *ngIf="true" [p3x-compile]="data" [p3x-compile-ctx]="this"></div>
 ```
 
-### Options
-The templates are cached.
-
 ```typescript
-export interface CompileOptions {
-    template: string;
-    container: ViewContainerRef;
-    imports?: Array<Type<any> | ModuleWithProviders | any[]>;
-    context?: any,
-    onCompiled?: Function,
-    onError?: Function;
+// a page example
+export class Page {
+
+    data: string = "<div (click)="context.alert()">It is working</div>";
+
+    alert() {
+        alert('ok');
+    }
 }
 ```
 
-### Example
-Check out the example, here [test/angular-webpack/angular/page.ts](https://github.com/patrikx3/angular-compile-html/blob/master/test/angular-webpack/angular/page.ts).
+#### Actual used dynamic compiler
+I use a dynamic Markdown page with ```p3x-angular-compile```:
+[Module](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/module.ts) , [Example page](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
+
+#### Service
+[Please refer to use an a service](https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts)
+
+### Options
+[Reference for the Angular module settings.](
+https://github.com/angular/angular/blob/master/packages/core/src/metadata/ng_module.ts)
+
+The templates are cached.
+```typescript
+export interface CompileOptions {   
+    // cached by template
+    template: string;
+    container: ViewContainerRef;
+    context?: any,
+    
+    // you can customize here any you want to
+    // CommonModule, BrowserModule are auto added 
+    // (like *ngIf and angular default directives)
+    // though CompileModule.forRoot is usually enough
+    // so you do not need to use it
+    module?: NgModule;
+    
+    onCompiled?: Function,
+    onError?: Function;
+
+}
+```
+
 
 ### Deployed example
 [Corifeus Pages (JIT + AOT at once)](https://pages.corifeus.tk)
@@ -116,7 +158,7 @@ grunt run|default
 [//]: #@corifeus-footer
 
 ---
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.336-32
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.374-40
 
 [Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
 

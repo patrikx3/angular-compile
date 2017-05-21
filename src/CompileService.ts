@@ -6,8 +6,11 @@ import {
     ViewContainerRef,
     ModuleWithProviders,
     Type,
+    Optional
 } from '@angular/core';
 
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
 export interface CompileOptions {
     template: string;
@@ -16,17 +19,28 @@ export interface CompileOptions {
     context?: any,
     onCompiled?: Function,
     onError?: Function;
+    module?: NgModule;
 }
 
-
 const cache : any = {};
+
+export class CompileServiceConfig {
+    module: NgModule
+}
+
+let SingletonDefaultModule: NgModule;
 
 @Injectable()
 export class CompileService  {
 
+
     constructor(
         private compiler: Compiler,
+        @Optional() config: CompileServiceConfig,
     ) {
+        if (config !== undefined) {
+            SingletonDefaultModule = config.module;
+        }
     }
 
     public async compile(opts: CompileOptions) {
@@ -58,10 +72,30 @@ export class CompileService  {
             class TemplateComponent {
                 context: any
             }
-            @NgModule({
-                imports: opts.imports,
-                declarations: [TemplateComponent]
-            })
+
+            let module : NgModule;
+            if (opts.module !== undefined) {
+                module = Object.assign({}, opts.module);
+            } else {
+                module = Object.assign({}, SingletonDefaultModule) || {
+//                 imports: opts.imports,
+                };
+            }
+            module.imports = module.imports || [];
+            module.imports.push( CommonModule );
+            module.imports.push( BrowserModule );
+            if (opts.imports !== undefined) {
+                module.imports = module.imports.concat(opts.imports)
+            }
+            if (module.declarations === undefined) {
+                module.declarations = [
+                    TemplateComponent
+                ];
+            } else {
+                module.declarations.push(TemplateComponent);
+            }
+
+            @NgModule(module)
             class TemplateModule {
             }
             const component = await this.compiler.compileModuleAndAllComponentsAsync(TemplateModule);
