@@ -35,7 +35,7 @@ module.exports = (grunt) => {
 
     grunt.registerTask('coverage', 'karma:cory-angular');
 
-    grunt.registerTask('publish', ['cory-replace', 'clean', 'cory-npm', 'cory-publish-angular']);
+    grunt.registerTask('publish', ['cory-replace', 'cory-npm', 'cory-publish-angular']);
 
    //cori-test:angular-protractor
    // cori-test:angular-karma

@@ -72,7 +72,8 @@ If you want very small bundle, use ```gzip```.
     imports: [
         CompileModule.forRoot({
             module: {
-                schemas: [CUSTOM_ELEMENTS_SCHEMA]
+                schemas: [CUSTOM_ELEMENTS_SCHEMA],
+                declarations: [MyDynamicElement ]
             }
         })
     ],
@@ -158,7 +159,7 @@ grunt run|default
 [//]: #@corifeus-footer
 
 ---
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.381-44
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.441-62
 
 [Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
 

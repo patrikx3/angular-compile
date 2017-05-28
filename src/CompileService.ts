@@ -66,48 +66,54 @@ export class CompileService  {
             return cache[cacheKey];
         }
 
-        cache[cacheKey] = new Promise(async(resolve) => {
-            @Component({
-                template: opts.template
-            })
-            class TemplateComponent {
-                context: any
-            }
+        cache[cacheKey] = (async() => {
 
-            let module : NgModule = {};
-            if (opts.module !== undefined) {
-                module = Object.assign({}, opts.module);
-            } else if (SingletonDefaultModule !== undefined && SingletonDefaultModule !== null) {
-                module = Object.assign({}, SingletonDefaultModule);
-            }
-            module.imports = module.imports || [];
-            module.imports.push( CommonModule );
-            module.imports.push( BrowserModule );
-            if (opts.imports !== undefined) {
-                module.imports = module.imports.concat(opts.imports)
-            }
-            if (module.declarations === undefined) {
-                module.declarations = [
-                    TemplateComponent
-                ];
-            } else {
-                module.declarations.push(TemplateComponent);
-            }
+            try {
+                @Component({
+                    template: opts.template
+                })
+                class TemplateComponent {
+                    context: any
+                }
 
-            @NgModule(module)
-            class TemplateModule {
-            }
-            const component = await this.compiler.compileModuleAndAllComponentsAsync(TemplateModule);
-            const factory = component.componentFactories.find((comp) =>
-                comp.componentType === TemplateComponent
-            );
-            if (opts.onCompiled) {
-                opts.onCompiled(component);
-            }
-            cache[cacheKey] = factory;
+                let module : NgModule = {};
+                if (opts.module !== undefined) {
+                    module = Object.assign({}, opts.module);
+                } else if (SingletonDefaultModule !== undefined && SingletonDefaultModule !== null) {
+                    module = Object.assign({}, SingletonDefaultModule);
+                }
+                module.imports = module.imports || [];
+                module.imports.push( CommonModule );
+                module.imports.push( BrowserModule );
+                if (opts.imports !== undefined) {
+                    module.imports = module.imports.concat(opts.imports)
+                }
+                if (module.declarations === undefined) {
+                    module.declarations = [
+                        TemplateComponent
+                    ];
+                } else {
+                    module.declarations.push(TemplateComponent);
+                }
 
-            resolve(factory);
-        })
+                @NgModule(module)
+                class TemplateModule {
+                }
+                const component = await this.compiler.compileModuleAndAllComponentsAsync(TemplateModule);
+                const factory = component.componentFactories.find((comp) =>
+                    comp.componentType === TemplateComponent
+                );
+                cache[cacheKey] = factory;
+                if (opts.onCompiled) {
+                    opts.onCompiled(component);
+                }
+                return factory;
+            } catch (e) {
+                delete cache[cacheKey];
+                throw e;
+            }
+        })();
+
         return cache[cacheKey];
     }
 }
