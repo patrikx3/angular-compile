@@ -12,6 +12,8 @@ import {
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { cloneDeep } from 'lodash';
+
 export interface CompileOptions {
     template: string;
     container: ViewContainerRef;
@@ -78,9 +80,9 @@ export class CompileService  {
 
                 let module : NgModule = {};
                 if (opts.module !== undefined) {
-                    module = Object.assign({}, opts.module);
+                    module = cloneDeep(opts.module);
                 } else if (SingletonDefaultModule !== undefined && SingletonDefaultModule !== null) {
-                    module = Object.assign({}, SingletonDefaultModule);
+                    module = cloneDeep(SingletonDefaultModule);
                 }
                 module.imports = module.imports || [];
                 module.imports.push( CommonModule );
@@ -95,7 +97,6 @@ export class CompileService  {
                 } else {
                     module.declarations.push(TemplateComponent);
                 }
-
                 @NgModule(module)
                 class TemplateModule {
                 }

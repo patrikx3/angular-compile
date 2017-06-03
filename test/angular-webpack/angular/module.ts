@@ -15,7 +15,10 @@ import {
         BrowserModule,
         CompileModule.forRoot({
             module: {
-                schemas: [CUSTOM_ELEMENTS_SCHEMA]
+                schemas: [CUSTOM_ELEMENTS_SCHEMA],
+                declarations: [],
+                imports: [],
+
             }
         })
     ],

@@ -6,13 +6,18 @@ import {
     OnInit,
     NgModule,
     CUSTOM_ELEMENTS_SCHEMA,
+    OnDestroy
 } from '@angular/core';
 
 import {CompileService } from '../../../src';
 
 @Component({
     selector: 'p3x-compile-test',
-    template: `    
+    template: `
+        <div [p3x-compile]="data3" [p3x-compile-ctx]="this"></div>
+        <div [p3x-compile]="data3" [p3x-compile-ctx]="this"></div>
+        <div [p3x-compile]="data3" [p3x-compile-ctx]="this"></div>
+
     <div #container></div>
 
     <div #container2></div>
@@ -35,10 +40,11 @@ import {CompileService } from '../../../src';
     Visible
     <div *ngIf="true" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
 
+        
 `
 })
 @Injectable()
-export class Page implements OnInit {
+export class Page implements OnInit, OnDestroy {
 
     @ViewChild('container', {read: ViewContainerRef}) container: ViewContainerRef;
     @ViewChild('container2', {read: ViewContainerRef}) container2: ViewContainerRef;
@@ -46,8 +52,12 @@ export class Page implements OnInit {
     data1: string;
     data2: string;
 
+    data3: string = 'here content of your file';
+
     counter1 : number = 0;
     counter2 : number = 0;
+
+    interval: any;
 
     constructor( private compileHtmlService: CompileService ) {
     }
@@ -91,6 +101,30 @@ export class Page implements OnInit {
     ngOnInit() {
         this.update1();
         this.update2();
+
+        let is = false;
+        let newData = '<span>123</span>';
+        let defaultData = '';
+        let count = 0;
+        /*
+        this.interval = setInterval(() => {
+            is = !is;
+            if (is) {
+                count++;
+                defaultData = defaultData + newData;
+                this.data3 = defaultData + defaultData;
+                if (count > 10) {
+                    count = 0;
+                    defaultData = newData;
+                }
+            } else {
+                this.data3 = '<div>321</div>'
+            }
+        }, 1000)
+        */
     }
 
+    ngOnDestroy() {
+        clearInterval(this.interval);
+    }
 }
