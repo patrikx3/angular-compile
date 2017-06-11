@@ -25,7 +25,7 @@ Besides, when I can support, please note, I cannot support old versions, only th
    
 ### Built on Node 
 ``` 
-v8.0.0
+v8.1.0
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -34,7 +34,7 @@ Install NodeJs:
 https://nodejs.org/en/download/package-manager/    
   
 ### Updating
-Since, I work full time, I can work only on weekends and Github updates are released only Sundays. Minor errors can be released any time, but reflects will be shown only in NPM.     
+Since, I work full time, I can work only on weekends. Github updates are released only Sundays. Minor errors can be released any time, but reflects will be shown only in NPM.     
   
 # Description  
 
@@ -43,8 +43,6 @@ Since, I work full time, I can work only on weekends and Github updates are rele
 
 # Use case
 Dynamic compile components by a string template for Angular. You can provide a context, that you can use with anything (for clicking for free etc..) 
-
-**The old ```angular-compile-html```.**
 
 ## NPM & Version
 It is a ```CommonJS``` bundle.
@@ -164,7 +162,7 @@ grunt run|default
 [//]: #@corifeus-footer
 
 ---
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.472-12
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.483-19
 
 [Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
 
