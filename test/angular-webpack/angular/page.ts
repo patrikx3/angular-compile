@@ -14,6 +14,11 @@ import {CompileService } from '../../../src';
 @Component({
     selector: 'p3x-compile-test',
     template: `
+        
+        <cory-mat-loading [cory-visible]="true">sss</cory-mat-loading>
+        
+        <div [p3x-compile]="data4" [p3x-compile-ctx]="this"></div>
+        
         <div [p3x-compile]="data3" [p3x-compile-ctx]="this"></div>
         <div [p3x-compile]="data3" [p3x-compile-ctx]="this"></div>
         <div [p3x-compile]="data3" [p3x-compile-ctx]="this"></div>
@@ -53,6 +58,8 @@ export class Page implements OnInit, OnDestroy {
     data2: string;
 
     data3: string = 'here content of your file';
+
+    data4: string = '<cory-mat-loading [cory-visible]="true"></cory-mat-loading>'
 
     counter1 : number = 0;
     counter2 : number = 0;

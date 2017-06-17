@@ -73,10 +73,18 @@ If you want very small bundle, use ```gzip```.
 // the module settings
 @NgModule({
     imports: [
+        // multiple directives in a shared module like this
+        CorifeusWebMaterialModule,
+        
         CompileModule.forRoot({
             module: {
                 schemas: [CUSTOM_ELEMENTS_SCHEMA],
-                declarations: [MyDynamicElement ]
+                declarations: [MyDynamicElement ],
+                // though you are better a shared component like
+                imports: [
+                    CorifeusWebMaterialModule
+                ]
+                
             }
         })
     ],
@@ -158,11 +166,19 @@ grunt run|default
 
 
 
+# Errors
+
+## Type x is part of the declarations of 2 modules
+ 
+Basically, you need a shared component.
+ 
+https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-part-of-the-declarations-of-2-modules-par
+
 
 [//]: #@corifeus-footer
 
 ---
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.483-19
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.492-22
 
 [Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
 
