@@ -18,7 +18,7 @@ This is an open source project. Just code.
    
 ### Built on Node 
 ``` 
-v8.1.2
+v8.1.3
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -168,9 +168,9 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 [//]: #@corifeus-footer
 
 ---
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.1.500-28
+
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.2.509-38
 
 [Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
-
 
 [//]: #@corifeus-footer:end

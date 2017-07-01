@@ -5,11 +5,12 @@ filter:
     - node_modules/*
 
 build:
-  environment:
-    node: 8.1.0
 
   dependencies:
     before:
+      - export LATEST=$(nvm ls-remote | tail -1)
+      - nvm install $LATEST
+#      - nvm use $LATEST
       - npm install grunt-cli -g
       - npm install
       - node_modules/protractor/bin/webdriver-manager update
