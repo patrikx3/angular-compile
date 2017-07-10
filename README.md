@@ -52,7 +52,7 @@ It is not working out of the box (the default is either JIT or AOT, not both), b
 The solution can be architect with the ```@angular/compiler``` and the ```awesome-typescript-loader``` together. A miracle!
 
 Example here:
-[More info about AOT + JIT](https://pages.corifeus.tk/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
+[More info about AOT + JIT](https://pages.corifeus.com/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
 
 ### Size
 If you want very small bundle, use ```gzip```.
@@ -138,7 +138,7 @@ export interface CompileOptions {
 
 
 ### Deployed example
-[Corifeus Pages (JIT + AOT at once)](https://pages.corifeus.tk)
+[Corifeus Pages (JIT + AOT at once)](https://pages.corifeus.com)
   
 [https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
@@ -169,8 +169,8 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.tk/angular-compile) Build v4.2.509-38
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v4.2.518-46
 
-[Corifeus](http://www.corifeus.tk) by [Patrik Laszlo](http://patrikx3.tk)
+[Corifeus](http://www.corifeus.com) by [Patrik Laszlo](http://patrikx3.com)
 
 [//]: #@corifeus-footer:end
