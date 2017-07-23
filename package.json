@@ -1,48 +1,48 @@
 {
-    "name": "p3x-angular-compile",
-    "version": "4.2.523-52",
-    "corifeus": {
-        "prefix": "p3x-",
-        "publish": true,
-        "type": "p3x",
-        "code": "Wheel"
-    },
-    "description": "Angular Dynamic Compile service and directive",
-    "main": "dist/index.js",
-    "typings": "dist/index",
-    "scripts": {
-        "test": "grunt"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/patrikx3/angular-compile.git"
-    },
-    "keywords": [
-        "p3x",
-        "angular",
-        "ng",
-        "compile",
-        "html",
-        "angular",
-        "dynamic",
-        "aot"
-    ],
-    "author": "Patrik Laszlo <alabard@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/patrikx3/angular-compile/issues"
-    },
-    "homepage": "https://pages.corifeus.com/angular-compile",
-    "devDependencies": {
-        "corifeus-builder-angular": "^4.3.465-67",
-        "corifeus-web": "^4.2.436-58",
-        "corifeus-web-material": "^4.2.496-70"
-    },
-    "dependencies": {
-        "@types/lodash": "^4.14.69",
-        "lodash": "^4.17.4"
-    },
-    "engines": {
-        "node": ">=7.8.0"
-    }
+  "name": "p3x-angular-compile",
+  "version": "4.3.0-53",
+  "corifeus": {
+    "prefix": "p3x-",
+    "publish": true,
+    "type": "p3x",
+    "code": "Wheel"
+  },
+  "description": "Angular Dynamic Compile service and directive",
+  "main": "dist/index.js",
+  "typings": "dist/index",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrikx3/angular-compile.git"
+  },
+  "keywords": [
+    "p3x",
+    "angular",
+    "ng",
+    "compile",
+    "html",
+    "angular",
+    "dynamic",
+    "aot"
+  ],
+  "author": "Patrik Laszlo <alabard@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrikx3/angular-compile/issues"
+  },
+  "homepage": "https://pages.corifeus.com/angular-compile",
+  "devDependencies": {
+    "corifeus-builder-angular": "^4.3.469-71",
+    "corifeus-web": "^4.3.1-60",
+    "corifeus-web-material": "^4.3.3-73"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.71",
+    "lodash": "^4.17.4"
+  },
+  "engines": {
+    "node": ">=7.8.0"
+  }
 }
