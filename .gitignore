@@ -1,9 +1,5 @@
 /node_modules
 /build
-/yarn.lock
-/package-lock.json
-
 /dist
-
 .idea/workspace.xml
 .idea/tasks.xml
