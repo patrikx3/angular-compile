@@ -5,8 +5,8 @@ filter:
     - node_modules/*
 
 build:
-	cache:
-		disabled: true
+  cache:
+    disabled: true
 
   dependencies:
     before:
