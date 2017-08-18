@@ -1,11 +1,12 @@
 {
   "name": "p3x-angular-compile",
-  "version": "4.3.25-78",
+  "version": "4.3.38-91",
   "corifeus": {
     "prefix": "p3x-",
     "publish": true,
     "type": "p3x",
-    "code": "Wheel"
+    "code": "Wheel",
+    "nodejs": "v8.4.0"
   },
   "description": "Angular Dynamic Compile service and directive",
   "main": "dist/index.js",
@@ -34,12 +35,12 @@
   },
   "homepage": "https://pages.corifeus.com/angular-compile",
   "devDependencies": {
-    "corifeus-builder-angular": "^4.3.495-101",
-    "corifeus-web": "^4.3.26-84",
-    "corifeus-web-material": "^4.3.29-98"
+    "corifeus-builder-angular": "^4.3.512-116",
+    "corifeus-web": "^4.3.41-98",
+    "corifeus-web-material": "^4.3.44-112"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.72",
+    "@types/lodash": "^4.14.73",
     "lodash": "^4.17.4"
   },
   "engines": {
