@@ -169,7 +169,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v4.3.70-107
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v4.3.73-113
 
 [Corifeus](http://www.corifeus.com) by [Patrik Laszlo](http://patrikx3.com)
 
