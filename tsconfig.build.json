@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "noStrictGenericChecks": true,
     "baseUrl": ".",
     "declaration": true,
     "stripInternal": true,

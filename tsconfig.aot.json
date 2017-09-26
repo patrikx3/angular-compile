@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "noStrictGenericChecks": true,
+    "skipLibCheck": true,
     "outDir": "build/aot",
     "target": "es5",
     "module": "commonjs",

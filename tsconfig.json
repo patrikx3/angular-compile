@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "noStrictGenericChecks": true,
+    "skipLibCheck": true,
     "baseUrl": "./",
     "target": "es5",
     "module": "commonjs",
