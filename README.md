@@ -171,8 +171,9 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v4.4.61-147
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v4.4.83-167 
 
-[Corifeus](http://www.corifeus.com) by [Patrik Laszlo](http://patrikx3.com)
+[![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) 
+ 
 
 [//]: #@corifeus-footer:end
