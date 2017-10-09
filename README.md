@@ -60,6 +60,8 @@ If you want very small bundle, use ```gzip```.
 ## Usage
 
 ```typescript
+import { CompileModule} from "p3x-angular-compile"
+
 // the module settings
 @NgModule({
     imports: [
