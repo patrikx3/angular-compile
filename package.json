@@ -40,7 +40,7 @@
     "corifeus-web-material": "^4.4.125-218"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.78",
+    "@types/lodash": "^4.14.79",
     "lodash": "^4.17.4"
   },
   "engines": {
