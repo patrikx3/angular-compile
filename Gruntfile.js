@@ -1,5 +1,7 @@
 module.exports = (grunt) => {
 
+    grunt.option('cory-loader-off', true);
+
     //node node_modules/protractor/bin/webdriver-manager update
     const builder = require('corifeus-builder-angular');
 /*
@@ -25,7 +27,7 @@ module.exports = (grunt) => {
 
     grunt.registerTask('run', builder.config.task.run.angular);
 
-    grunt.registerTask('default',  builder.config.task.build.angularAotJit);
+    grunt.registerTask('default',  builder.config.task.build.angular);
 
     grunt.registerTask('aot', builder.config.task.build.angularAot);
 

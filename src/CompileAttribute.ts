@@ -1,19 +1,37 @@
 import {
-    Directive,
+    Component,
     Input,
     Injectable,
-    ViewContainerRef,
     OnInit,
     OnChanges,
     SimpleChanges,
     Type,
     ModuleWithProviders,
     NgModule,
+    Compiler,
+    NgModuleFactory,
 } from '@angular/core';
 
-import { CompileService } from './CompileService';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 
-@Directive({ selector: '[p3x-compile]' })
+//import { CompileService } from './CompileService';
+
+let SingletonDefaultModule: NgModule;
+
+import { cloneDeep } from 'lodash';
+
+//const cache : any = {};
+
+@Component({
+    selector: '[p3x-compile]',
+    template: `
+        <span *ngIf="html !== undefined && html !== null && html.trim() !== '' && dynamicComponent !== undefined && dynamicModule !== undefined">
+        <ng-container *ngComponentOutlet="dynamicComponent;
+                            ngModuleFactory: dynamicModule;"></ng-container>
+        </span>
+`
+})
 @Injectable()
 export class CompileAttribute implements OnInit, OnChanges{
 
@@ -23,6 +41,9 @@ export class CompileAttribute implements OnInit, OnChanges{
     @Input('p3x-compile-ctx')
     context:  any;
 
+    dynamicComponent: any;
+    dynamicModule: NgModuleFactory<any> | any;
+
     @Input('p3x-compile-module')
     module:  NgModule;
 
@@ -31,9 +52,26 @@ export class CompileAttribute implements OnInit, OnChanges{
 
     async update() {
         if (this.html === undefined || this.html.trim() === '') {
-            this.container.clear();
+//            this.container.clear();
+            this.dynamicComponent = undefined;
+            this.dynamicModule = undefined;
             return;
         }
+/*
+        const cacheKey = this.html;
+
+        if (Object.keys(cache).indexOf(cacheKey) > -1) {
+            return cache[cacheKey];
+        }
+*/
+        try {
+            this.dynamicComponent = this.createNewComponent(this.html, this.context);
+            this.dynamicModule = this.compiler.compileModuleSync(this.createComponentModule(this.dynamicComponent));
+//            cache[cacheKey] = this.dynamicComponent;
+        } catch (e) {
+            console.error(e);
+        }
+        /*
         await this.service.compile({
             template: this.html,
             container: this.container,
@@ -41,19 +79,65 @@ export class CompileAttribute implements OnInit, OnChanges{
             imports: this.imports,
             module: this.module
         })
+        */
     }
 
-    ngOnInit() {
+    private createComponentModule (componentType: any) {
+        let module : NgModule = {};
+
+        if (this.module !== undefined) {
+            module = cloneDeep(this.module);
+        } else if (SingletonDefaultModule !== undefined && SingletonDefaultModule !== null) {
+            module = cloneDeep(SingletonDefaultModule);
+        }
+        module.imports = module.imports || [];
+        module.imports.push( CommonModule );
+//        module.imports.push( BrowserModule );
+        if (this.imports !== undefined) {
+            module.imports = module.imports.concat(this.imports)
+        }
+        if (module.declarations === undefined) {
+            module.declarations = [
+                componentType
+            ];
+        } else {
+            module.declarations.push(componentType);
+        }
+        module.entryComponents = [
+            componentType
+        ];
+        @NgModule(module)
+        class RuntimeComponentModule {
+        }
+        return RuntimeComponentModule;
+    }
+
+
+    private createNewComponent (html:string, context: any) {
+
+        @Component({
+            selector: 'dynamic-component',
+            template: html
+        })
+        class DynamicComponent {
+            context: any = context;
+        }
+
+        return DynamicComponent;
+    }
+
+    async ngOnInit() {
         this.update();
     }
 
-    ngOnChanges(changes: SimpleChanges) {
+    async ngOnChanges(changes: SimpleChanges) {
         //fixme only update with the required changes
         this.update();
     }
 
     constructor(
-        private container: ViewContainerRef,
-        private service: CompileService
+//        private container: ViewContainerRef,
+//        private service: CompileService
+        private compiler: Compiler
     ) {}
 }

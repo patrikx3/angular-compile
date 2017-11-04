@@ -1,3 +1,4 @@
+/*
 import {
     Component,
     NgModule,
@@ -118,3 +119,4 @@ export class CompileService  {
         return cache[cacheKey];
     }
 }
+*/

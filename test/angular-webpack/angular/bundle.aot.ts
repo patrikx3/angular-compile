@@ -3,7 +3,7 @@ enableProdMode();
 
 //import 'corifeus-web/src/bundle';
 import { platformBrowser }    from '@angular/platform-browser';
-import {ModuleNgFactory} from '../../../build/aot/test/angular-webpack/angular/module.ngfactory';
+import {ModuleNgFactory} from './module.ngfactory';
 
 platformBrowser().bootstrapModuleFactory(ModuleNgFactory);
 

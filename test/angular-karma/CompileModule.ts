@@ -1,29 +1,34 @@
 // you need unlinked npm-s!!!
-
 import { TestBed } from '@angular/core/testing';
 import { inject } from '@angular/core/testing';
 
-import {CompileAttribute, CompileService  } from '../../src'
-describe('CompileHtml', () => {
-    let service: CompileService;
+import { CommonModule } from '@angular/common';
+import { BrowserModule }  from '@angular/platform-browser';
+
+import {CompileAttribute  } from '../../src/CompileAttribute'
+describe('CompileModule', () => {
+    let attribute: CompileAttribute;
     beforeEach(() => {
         TestBed.configureTestingModule({
             imports: [
+                CommonModule,
+                BrowserModule
             ],
             declarations: [
                 CompileAttribute
             ],
             providers: [
-                CompileService
+
             ],
         });
     });
 
-    beforeEach(inject([CompileService], (_service: CompileService) => {
-        service = _service;
+    /*
+    beforeEach(inject([CompileAttribute], (_attribute: CompileAttribute) => {
+        attribute = _attribute;
     }));
-
-    it ('CompileService', (/*done*/) => {
+*/
+    it ('CompileAttribute', (/*done*/) => {
 //        expect(service instanceof CompileService).toBeTruthy();
         /*
         setTimeout(()=> {

@@ -7,7 +7,7 @@
 ---
 
  
-# Angular Dynamic Compile service and directive  
+# Angular Dynamic Compile service and directive v5.0.30-195  
 
 This is an open source project. Just code.
 
@@ -31,9 +31,6 @@ https://nodejs.org/en/download/package-manager/
                         
 [//]: #@corifeus-header:end
 
-# Warning
-
-It is working only up to ```Angular 4.x.x```. I am working on the ```Angular 5``` solution. Hold tight. It is coming, I already use it in [https://pages.corifeus.com](https://pages.corifeus.com).
 
 # Use case
 Dynamic compile components by a string template for Angular. You can provide a context, that you can use with anything (for clicking for free etc..) 
@@ -41,6 +38,11 @@ Dynamic compile components by a string template for Angular. You can provide a c
 ## NPM & Version
 It is a ```CommonJS``` bundle.
 The version reflects the Angular version (```AngularMajor.AngularMinor.Build-Commit```).
+
+You can find out your proper version with this command:
+```bash
+npm show p3x-angular-compile versions --json
+```
 
 ## Install
   
@@ -51,11 +53,18 @@ yarn add p3x-angular-compile
 ```
 
 ## AOT + JIT
+
+### Angular 5.x.x +
+
+For now we cannot use AOT + JIT at once. It is too new, we will need more releases and new functions that are removed.
+
+### Angular 4.x.x
+
 It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 folds faster. The ``@ngtools/webpack`` is AOT and the ```awesome-typescript-loader``` is JIT only. 
   
 The solution can be architect with the ```@angular/compiler``` and the ```awesome-typescript-loader``` together. A miracle!
 
-Example here:
+Example here (since I am using Angular 5 not, it is not AOT + JIT anymore, but if you are on Angular 4, you can do it):
 [More info about AOT + JIT](https://pages.corifeus.com/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
 
 ### Size
@@ -72,6 +81,13 @@ import { CompileModule} from "p3x-angular-compile"
         // multiple directives in a shared module like this
         CorifeusWebMaterialModule,
         
+        // usually it is enough
+        CompileModule,
+        
+        // usually it is not required anymore
+        // since Angular 5 changed
+        // but if there is something missing,
+        // you can add in as before
         CompileModule.forRoot({
             module: {
                 schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -93,9 +109,9 @@ import { CompileModule} from "p3x-angular-compile"
 })
 export class Module { };
 ```
-  
+    
 ```html
- <div *ngIf="true" [p3x-compile]="data" [p3x-compile-ctx]="this"></div>
+ <div *ngIf="true" [p3x-compile]="data" [p3x-compile-ctx]="this" [p3x-compile-module]="usuallyNotRequired" [p3x-compile-imports]="usuallyNotRequired"></div>
 ```
 
 ```typescript
@@ -114,14 +130,11 @@ export class Page {
 I use a dynamic Markdown page with ```p3x-angular-compile```:
 [Module](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/module.ts) , [Example page](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
+<!--
+
 #### Service
 [Please refer to use an a service](https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts)
 
-### Options
-[Reference for the Angular module settings.](
-https://github.com/angular/angular/blob/master/packages/core/src/metadata/ng_module.ts)
-
-The templates are cached.
 ```typescript
 export interface CompileOptions {   
     // cached by template
@@ -142,9 +155,23 @@ export interface CompileOptions {
 }
 ```
 
+-->
+
+### Options
+[Reference for the Angular module settings.](
+https://github.com/angular/angular/blob/master/packages/core/src/metadata/ng_module.ts)
+
+<!--
+The templates are cached.
+-->
 
 ### Deployed example
+<!--
 [Corifeus Pages (JIT + AOT at once)](https://pages.corifeus.com)
+  -->
+
+[Corifeus Pages (JIT)](https://pages.corifeus.com)
+
   
 [https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
@@ -175,7 +202,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v4.4.122-190 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.0.30-195 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=LFRV89WPRMMVE&lc=HU&item_name=Patrik%20Laszlo&item_number=patrikx3&currency_code=HUF&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) 
 

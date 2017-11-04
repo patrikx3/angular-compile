@@ -15,7 +15,10 @@ import {
 @NgModule({
     imports: [
         BrowserModule,
+        CompileModule,
 //        CorifeusMaterialModule,
+
+/*
         CompileModule.forRoot({
             module: {
                 schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -26,6 +29,7 @@ import {
 
             }
         })
+*/
     ],
     declarations: [
         Page,

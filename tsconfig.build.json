@@ -28,6 +28,8 @@
   ],
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,
+    "annotationsAs": "decorators",
+    "preserveWhitespaces": false,
     "flatModuleId": "p3x-angular-compile",
     "annotateForClosureCompiler": true
   }
