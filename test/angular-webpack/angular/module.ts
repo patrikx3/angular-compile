@@ -4,7 +4,7 @@ import {
 } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 
-import { CorifeusMaterialModule } from 'corifeus-web-material'
+//import { CorifeusMaterialModule } from 'corifeus-web-material'
 
 import {Page } from './page';
 import {
@@ -15,13 +15,13 @@ import {
 @NgModule({
     imports: [
         BrowserModule,
-        CorifeusMaterialModule,
+//        CorifeusMaterialModule,
         CompileModule.forRoot({
             module: {
                 schemas: [CUSTOM_ELEMENTS_SCHEMA],
                 declarations: [],
                 imports: [
-                    CorifeusMaterialModule
+//                    CorifeusMaterialModule
                 ],
 
             }

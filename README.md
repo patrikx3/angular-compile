@@ -18,7 +18,7 @@ This is an open source project. Just code.
    
 ### Built on Node 
 ``` 
-v8.9.0
+v9.0.0
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -30,6 +30,10 @@ https://nodejs.org/en/download/package-manager/
 
                         
 [//]: #@corifeus-header:end
+
+# Warning
+
+It is working only up to ```Angular 4.x.x```. I am working on the ```Angular 5``` solution. Hold tight. It is coming, I already use it in [https://pages.corifeus.com](https://pages.corifeus.com).
 
 # Use case
 Dynamic compile components by a string template for Angular. You can provide a context, that you can use with anything (for clicking for free etc..) 
@@ -171,7 +175,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v4.4.110-186 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v4.4.122-190 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=LFRV89WPRMMVE&lc=HU&item_name=Patrik%20Laszlo&item_number=patrikx3&currency_code=HUF&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) 
 
