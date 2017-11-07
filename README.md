@@ -7,7 +7,7 @@
 ---
 
  
-# Angular Dynamic Compile service and directive v5.0.36-198  
+# Angular Dynamic Compile component, that turns a string into a compiled component v5.0.43-202  
 
 This is an open source project. Just code.
 
@@ -57,6 +57,16 @@ yarn add p3x-angular-compile
 ### Angular 5.x.x +
 
 For now we cannot use AOT + JIT at once. It is too new, we will need more releases and new functions that are removed.
+
+#### Info
+https://github.com/angular/angular/issues/20156
+
+On the bottom, you can see:
+```text
+To reduce the payload we do not ship the compiler in AoT
+```
+
+So right now, it is not possible.
 
 ### Angular 4.x.x
 
@@ -202,7 +212,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.0.36-198 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.0.43-202 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=LFRV89WPRMMVE&lc=HU&item_name=Patrik%20Laszlo&item_number=patrikx3&currency_code=HUF&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) 
 
