@@ -41,6 +41,9 @@ export class CompileAttribute implements OnInit, OnChanges{
     @Input('p3x-compile-ctx')
     context:  any;
 
+    @Input('p3x-error-handler')
+    errorHandler: (ex: any) => void = console.error;
+
     dynamicComponent: any;
     dynamicModule: NgModuleFactory<any> | any;
 
@@ -69,7 +72,7 @@ export class CompileAttribute implements OnInit, OnChanges{
             this.dynamicModule = this.compiler.compileModuleSync(this.createComponentModule(this.dynamicComponent));
 //            cache[cacheKey] = this.dynamicComponent;
         } catch (e) {
-            console.error(e);
+            this.errorHandler(e);
         }
         /*
         await this.service.compile({
