@@ -30,7 +30,7 @@ import { cloneDeep } from 'lodash';
         <ng-container *ngComponentOutlet="dynamicComponent;
                             ngModuleFactory: dynamicModule;"></ng-container>
         </span>
-`
+    `
 })
 @Injectable()
 export class CompileAttribute implements OnInit, OnChanges{
@@ -60,13 +60,13 @@ export class CompileAttribute implements OnInit, OnChanges{
             this.dynamicModule = undefined;
             return;
         }
-/*
-        const cacheKey = this.html;
+        /*
+                const cacheKey = this.html;
 
-        if (Object.keys(cache).indexOf(cacheKey) > -1) {
-            return cache[cacheKey];
-        }
-*/
+                if (Object.keys(cache).indexOf(cacheKey) > -1) {
+                    return cache[cacheKey];
+                }
+        */
         try {
             this.dynamicComponent = this.createNewComponent(this.html, this.context);
             this.dynamicModule = this.compiler.compileModuleSync(this.createComponentModule(this.dynamicComponent));
@@ -141,6 +141,6 @@ export class CompileAttribute implements OnInit, OnChanges{
     constructor(
 //        private container: ViewContainerRef,
 //        private service: CompileService
-        private compiler: Compiler
+private compiler: Compiler
     ) {}
 }
