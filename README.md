@@ -124,7 +124,8 @@ export class Module { };
  <div *ngIf="true" 
  [p3x-compile]="data"
  [p3x-compile-ctx]="this"
- [p3x-compile-modul]="youCanConfigureTheCompileNgModuleForAngular5NotNeeded"
+ [p3x-compile-error-handler]="anyFunctionThatTakesAnExceptionObject"
+ [p3x-compile-module]="youCanConfigureTheCompileNgModuleForAngular5NotNeeded"
  [p3x-compile-imports]="ifForSomeReasonADirectiveIsNotWorkingYouCanAddInForAngular5NotNeeded"
  >     
 </div>
