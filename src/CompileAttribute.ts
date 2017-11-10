@@ -41,7 +41,7 @@ export class CompileAttribute implements OnInit, OnChanges{
     @Input('p3x-compile-ctx')
     context:  any;
 
-    @Input('p3x-error-handler')
+    @Input('p3x-compile-error-handler')
     errorHandler: (ex: any) => void = console.error;
 
     dynamicComponent: any;
