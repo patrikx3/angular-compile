@@ -124,7 +124,8 @@ export class Module { };
  <div *ngIf="true" 
  [p3x-compile]="data"
  [p3x-compile-ctx]="this"
- [p3x-compile-modul]="youCanConfigureTheCompileNgModule"
+ [p3x-compile-error-handler]="anyFunctionThatAcceptsAnException"
+ [p3x-compile-module]="youCanConfigureTheCompileNgModule"
  [p3x-compile-imports]="ifForSomeReasonADirectiveIsNotWorkingYouCanAddIn">     
 </div>
 ```
@@ -148,7 +149,7 @@ I use a dynamic Markdown page with ```p3x-angular-compile```:
 <!--
 
 #### Service
-[Please refer to use an a service](https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts)
+[Please refer to use as a service](https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts)
 
 ```typescript
 export interface CompileOptions {   
