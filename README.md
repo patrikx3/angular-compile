@@ -7,7 +7,7 @@
 ---
 
  
-# Angular Dynamic Compile component, that turns a string into a compiled component v5.0.45-206  
+# Angular Dynamic Compile component, that turns a string into a compiled component v5.0.47-208  
 
 This is an open source project. Just code.
 
@@ -120,12 +120,13 @@ import { CompileModule} from "p3x-angular-compile"
 export class Module { };
 ```
     
-```text
+```html
  <div *ngIf="true" 
  [p3x-compile]="data"
  [p3x-compile-ctx]="this"
- [p3x-compile-modul]="youCanConfigureTheCompileNgModule"
- [p3x-compile-imports]="ifForSomeReasonADirectiveIsNotWorkingYouCanAddIn">     
+ [p3x-compile-modul]="youCanConfigureTheCompileNgModuleForAngular5NotNeeded"
+ [p3x-compile-imports]="ifForSomeReasonADirectiveIsNotWorkingYouCanAddInForAngular5NotNeeded"
+ >     
 </div>
 ```
 
@@ -217,7 +218,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.0.45-206 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.0.47-208 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=LFRV89WPRMMVE&lc=HU&item_name=Patrik%20Laszlo&item_number=patrikx3&currency_code=HUF&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) 
 
