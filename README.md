@@ -99,6 +99,7 @@ import { CompileModule} from "p3x-angular-compile"
         // but if there is something missing,
         // you can add in as before
         CompileModule.forRoot({
+            // module = NgModule
             module: {
                 schemas: [CUSTOM_ELEMENTS_SCHEMA],
                 declarations: [MyDynamicElement ],
