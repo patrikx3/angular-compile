@@ -1,6 +1,6 @@
 {
   "name": "p3x-angular-compile",
-  "version": "5.0.50-211",
+  "version": "5.0.52-212",
   "corifeus": {
     "prefix": "p3x-",
     "publish": true,
@@ -35,10 +35,10 @@
   },
   "homepage": "https://pages.corifeus.com/angular-compile",
   "devDependencies": {
-    "corifeus-builder-angular": "^5.0.36-234"
+    "corifeus-builder-angular": "^5.0.38-235"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.84",
+    "@types/lodash": "^4.14.85",
     "lodash": "^4.17.4"
   },
   "engines": {
