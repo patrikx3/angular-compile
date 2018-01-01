@@ -29,6 +29,7 @@
   "exclude": [
     "node_modules",
     "src/angular/bundle.aot.ts",
-    "test/angular-webpack/angular/bundle.aot.ts"
+    "test/angular-webpack/angular/bundle.aot.ts",
+    "build/browser"
   ]
 }
