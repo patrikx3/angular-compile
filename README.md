@@ -7,11 +7,12 @@
 ---
 
  
-# Angular Dynamic Compile component, that turns a string into a compiled component v5.1.45-243  
+# Angular Dynamic Compile component, that turns a string into a compiled component v5.1.53-244  
 
 This is an open source project. Just code. If you like this code, please add a star in GitHub and you really like, you can donate as well. Thanks you so much!
 
-Travis is having issues, but with Scrutinizer it works 100%.
+Right now, Travis is giving errors (quota errors with parallel builds), though Scrutinizer is working 100% - building, code quality, coverage.
+
 
 Given, I have my own server, with dynamic IP address, it could happen that the server for about max 5 minutes can not be reachable for the dynamic DNS or very rarely I backup with Clonzilla the SSD or something with the electricity (too much hoovering or cleaning - but I worked on it, so should not happen again), but for some reason, it is not reachable please hang on for 5-30 minutes and it will be back for sure. 
 
@@ -232,7 +233,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.1.45-243 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.1.53-244 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=LFRV89WPRMMVE&lc=HU&item_name=Patrik%20Laszlo&item_number=patrikx3&currency_code=HUF&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
