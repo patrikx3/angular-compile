@@ -40,6 +40,15 @@ import {
 
         <h3>Data2 - This always visible</h3>
         <div *ngIf="true" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
+
+
+        <hr/>
+
+        <h3>Router Link</h3>
+        <div [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this"></div>
+
+        <button (click)="randomRouterLink()">Generate new router link</button>
+
     `
 })
 @Injectable()
@@ -55,6 +64,8 @@ export class Page implements OnInit, OnDestroy {
 
     interval: any;
 
+    dataRouterLink: string = ''
+
     constructor(
     //    private compileHtmlService: CompileService
     ) {
@@ -63,7 +74,7 @@ export class Page implements OnInit, OnDestroy {
     private update1() {
         this.counter1++;
         this.data1 = `
-<div>Service</div><a id="button-container" href="javascript:void(0);" (click)="context.update1()">Click me via a service!</a>
+<div>P3X Angular Compile</div><a id="button-container" href="javascript:void(0);" (click)="context.update1()">Click me via a angular compile!</a>
 <div id="counter-container">{{ context.counter1}}</div>
 `;
     }
@@ -71,15 +82,32 @@ export class Page implements OnInit, OnDestroy {
     private update2() {
         this.counter2++;
         this.data2 = `
-<div>Attribute</div><a id="button-attribute" href="javascript:void(0);" (click)="context.update2()">Click me via an attribute!</a>
+<div>Attribute</div><a id="button-attribute" href="javascript:void(0);" (click)="context.update2()">Click me via an other attribute!</a>
 <div id="counter-attribute">{{ context.counter2}}</div>
 `;
 
     }
 
+    chars: string = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    getRandomChar() {
+        return this.chars[Math.floor(Math.random() * (62 - 0)) + 0]
+    }
+
+    randomRouterLink() {
+        let counter = 0;
+        let randomString = '';
+        while (counter < 10) {
+            counter++;
+            randomString += this.getRandomChar();
+        }
+        this.dataRouterLink = `<a href="javascript:void(0)" routerLink="${randomString}">${randomString}</a>`
+    }
+
     ngOnInit() {
         this.update1();
         this.update2();
+        this.randomRouterLink()
         /*
                 let is = false;
                 let newData = '<span>123</span>';
