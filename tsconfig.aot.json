@@ -21,14 +21,14 @@
       "es2017"
     ]
   },
-  "includes": [
+  "include": [
     "src/angular/**/*",
     "test/angular-webpack/**/*"
   ],
   "exclude": [
-    "node_modules",
     "src/angular/bundle.ts",
     "test/angular-webpack/angular/bundle.ts",
+    "test/angular-karma",
     "build/browser"
   ],
   "angularCompilerOptions": {
