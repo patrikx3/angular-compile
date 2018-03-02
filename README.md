@@ -7,7 +7,7 @@
 ---
 
  
-# Angular Dynamic Compile component, that turns a string into a compiled component v5.2.62-280  
+# Angular Dynamic Compile component, that turns a string into a compiled component v5.2.68-284  
 
 This is an open source project. Just code. If you like this code, please add a star in GitHub and you really like, you can donate as well. Thanks you so much!
 
@@ -22,7 +22,7 @@ All my domains (patrikx3.com and corifeus.com) could have errors right now, sinc
    
 ### Built on Node 
 ``` 
-v9.6.1
+v9.7.1
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -34,7 +34,7 @@ https://nodejs.org/en/download/package-manager/
 # Built on Angular
 
 ```text
-5.2.6
+5.2.7
 ```
             
 
@@ -233,7 +233,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.2.62-280 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.2.68-284 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
