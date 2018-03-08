@@ -7,9 +7,9 @@
 ---
 
  
-# Angular Dynamic Compile component, that turns a string into a compiled component v5.2.68-284  
+# Angular Dynamic Compile component, that turns a string into a compiled component v5.2.78-293  
 
-This is an open source project. Just code. If you like this code, please add a star in GitHub and you really like, you can donate as well. Thanks you so much!
+This is an open source project. Just code. If you like this code, please add a star in GitHub and if you really like, you can donate as well. Thanks you so much!
 
 Given, I have my own server, with dynamic IP address, it could happen that the server for about max 5 minutes can not be reachable for the dynamic DNS or very rarely I backup with Clonzilla the SSD or something with the electricity (too much hoovering or cleaning - but I worked on it, so should not happen again), but for some reason, it is not reachable please hang on for 5-30 minutes and it will be back for sure. 
 
@@ -22,7 +22,7 @@ All my domains (patrikx3.com and corifeus.com) could have errors right now, sinc
    
 ### Built on Node 
 ``` 
-v9.7.1
+v9.8.0
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -34,7 +34,7 @@ https://nodejs.org/en/download/package-manager/
 # Built on Angular
 
 ```text
-5.2.7
+5.2.8
 ```
             
 
@@ -233,7 +233,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.2.68-284 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.2.78-293 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
