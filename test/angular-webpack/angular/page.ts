@@ -13,10 +13,7 @@ import {
     selector: 'p3x-compile-test',
     template: `
 
-        <div class="cory-mat-container">
-            <mat-card>
-                <mat-card-content>
-
+       
                     <h3>Data1</h3>
                     <div [p3x-compile]="data1" [p3x-compile-ctx]="this"></div>
 
@@ -51,20 +48,7 @@ import {
 
                     <button (click)="randomRouterLink()">Generate new router link</button>
 
-                    <h3>Dynamic form</h3>
-                    <div [p3x-compile]="compileForm" [p3x-compile-ctx]="this"></div>
-
-                    <button mat-raised-button color="primary" (click)="formClick()">
-                        Verify
-                    </button>
-
-                    <button mat-raised-button color="primary" (click)="formClick()">
-                        Prolongate
-                    </button>
-                    
-                </mat-card-content>
-            </mat-card>
-        </div>
+                  
         
         <!--        <cory-mat-loading [cory-visible]="true">sss</cory-mat-loading> -->
 
@@ -88,25 +72,7 @@ export class Page implements OnInit, OnDestroy {
 
     compileForm: string = `
     
-   
-        <div class="flex-container">
-            <div class="row">
-                <div class="flex-item">
-                   <!-- <cory-mat-login></cory-mat-login> -->
-                                        
-                    <br/>
-
-                                       
-                    <button mat-raised-button color="primary" (click)="context.formClick()">
-                        Verify
-                    </button>
-                    
-                    <button mat-raised-button color="primary" (click)="context.formClick()">
-                        Prolongate
-                    </button>
-                </div>
-            </div>
-        </div>    
+    
 `
 
     constructor(

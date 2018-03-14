@@ -7,8 +7,8 @@ import { BrowserModule }  from '@angular/platform-browser';
 
 import { RouterModule, Routes } from '@angular/router';
 
-import { CorifeusMaterialModule } from 'corifeus-web-material'
-import { CorifeusModule } from 'corifeus-web';
+//import { CorifeusMaterialModule } from 'corifeus-web-material'
+//import { CorifeusModule } from 'corifeus-web';
 
 import {Page } from './page';
 import {
@@ -30,7 +30,7 @@ export const routes: Routes = [
     imports: [
         BrowserModule,
 ///        CompileModule,
-        CorifeusMaterialModule,
+//        CorifeusMaterialModule,
 //        CorifeusModule,
         RouterModule.forRoot(routes),
 
@@ -39,7 +39,7 @@ export const routes: Routes = [
 //                schemas: [CUSTOM_ELEMENTS_SCHEMA],
 //                declarations: [],
                 imports: [
-                    CorifeusMaterialModule
+//                    CorifeusMaterialModule
                 ],
                 exports: [
 
