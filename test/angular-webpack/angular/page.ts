@@ -13,41 +13,61 @@ import {
     selector: 'p3x-compile-test',
     template: `
 
+        <div class="cory-mat-container">
+            <mat-card>
+                <mat-card-content>
+
+                    <h3>Data1</h3>
+                    <div [p3x-compile]="data1" [p3x-compile-ctx]="this"></div>
+
+                    <hr/>
+
+                    <h3>Data2</h3>
+                    <div [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
+
+                    <hr/>
+
+                    <h3>Data3</h3>
+                    <div [p3x-compile]="data3" [p3x-compile-ctx]="this"></div>
+
+
+                    <hr/>
+                    Hidden is working? If show, below should say "Click me via a service!"
+                    <br/>
+                    <div *ngIf="false" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
+                    <br/>
+                    If there was no "Click me via a service!" above, it works.
+
+                    <hr/>
+
+                    <h3>Data2 - This always visible</h3>
+                    <div *ngIf="true" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
+
+
+                    <hr/>
+
+                    <h3>Router Link</h3>
+                    <div [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this"></div>
+
+                    <button (click)="randomRouterLink()">Generate new router link</button>
+
+                    <h3>Dynamic form</h3>
+                    <div [p3x-compile]="compileForm" [p3x-compile-ctx]="this"></div>
+
+                    <button mat-raised-button color="primary" (click)="formClick()">
+                        Verify
+                    </button>
+
+                    <button mat-raised-button color="primary" (click)="formClick()">
+                        Prolongate
+                    </button>
+                    
+                </mat-card-content>
+            </mat-card>
+        </div>
+        
         <!--        <cory-mat-loading [cory-visible]="true">sss</cory-mat-loading> -->
 
-        <h3>Data1</h3>
-        <div [p3x-compile]="data1" [p3x-compile-ctx]="this"></div>
-
-        <hr/>
-
-        <h3>Data2</h3>
-        <div [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
-
-        <hr/>
-
-        <h3>Data3</h3>
-        <div [p3x-compile]="data3" [p3x-compile-ctx]="this"></div>
-
-
-        <hr/>
-        Hidden is working? If show, below should say "Click me via a service!"
-        <br/>
-        <div *ngIf="false" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
-        <br/>
-        If there was no "Click me via a service!" above, it works.
-
-        <hr/>
-
-        <h3>Data2 - This always visible</h3>
-        <div *ngIf="true" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
-
-
-        <hr/>
-
-        <h3>Router Link</h3>
-        <div [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this"></div>
-
-        <button (click)="randomRouterLink()">Generate new router link</button>
 
     `
 })
@@ -66,6 +86,29 @@ export class Page implements OnInit, OnDestroy {
 
     dataRouterLink: string = ''
 
+    compileForm: string = `
+    
+   
+        <div class="flex-container">
+            <div class="row">
+                <div class="flex-item">
+                   <!-- <cory-mat-login></cory-mat-login> -->
+                                        
+                    <br/>
+
+                                       
+                    <button mat-raised-button color="primary" (click)="context.formClick()">
+                        Verify
+                    </button>
+                    
+                    <button mat-raised-button color="primary" (click)="context.formClick()">
+                        Prolongate
+                    </button>
+                </div>
+            </div>
+        </div>    
+`
+
     constructor(
     //    private compileHtmlService: CompileService
     ) {
@@ -77,6 +120,10 @@ export class Page implements OnInit, OnDestroy {
 <div>P3X Angular Compile</div><a id="button-container" href="javascript:void(0);" (click)="context.update1()">Click me via a angular compile!</a>
 <div id="counter-container">{{ context.counter1}}</div>
 `;
+    }
+
+    private formClick() {
+        alert('form click');
     }
 
     private update2() {

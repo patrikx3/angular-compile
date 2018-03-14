@@ -7,7 +7,7 @@
 ---
 
  
-# Angular Dynamic Compile component, that turns a string into a compiled component v5.2.83-304  
+# Angular Dynamic Compile component, that turns a string into a compiled component v5.2.89-308  
 
 This is an open source project. Just code. If you like this code, please add a star in GitHub and if you really like, you can donate as well. Thanks you so much!
 
@@ -201,7 +201,9 @@ The templates are cached.
 [Corifeus Pages (JIT + AOT at once)](https://pages.corifeus.com)
   -->
 
-[Corifeus Pages (JIT)](https://pages.corifeus.com)
+#### For now, until there is no options in Angular to use JIT, I just use AOT, so I don't use this component  
+
+[Corifeus Pages (AOT)](https://pages.corifeus.com)
 
   
 [https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
@@ -233,7 +235,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.2.83-304 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.2.89-308 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
