@@ -122,7 +122,7 @@ export class Page implements OnInit, OnDestroy {
 `;
     }
 
-    private formClick() {
+    public formClick() {
         alert('form click');
     }
 
