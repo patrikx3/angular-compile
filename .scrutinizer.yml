@@ -20,7 +20,7 @@ build:
 #      - nvm use $LATEST
       - npm install grunt-cli -g
       - npm install
-      - node_modules/protractor/bin/webdriver-manager update
+      - node_modules/protractor/bin/webdriver-manager update --gecko=false
 
   tests:
     override:
