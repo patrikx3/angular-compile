@@ -1,12 +1,12 @@
 {
   "name": "p3x-angular-compile",
-  "version": "5.2.103-319",
+  "version": "5.2.104-322",
   "corifeus": {
     "prefix": "p3x-",
     "publish": true,
     "type": "p3x",
     "code": "Logico",
-    "nodejs": "v9.10.0"
+    "nodejs": "v9.10.1"
   },
   "description": "Angular Dynamic Compile component, that turns a string into a compiled component",
   "main": "dist/index.js",
@@ -35,9 +35,9 @@
   },
   "homepage": "https://pages.corifeus.com/angular-compile",
   "devDependencies": {
-    "corifeus-builder-angular": "^5.2.219-377",
-    "corifeus-web": "^5.2.204-354",
-    "corifeus-web-material": "^5.2.122-372"
+    "corifeus-builder-angular": "^5.2.220-380",
+    "corifeus-web": "^5.2.205-357",
+    "corifeus-web-material": "^5.2.123-375"
   },
   "dependencies": {
     "@types/lodash": "^4.14.106",
