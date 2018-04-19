@@ -13,7 +13,6 @@
 *.log
 /corifeus-boot.json
 
-
 # Corifeus / P3X
 /src
 /tsconfig*
