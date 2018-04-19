@@ -6,7 +6,7 @@
 
 
  
-# Angular Dynamic Compile component, that turns a string into a compiled component v5.2.126-340  
+# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v5.2.126-340  
 
 This is an open-source project. Star this repository if you like it, or even donate!  Thank you so much! :)
 
