@@ -6,7 +6,7 @@
 
 
  
-# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v5.2.131-345  
+# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v5.2.135-351  
 
 This is an open-source project. Star this repository if you like it, or even donate!  Thank you so much! :)
 
@@ -22,7 +22,7 @@ All my domains (patrikx3.com and corifeus.com) could have errors since I am deve
    
 ### Built on Node 
 ``` 
-v9.11.1
+v10.0.0
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -157,11 +157,13 @@ export class Page {
 }
 ```
 
+
+<!--
+
 #### Actual used dynamic compiler
 I use a dynamic Markdown page with ```p3x-angular-compile```:
 [Module](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/module.ts) , [Example page](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
 
-<!--
 
 #### Service
 [Please refer to use an a service](https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts)
@@ -196,10 +198,10 @@ https://github.com/angular/angular/blob/master/packages/core/src/metadata/ng_mod
 The templates are cached.
 -->
 
-### Deployed example
 <!--
+
+### Deployed example
 [Corifeus Pages (JIT + AOT at once)](https://pages.corifeus.com)
-  -->
 
 #### For now, until there is no options in Angular to use JIT, I just use AOT, so I don't use this component  
 
@@ -207,6 +209,9 @@ The templates are cached.
 
   
 [https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
+
+  -->
+
 
 ## Dev environment end test
    
@@ -235,14 +240,19 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.2.131-345 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v5.2.135-351 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
 
-## Sponsor
+## Sponsors
 
-[![JetBrains](https://www.patrikx3.com/images/jetbrains-logo.svg)](https://www.jetbrains.com/)
+[IntelliJ - The most intelligent Java IDE](https://www.jetbrains.com)
+  
+[![JetBrains](https://cdn.corifeus.com/assets/svg/jetbrains-logo.svg)](https://www.jetbrains.com/) [![NoSQLBooster](https://cdn.corifeus.com/assets/png/nosqlbooster-70x70.png)](https://www.nosqlbooster.com/)
+
+[The Smartest IDE for MongoDB](https://www.nosqlbooster.com)
+  
   
  
 
