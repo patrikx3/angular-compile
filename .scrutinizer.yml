@@ -18,7 +18,7 @@ build:
       - export LATEST=$(nvm ls-remote | tail -1)
       - nvm install $LATEST
 #      - nvm use $LATEST
-      - npm install grunt-cli -g
+      - npm install -g grunt-cli npm
       - npm install
       - node_modules/protractor/bin/webdriver-manager update --gecko=false
 
