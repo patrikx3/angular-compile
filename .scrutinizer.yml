@@ -15,8 +15,8 @@ build:
 
   dependencies:
     before:
-      - export LATEST=$(nvm ls-remote | tail -1)
-      - nvm install $LATEST
+      #- export LATEST=$(nvm ls-remote | tail -1)
+      #- nvm install $LATEST
 #      - nvm use $LATEST
       - npm install -g grunt-cli npm
       - npm install
