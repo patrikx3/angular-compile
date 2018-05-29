@@ -9,6 +9,7 @@ addons:
 language: node_js
 node_js:
 - node
+before_install: npm install -g npm
 before_script:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
