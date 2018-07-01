@@ -70,7 +70,7 @@ npm install --save p3x-angular-compile
 yarn add p3x-angular-compile
 ```
 
-### Check out how it works
+## Check out how it works and code
 
 https://angular-compile.corifeus.com
 

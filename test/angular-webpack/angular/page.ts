@@ -9,7 +9,7 @@ import {
     OnDestroy
 } from '@angular/core';
 
-
+/*
 import {
     MatAutocompleteModule,
     MatButtonModule,
@@ -47,6 +47,12 @@ import {
 //    OverlayContainer,
 //    MatSelectionList,
 } from '@angular/material';
+*/
+
+import {
+    MatButtonModule,
+} from '@angular/material';
+
 
 @Component({
     selector: 'p3x-compile-test',
@@ -56,7 +62,7 @@ import {
 
     <div style="margin: 40px;">
             <mat-card>
-                    <h2>Some helper info</h2>
+                    <h2>Some helper URL links</h2>
 
                     <a href="https://pages.corifeus.com/angular-compile" target="p3x-corifeus-pages">pages.corifeus.com</a>
                     <br/>
