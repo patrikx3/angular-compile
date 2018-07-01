@@ -29,7 +29,7 @@
   "exclude": [
     "node_modules",
     "src/angular/bundle.aot.ts",
-    "test/angular-karma-disabled",
+    "test/angular-karma",
     "test/angular-webpack/angular/bundle.aot.ts",
     "build/browser"
   ]

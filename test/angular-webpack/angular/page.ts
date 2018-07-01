@@ -66,7 +66,7 @@ import {
 
                     <a href="https://pages.corifeus.com/angular-compile" target="p3x-corifeus-pages">pages.corifeus.com</a>
                     <br/>
-                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L1" target="p3x-corifeus-pages-github">How it works from the code in GitHub</a>
+                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L54" target="p3x-corifeus-pages-github">How it works from the code in GitHub</a>
                     <br/>
 
                     <hr/>
