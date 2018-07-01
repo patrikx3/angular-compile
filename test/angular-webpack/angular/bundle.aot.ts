@@ -1,4 +1,4 @@
-//import 'corifeus-web-material/src/bundle'
+import 'corifeus-web-material/src/bundle'
 
 
 import { enableProdMode } from '@angular/core';

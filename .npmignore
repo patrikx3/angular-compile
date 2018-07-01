@@ -14,7 +14,8 @@
 /corifeus-boot.json
 
 # Corifeus / P3X
-/src
 /tsconfig*
+/dist/node_modules
+/dist/test
 
 # need to allow ts for awesome=typscript-loader

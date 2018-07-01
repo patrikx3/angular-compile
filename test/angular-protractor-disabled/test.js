@@ -1,9 +1,8 @@
-browser.ignoreSynchronization = true;
+//browser.ignoreSynchronization = true;
 
 describe('CompileHtml', () => {
 
     browser.get(`index.html`);
-
 
     const clicker = (button, counter) => {
         const total = 5;
@@ -17,9 +16,11 @@ describe('CompileHtml', () => {
     }
 
     it('Attribute', (done) => {
-        const button = element(by.id('button-attribute'))
-        const counter = element(by.id('counter-attribute'));
-        clicker(button, counter);
-        done();
+        setTimeout(() => {
+            const button = element(by.id('button-attribute'))
+            const counter = element(by.id('counter-attribute'));
+            clicker(button, counter);
+            done();
+        }, 5000)
     });
 });

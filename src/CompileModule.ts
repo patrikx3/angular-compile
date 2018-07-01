@@ -4,23 +4,25 @@ import { CompileAttribute} from "./CompileAttribute";
 
 import {
     NgModule,
-    ModuleWithProviders,
+    //ModuleWithProviders,
 } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { Compiler } from '@angular/core';
 /*
+import { BrowserModule } from '@angular/platform-browser';
+import { Compiler } from '@angular/core';
 import {JitCompilerFactory} from '@angular/compiler';
 export function createJitCompiler () {
     return new JitCompilerFactory([{useDebug: false, useJit: true}]).createCompiler();
 }
 */
 
+/*
 export class CompileServiceConfig {
     module: NgModule
 }
+*/
 
 // exports = component
 @NgModule({
@@ -41,12 +43,5 @@ export class CompileServiceConfig {
     ]
 })
 export class CompileModule {
-    static forRoot(config: CompileServiceConfig) : ModuleWithProviders {
-        return {
-            ngModule: CompileModule,
-            providers: [
-                {provide: CompileServiceConfig, useValue: config }
-            ]
-        };
-    }
 }
+

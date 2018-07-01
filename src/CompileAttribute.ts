@@ -10,16 +10,18 @@ import {
     NgModule,
     Compiler,
     NgModuleFactory,
+    Inject,
 } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
-//import { CompileService } from './CompileService';
-
 let SingletonDefaultModule: NgModule;
 
 import { cloneDeep } from 'lodash';
+import { CorifeusMaterialModule } from 'corifeus-web-material';
+
+
 
 //const cache : any = {};
 
@@ -95,7 +97,6 @@ export class CompileAttribute implements OnInit, OnChanges{
         }
         module.imports = module.imports || [];
         module.imports.push( CommonModule );
-//        module.imports.push( BrowserModule );
         if (this.imports !== undefined) {
             module.imports = module.imports.concat(this.imports)
         }
@@ -141,6 +142,9 @@ export class CompileAttribute implements OnInit, OnChanges{
     constructor(
 //        private container: ViewContainerRef,
 //        private service: CompileService
-private compiler: Compiler
-    ) {}
+    private compiler: Compiler,
+   // @Inject('config') private config:CompileServiceConfig
+    ) {
+        
+    }
 }

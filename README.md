@@ -6,7 +6,7 @@
 
 
  
-# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v6.0.20-376  
+# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v6.0.42-396  
 
 This is an open-source project. Star this repository if you like it, or even donate!  Thank you so much! :)
 
@@ -23,7 +23,7 @@ All my domains (patrikx3.com and corifeus.com) could have errors since I am deve
    
 ### Built on Node 
 ``` 
-v10.2.1
+v10.5.0
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -35,7 +35,7 @@ https://nodejs.org/en/download/package-manager/
 # Built on Angular
 
 ```text
-6.0.3
+6.0.7
 ```
             
 
@@ -50,7 +50,11 @@ https://nodejs.org/en/download/package-manager/
 Dynamic compile components by a string template for Angular. You can provide a context, that you can use with anything (for clicking for free etc..) 
 
 ## NPM & Version
-It is a ```CommonJS``` bundle.
+
+It is a ```CommonJS``` bundle by default.
+  
+But! You can use the native `TypeScript` by `import` from `p3x-angular-compile/src`.
+
 The version reflects the Angular version (```AngularMajor.AngularMinor.Build-Commit```).
 
 You can find out your proper version with this command:
@@ -65,6 +69,11 @@ npm install --save p3x-angular-compile
 # or
 yarn add p3x-angular-compile
 ```
+
+### Check out how it works
+
+https://angular-compile.corifeus.com
+
 
 ## AOT + JIT
 
@@ -107,23 +116,6 @@ import { CompileModule} from "p3x-angular-compile"
         
         // usually it is enough
         CompileModule,
-        
-        // usually it is not required anymore
-        // since Angular 5 changed
-        // but if there is something missing,
-        // you can add in as before
-        CompileModule.forRoot({
-            // module = NgModule
-            module: {
-                schemas: [CUSTOM_ELEMENTS_SCHEMA],
-                declarations: [MyDynamicElement ],
-                // though you are better a shared component like
-                imports: [
-                    CorifeusWebMaterialModule
-                ]
-                
-            }
-        })
     ],
     declarations: [
         Page,
@@ -241,7 +233,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v6.0.20-376 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v6.0.42-396 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 

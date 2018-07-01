@@ -9,11 +9,63 @@ import {
     OnDestroy
 } from '@angular/core';
 
+
+import {
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatCommonModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatLineModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatOptionModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+//    OverlayContainer,
+//    MatSelectionList,
+} from '@angular/material';
+
 @Component({
     selector: 'p3x-compile-test',
     template: `
 
-       
+    <cory-mat-loading [cory-visible]="true"></cory-mat-loading>
+
+    <div style="margin: 40px;">
+            <mat-card>
+                    <h2>Some helper info</h2>
+
+                    <a href="https://pages.corifeus.com/angular-compile" target="p3x-corifeus-pages">pages.corifeus.com</a>
+                    <br/>
+                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L1" target="p3x-corifeus-pages-github">How it works from the code in GitHub</a>
+                    <br/>
+
+                    <hr/>
+
+            
                     <h3>Data1</h3>
                     <div [p3x-compile]="data1" [p3x-compile-ctx]="this"></div>
 
@@ -45,14 +97,19 @@ import {
 
                     <h3>Router Link</h3>
                     <div [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this"></div>
+                    
+          <!--          <div>{{ dataRouterLink }}</div> -->
+                    <br/>
 
-                    <button (click)="randomRouterLink()">Generate new router link</button>
+                    <button mat-button mat-raised-button color="primary" (click)="randomRouterLink()">Generate new router link</button>
 
-                  
-        
-        <!--        <cory-mat-loading [cory-visible]="true">sss</cory-mat-loading> -->
+                    <hr/>
 
-
+                    <h3>Router Link Compiled</h3>
+                    <div [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterailModule"></div>
+                    
+            </mat-card>
+        </div>
     `
 })
 @Injectable()
@@ -70,10 +127,25 @@ export class Page implements OnInit, OnDestroy {
 
     dataRouterLink: string = ''
 
-    compileForm: string = `
-    
-    
-`
+    compileForm: string = ``
+
+    dataMaterialDefault: string = `
+    <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLink()">Generate new router link</button>
+    `
+    dataMaterial: string = `
+    <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLink()">Generate new router link</button>
+    `
+    dataMaterailModule : any =  {
+        //                schemas: [CUSTOM_ELEMENTS_SCHEMA],
+        //                declarations: [],
+                        imports: [
+                            MatButtonModule
+                        ],
+                        exports: [
+        
+                        ]
+        
+                    }
 
     constructor(
     //    private compileHtmlService: CompileService
@@ -110,11 +182,19 @@ export class Page implements OnInit, OnDestroy {
     randomRouterLink() {
         let counter = 0;
         let randomString = '';
+        let randomString2 = '';
+        
         while (counter < 10) {
             counter++;
             randomString += this.getRandomChar();
+            randomString2 += this.getRandomChar();
         }
         this.dataRouterLink = `<a href="javascript:void(0)" routerLink="${randomString}">${randomString}</a>`
+        this.dataMaterial = `
+        <a href="javascript:void(0)" routerLink="${randomString2}">${randomString2}</a>
+            <br/>
+            ${this.dataMaterialDefault}
+        `
     }
 
     ngOnInit() {
