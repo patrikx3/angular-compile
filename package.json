@@ -1,12 +1,12 @@
 {
   "name": "p3x-angular-compile",
-  "version": "6.0.42-396",
+  "version": "6.0.43-406",
   "corifeus": {
     "prefix": "p3x-",
     "publish": true,
     "type": "p3x",
     "code": "Logico",
-    "nodejs": "v10.5.0",
+    "nodejs": "v10.6.0",
     "opencollective": false,
     "reponame": "angular-compile",
     "build": true

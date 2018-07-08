@@ -68,7 +68,8 @@ import {
                     <br/>
                     <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L54" target="p3x-corifeus-pages-github">How it works from the code in GitHub</a>
                     <br/>
-
+                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L115">How the actual Angular Compile looks like</a>
+                    <br/>
                     <hr/>
 
             
@@ -101,7 +102,7 @@ import {
 
                     <hr/>
 
-                    <h3>Router Link</h3>
+                    <h3>Pure Router Link with JIT Angular</h3>
                     <div [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this"></div>
                     
           <!--          <div>{{ dataRouterLink }}</div> -->
@@ -111,8 +112,8 @@ import {
 
                     <hr/>
 
-                    <h3>Router Link Compiled</h3>
-                    <div [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterailModule"></div>
+                    <h3>Router Link with p3x-angular-compile</h3>
+                    <div [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule"></div>
                     
             </mat-card>
         </div>
@@ -141,7 +142,7 @@ export class Page implements OnInit, OnDestroy {
     dataMaterial: string = `
     <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLink()">Generate new router link</button>
     `
-    dataMaterailModule : any =  {
+    dataMaterialModule : any =  {
         //                schemas: [CUSTOM_ELEMENTS_SCHEMA],
         //                declarations: [],
                         imports: [
