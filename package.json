@@ -1,49 +1,49 @@
 {
-  "name": "p3x-angular-compile",
-  "version": "6.0.43-406",
-  "corifeus": {
-    "prefix": "p3x-",
-    "publish": true,
-    "type": "p3x",
-    "code": "Logico",
-    "nodejs": "v10.6.0",
-    "opencollective": false,
-    "reponame": "angular-compile",
-    "build": true
-  },
-  "description": "🆖 Angular Dynamic Compile component, that turns a string into a compiled component",
-  "main": "dist/index.js",
-  "typings": "dist/index",
-  "scripts": {
-    "test": "grunt"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/patrikx3/angular-compile.git"
-  },
-  "keywords": [
-    "p3x",
-    "angular",
-    "ng",
-    "compile",
-    "html",
-    "angular",
-    "dynamic",
-    "aot"
-  ],
-  "author": "Patrik Laszlo <alabard@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/patrikx3/angular-compile/issues"
-  },
-  "homepage": "https://pages.corifeus.com/angular-compile",
-  "devDependencies": {
-    "corifeus-builder-angular": "^6.0.77-447",
-    "corifeus-web": "^6.0.45-433",
-    "corifeus-web-material": "^6.0.35-472"
-  },
-  "dependencies": {},
-  "engines": {
-    "node": ">=10.2.1"
-  }
+    "name": "p3x-angular-compile",
+    "version": "6.0.46-411",
+    "corifeus": {
+        "prefix": "p3x-",
+        "publish": true,
+        "type": "p3x",
+        "code": "Logico",
+        "nodejs": "v10.6.0",
+        "opencollective": false,
+        "reponame": "angular-compile",
+        "build": true
+    },
+    "description": "🆖 Angular Dynamic Compile component, that turns a string into a compiled component",
+    "main": "dist/index.js",
+    "typings": "dist/index",
+    "scripts": {
+        "test": "grunt"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/patrikx3/angular-compile.git"
+    },
+    "keywords": [
+        "p3x",
+        "angular",
+        "ng",
+        "compile",
+        "html",
+        "angular",
+        "dynamic",
+        "aot"
+    ],
+    "author": "Patrik Laszlo <alabard@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/patrikx3/angular-compile/issues"
+    },
+    "homepage": "https://pages.corifeus.com/angular-compile",
+    "devDependencies": {
+        "corifeus-builder-angular": "^6.0.91-455",
+        "corifeus-web": "^6.0.52-441",
+        "corifeus-web-material": "^6.0.39-478"
+    },
+    "dependencies": {},
+    "engines": {
+        "node": ">=10.5.0"
+    }
 }
