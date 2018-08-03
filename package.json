@@ -1,12 +1,12 @@
 {
     "name": "p3x-angular-compile",
-    "version": "6.0.50-416",
+    "version": "6.1.2-422",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
         "type": "p3x",
         "code": "Logico",
-        "nodejs": "v10.6.0",
+        "nodejs": "v10.8.0",
         "opencollective": false,
         "reponame": "angular-compile",
         "build": true
@@ -38,11 +38,13 @@
     },
     "homepage": "https://pages.corifeus.com/angular-compile",
     "devDependencies": {
-        "corifeus-builder-angular": "^6.0.100-461",
-        "corifeus-web": "^6.0.55-448",
-        "corifeus-web-material": "^6.0.44-483"
+        "corifeus-builder-angular": "^6.1.3-465",
+        "corifeus-web": "^6.1.9-453",
+        "corifeus-web-material": "^6.1.1-487"
     },
-    "dependencies": {},
+    "dependencies": {
+        "lodash": "^4.17.10"
+    },
     "engines": {
         "node": ">=10.5.0"
     }
