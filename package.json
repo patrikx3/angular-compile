@@ -15,7 +15,7 @@
     "main": "dist/index.js",
     "typings": "dist/index",
     "scripts": {
-        "test": "grunt"
+        "test": "grunt travis"
     },
     "repository": {
         "type": "git",
