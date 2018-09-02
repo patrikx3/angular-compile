@@ -29,6 +29,16 @@ module.exports = (grunt) => {
 
     grunt.registerTask('default',  builder.config.task.build.angular);
 
+    grunt.registerTask('travis',  [ 'cory-ensure-protractor',
+        'cory-npm',
+        'cory-npm-angular',
+        'clean',
+        'copy:cory-build',
+        'cory:license',
+        'webpack:cory-build',
+        'cory-replace' ]
+    );
+
     grunt.registerTask('aot', builder.config.task.build.angularAot);
 
     grunt.registerTask('aot-jit', builder.config.task.build.angularAotJit);
