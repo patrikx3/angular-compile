@@ -9,7 +9,7 @@
 
 
  
-# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2018.9.5-1  
+# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2018.9.16-2  
 
 This is an open-source project. Star this repository, if you like it, or even donate! Thank you so much! :)
 
@@ -21,12 +21,12 @@ All my domains (patrikx3.com and corifeus.com) could have errors, since I am dev
 
 ### Node Version Requirement 
 ``` 
->=10.9.0 
+>=8.11.4 
 ```  
    
 ### Built on Node 
 ``` 
-v10.9.0
+v10.10.0
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -38,7 +38,7 @@ https://nodejs.org/en/download/package-manager/
 # Built on Angular
 
 ```text
-6.1.6
+6.1.7
 ```
             
 
@@ -52,18 +52,11 @@ https://nodejs.org/en/download/package-manager/
 # Use case
 Dynamic compile components by a string template for Angular. You can provide a context, that you can use with anything (for clicking for free etc..) 
 
-## NPM & Version
+## NPM 
 
 It is a ```CommonJS``` bundle by default.
   
 But! You can use the native `TypeScript` by `import` from `p3x-angular-compile/src`.
-
-The version reflects the Angular version (```AngularMajor.AngularMinor.Build-Commit```).
-
-You can find out your proper version with this command:
-```bash
-npm show p3x-angular-compile versions --json
-```
 
 ## Install
   
@@ -237,7 +230,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2018.9.5-1 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2018.9.16-2 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
