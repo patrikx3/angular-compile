@@ -35,7 +35,7 @@ module.exports = (grunt) => {
         'clean',
         'copy:cory-build',
         'cory:license',
-        'webpack:cory-build',
+        'cory-build-jit',
         'cory-replace' ]
     );
 
