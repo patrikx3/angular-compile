@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2018.12.30-2",
+    "version": "2018.12.31-0",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
