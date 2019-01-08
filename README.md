@@ -4,8 +4,6 @@
 
   
 
-**I am trying to save up for a static IP address, if you have to give, any small amount, please donate! Thank you very much!**
-     
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Build Status](https://api.travis-ci.com/patrikx3/angular-compile.svg?branch=master)](https://travis-ci.com/patrikx3/angular-compile) 
 [![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m780749701-41bcade28c1ea8154eda7cca.svg)](https://uptimerobot.patrikx3.com/)
 
@@ -13,10 +11,10 @@
 
 
  
-# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.1.4-2  
+# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.1.8-1  
 
   
-This is an open-source project. Star this repository, if you like it, or even donate! Thank you so much! :)
+This is an open-source project. Star this repository, if you like it, or even donate to maintain the servers and the development. Thank you so much! :)
 
 I run my own server with dynamic IP address, so, it may happen, that the server can not be reachable for about max 15 minutes, due to nature of the dynamic DNS. The server may also be unreachable, when I backup the SSD with Clonzilla (very rarely) or an electrical issue (but this should not happen again). When the server is down, please hang on for 15-30 minutes and the server will be back up.
 
@@ -44,7 +42,7 @@ https://nodejs.org/en/download/package-manager/
 # Built on Angular
 
 ```text
-7.1.4
+7.2.0
 ```
             
 
@@ -236,7 +234,7 @@ https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.1.4-2 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.1.8-1 
 
 [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) 
 
