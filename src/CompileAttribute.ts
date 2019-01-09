@@ -14,12 +14,12 @@ import {
 } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
+//import { BrowserModule } from '@angular/platform-browser';
 
 let SingletonDefaultModule: NgModule;
 
 import { cloneDeep } from 'lodash';
-import { CorifeusMaterialModule } from 'corifeus-web-material';
+//import { CorifeusMaterialModule } from 'corifeus-web-material';
 
 
 
