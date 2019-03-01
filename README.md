@@ -78,20 +78,21 @@ https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/ang
 
 ## AOT + JIT
 
-### Angular 5.x.x +
+### Since Angular 5.x.x +
 
-For now we cannot use AOT + JIT at once. It is too new, we will need more releases and new functions that are removed.
+We cannot use AOT + JIT at once.
 
-#### Info
-https://github.com/angular/angular/issues/20156
-
-On the bottom, you can see:
+On the bottom of the following info, you can see:
 ```text
 To reduce the payload we do not ship the compiler in AoT
 ```
 
+#### Info
+https://github.com/angular/angular/issues/20156
+
 So right now, it is not possible.
 
+<!---
 ### Angular 4.x.x
 
 It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 folds faster. The ``@ngtools/webpack`` is AOT and the ```awesome-typescript-loader``` is JIT only. 
@@ -100,6 +101,8 @@ The solution can be architect with the ```@angular/compiler``` and the ```awesom
 
 Example here (since I am using Angular 5 not, it is not AOT + JIT anymore, but if you are on Angular 4, you can do it):
 [More info about AOT + JIT](https://pages.corifeus.com/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
+
+-->
 
 ### Size
 If you want very small bundle, use ```gzip```.
@@ -127,23 +130,50 @@ import { CompileModule} from "p3x-angular-compile"
 })
 export class Module { };
 ```
-    
+
+#### The template    
 ```html
- <div *ngIf="true" 
+ <div 
+ <!--- Not required -->
+ *ngIf="isEnabled" 
+
+ <!--- Required -->
  [p3x-compile]="data"
+
+ <!--- Required -->
  [p3x-compile-ctx]="this"
- [p3x-compile-error-handler]="anyFunctionThatTakesAnExceptionObject"
- [p3x-compile-module]="youCanConfigureTheCompileNgModuleForAngular5NotNeeded"
- [p3x-compile-imports]="ifForSomeReasonADirectiveIsNotWorkingYouCanAddInForAngular5NotNeeded"
+
+ <!--- Not required -->
+ [p3x-compile-error-handler]="handleCompileErrorHandler"
+
+ <!--- Not required -->
+ [p3x-compile-module]="dataModule"
  >     
 </div>
 ```
 
+#### The code
 ```typescript
 // a page example
 export class Page {
+    
+    isEnabled: boolean = true;
+    
+    dataModule : any =  {
+        //schemas: [CUSTOM_ELEMENTS_SCHEMA],
+        //declarations: [],
+        imports: [
+            MatButtonModule
+        ],
+        exports: [       
+        ]
+    }
 
     data: string = "<div (click)="context.alert()">It is working</div>";
+
+    handleCompileErrorHandler(error: Error) {
+        console.error(error)
+    }
 
     alert() {
         alert('ok');
