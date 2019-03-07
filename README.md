@@ -11,7 +11,7 @@
 
 
  
-# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.3.7-3  
+# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.3.7-4  
 
   
 🙏 This is an open-source project. Star this repository, if you like it, or even donate to maintain the servers and the development. Thank you so much!
@@ -60,8 +60,6 @@ Dynamic compile components by a string template for Angular. You can provide a c
 
 It is a ```CommonJS``` bundle by default.
   
-But! You can use the native `TypeScript` by `import` from `p3x-angular-compile/src`.
-
 ## Install
   
 ```bash
@@ -75,39 +73,6 @@ yarn add p3x-angular-compile
 https://angular-compile.corifeus.com  
 
 https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L115
-
-## AOT + JIT
-
-### Since Angular 5.x.x +
-
-We cannot use AOT + JIT at once.
-
-
-#### Info
-https://github.com/angular/angular/issues/20156#issuecomment-341767899
-
-On the issue, you can see:
-```text
-To reduce the payload, we do not ship the compiler in AOT.
-```
-
-
-So right now, it is not possible.
-
-<!---
-### Angular 4.x.x
-
-It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 folds faster. The ``@ngtools/webpack`` is AOT and the ```awesome-typescript-loader``` is JIT only. 
-  
-The solution can be architect with the ```@angular/compiler``` and the ```awesome-typescript-loader``` together. A miracle!
-
-Example here (since I am using Angular 5 not, it is not AOT + JIT anymore, but if you are on Angular 4, you can do it):
-[More info about AOT + JIT](https://pages.corifeus.com/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
-
--->
-
-### Size
-If you want very small bundle, use ```gzip```.
 
 ## Usage
 
@@ -261,12 +226,44 @@ Basically, you need a shared component.
  
 https://stackoverflow.com/questions/42993580/angular-2-type-childcomponent-is-a-part-of-the-declarations-of-2-modules-par
 
+## AOT + JIT
+
+### Since Angular 5.x.x +
+
+We cannot use AOT + JIT at once.
+
+
+#### Info
+https://github.com/angular/angular/issues/20156#issuecomment-341767899
+
+On the issue, you can see:
+```text
+To reduce the payload, we do not ship the compiler in AOT.
+```
+
+
+So right now, it is not possible.
+
+<!---
+### Angular 4.x.x
+
+It is not working out of the box (the default is either JIT or AOT, not both), but the apps become 10 folds faster. The ``@ngtools/webpack`` is AOT and the ```awesome-typescript-loader``` is JIT only. 
+  
+The solution can be architect with the ```@angular/compiler``` and the ```awesome-typescript-loader``` together. A miracle!
+
+Example here (since I am using Angular 5 not, it is not AOT + JIT anymore, but if you are on Angular 4, you can do it):
+[More info about AOT + JIT](https://pages.corifeus.com/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
+
+-->
+
+### Size
+If you want very small bundle, use ```gzip```.
 
 [//]: #@corifeus-footer
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.3.7-3 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.3.7-4 
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) 
 
