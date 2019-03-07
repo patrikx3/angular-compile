@@ -11,7 +11,7 @@
 
 
  
-# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.3.7-13  
+# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.3.7-14  
 
   
 🙏 This is an open-source project. Star this repository, if you like it, or even donate to maintain the servers and the development. Thank you so much!
@@ -101,6 +101,7 @@ export class Module { };
 #### The template    
 ```html
  <span 
+ 
  <!--- Not required -->
  *ngIf="isEnabled" 
 
@@ -110,7 +111,7 @@ export class Module { };
  <!--- Required -->
  [p3x-compile-ctx]="this"
 
- <!--- Not required -->
+ <!--- Not required, if no handler, it throws the error (before, it was swallowing and showing on console.error) -->
  [p3x-compile-error-handler]="handleCompileErrorHandler"
 
  <!--- Not required -->
@@ -263,7 +264,7 @@ If you want very small bundle, use ```gzip```.
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.3.7-13 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.3.7-14 
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) 
 
