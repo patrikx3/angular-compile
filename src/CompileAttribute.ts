@@ -28,7 +28,7 @@ import { cloneDeep } from 'lodash';
 @Component({
     selector: '[p3x-compile]',
     template: `
-        <ng-container *ngIf="html !== undefined && html !== null && html.trim() !== '' && dynamicComponent !== undefined && dynamicModule !== undefined">
+        <ng-container *ngIf="html !== undefined && html !== null && html.trim() !== ''">
             <ng-container *ngComponentOutlet="dynamicComponent; ngModuleFactory: dynamicModule;"></ng-container>
         </ng-container>
     `
@@ -43,7 +43,7 @@ export class CompileAttribute implements OnInit, OnChanges{
     context:  any;
 
     @Input('p3x-compile-error-handler')
-    errorHandler: (ex: any) => void = console.error;
+    errorHandler: Function = undefined;
 
     dynamicComponent: any;
     dynamicModule: NgModuleFactory<any> | any;
@@ -54,7 +54,7 @@ export class CompileAttribute implements OnInit, OnChanges{
     @Input('p3x-compile-imports')
     imports: Array<Type<any> | ModuleWithProviders | any[]>;
 
-    async update() {
+    update() {
         if (this.html === undefined || this.html.trim() === '') {
 //            this.container.clear();
             this.dynamicComponent = undefined;
@@ -73,7 +73,11 @@ export class CompileAttribute implements OnInit, OnChanges{
             this.dynamicModule = this.compiler.compileModuleSync(this.createComponentModule(this.dynamicComponent));
 //            cache[cacheKey] = this.dynamicComponent;
         } catch (e) {
-            this.errorHandler(e);
+            if (this.errorHandler === undefined) {
+                throw e;
+            } else {
+                this.errorHandler(e);
+            }
         }
         /*
         await this.service.compile({
@@ -129,11 +133,11 @@ export class CompileAttribute implements OnInit, OnChanges{
         return DynamicComponent;
     }
 
-    async ngOnInit() {
+    ngOnInit() {
         this.update();
     }
 
-    async ngOnChanges(changes: SimpleChanges) {
+    ngOnChanges(changes: SimpleChanges) {
         //fixme only update with the required changes
         this.update();
     }
