@@ -2,7 +2,7 @@ import {
     Component,
     Input,
     Injectable,
-    OnInit,
+ //   OnInit,
     OnChanges,
     SimpleChanges,
     Type,
@@ -20,7 +20,6 @@ let SingletonDefaultModule: NgModule;
 
 import { cloneDeep } from 'lodash';
 //import { CorifeusMaterialModule } from 'corifeus-web-material';
-
 
 const reverse = function (str: string) {
     return str.split('').reverse().join('')
@@ -60,7 +59,8 @@ const nextId = () => {
     `
 })
 @Injectable()
-export class CompileAttribute implements OnInit, OnChanges{
+export class CompileAttribute implements OnChanges {
+//export class CompileAttribute implements OnChanges ,OnInit {
 
     @Input('p3x-compile')
     html: string;
@@ -81,25 +81,28 @@ export class CompileAttribute implements OnInit, OnChanges{
     imports: Array<Type<any> | ModuleWithProviders | any[]>;
 
     update() {
-        if (this.html === undefined || this.html === null || this.html.trim() === '') {
-//            this.container.clear();
-            this.dynamicComponent = undefined;
-            this.dynamicModule = undefined;
-            return;
-        }
-
-        /*
-        console.log('html', this.html)
-        const cacheKey = this.html;
-        console.log(Object.keys(cache).indexOf(cacheKey), cache)
-        if (cache.hasOwnProperty(cacheKey)) {
-            const currentCache = cache[cacheKey];
-            this.dynamicComponent = currentCache.dynamicComponent
-            this.dynamicModule = currentCache.dynamicModule
-            return ;
-        }
-        */
         try {
+            if (this.html === undefined || this.html === null || this.html.trim() === '') {
+    //            this.container.clear();
+                this.dynamicComponent = undefined;
+                this.dynamicModule = undefined;
+                return;
+            }
+
+            /*
+
+            // looks like Angular already is caching
+
+            //console.log('html', this.html)
+            const cacheKey = this.html;
+            //console.log(Object.keys(cache).indexOf(cacheKey), cache)
+            if (cache.hasOwnProperty(cacheKey)) {
+                const currentCache = cache[cacheKey];
+                this.dynamicComponent = currentCache.dynamicComponent
+                this.dynamicModule = currentCache.dynamicModule
+                return ;
+            }
+            */
             this.dynamicComponent = this.createNewComponent(this.html, this.context);
             this.dynamicModule = this.compiler.compileModuleSync(this.createComponentModule(this.dynamicComponent));
 
@@ -117,6 +120,7 @@ export class CompileAttribute implements OnInit, OnChanges{
             }
         }
         /*
+        // now we use it with ngComponentOutlet, since about angular 5
         await this.service.compile({
             template: this.html,
             container: this.container,
@@ -170,20 +174,26 @@ export class CompileAttribute implements OnInit, OnChanges{
         return DynamicComponent;
     }
 
+    /*
+
+    // not requires, since ngOnChanges does it first time change
+
     ngOnInit() {
-        this.update();
+        //console.log('ng init')
+       // this.update();
     }
+     */
 
     ngOnChanges(changes: SimpleChanges) {
-        //fixme only update with the required changes
+        //console.log('ng one changes')
         this.update();
     }
 
     constructor(
-//        private container: ViewContainerRef,
-//        private service: CompileService
-    private compiler: Compiler,
-   // @Inject('config') private config:CompileServiceConfig
+        //  private container: ViewContainerRef,
+        // private service: CompileService
+        private compiler: Compiler,
+       // @Inject('config') private config:CompileServiceConfig
     ) {
         
     }
