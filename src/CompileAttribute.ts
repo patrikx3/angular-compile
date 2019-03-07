@@ -81,7 +81,7 @@ export class CompileAttribute implements OnInit, OnChanges{
     imports: Array<Type<any> | ModuleWithProviders | any[]>;
 
     update() {
-        if (this.html === undefined || this.html.trim() === '') {
+        if (this.html === undefined || this.html === null || this.html.trim() === '') {
 //            this.container.clear();
             this.dynamicComponent = undefined;
             this.dynamicModule = undefined;
