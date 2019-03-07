@@ -22,6 +22,32 @@ import { cloneDeep } from 'lodash';
 //import { CorifeusMaterialModule } from 'corifeus-web-material';
 
 
+const reverse = function (str: string) {
+    return str.split('').reverse().join('')
+}
+
+const random = () => {
+    return (Math.floor(Math.random() * (99999999999999999 - 10000000000000000)) + 10000000000000000).toString(16)
+}
+
+let currentIdTime : number;
+let currentId = 0;
+const nextId = () => {
+
+    const now = Date.now();
+    if (currentIdTime !== now) {
+        currentId = 0;
+        currentIdTime = now
+    }
+    const comingId = ++currentId;
+    const randomHex = reverse(random()).padStart(15, '0');
+    const timeHex = reverse(currentIdTime.toString(16).padStart(12, '0'))
+    const comingIdHex = reverse(comingId.toString(16).padStart(3, '0'))
+    const newId = `p3x-angular-compile-${timeHex}${comingIdHex}${randomHex}`;
+    //console.log(newId)
+    return newId
+}
+
 
 //const cache : any = {};
 
@@ -61,17 +87,28 @@ export class CompileAttribute implements OnInit, OnChanges{
             this.dynamicModule = undefined;
             return;
         }
-        /*
-                const cacheKey = this.html;
 
-                if (Object.keys(cache).indexOf(cacheKey) > -1) {
-                    return cache[cacheKey];
-                }
+        /*
+        console.log('html', this.html)
+        const cacheKey = this.html;
+        console.log(Object.keys(cache).indexOf(cacheKey), cache)
+        if (cache.hasOwnProperty(cacheKey)) {
+            const currentCache = cache[cacheKey];
+            this.dynamicComponent = currentCache.dynamicComponent
+            this.dynamicModule = currentCache.dynamicModule
+            return ;
+        }
         */
         try {
             this.dynamicComponent = this.createNewComponent(this.html, this.context);
             this.dynamicModule = this.compiler.compileModuleSync(this.createComponentModule(this.dynamicComponent));
-//            cache[cacheKey] = this.dynamicComponent;
+
+            /*
+            cache[cacheKey] = {
+                dynamicComponent: this.dynamicComponent,
+                dynamicModule: this.dynamicModule,
+            };
+            */
         } catch (e) {
             if (this.errorHandler === undefined) {
                 throw e;
@@ -123,7 +160,7 @@ export class CompileAttribute implements OnInit, OnChanges{
     private createNewComponent (html:string, context: any) {
 
         @Component({
-            selector: 'dynamic-component',
+            selector: nextId(),
             template: html
         })
         class DynamicComponent {
