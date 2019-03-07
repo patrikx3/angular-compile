@@ -58,13 +58,14 @@ import {
     selector: 'p3x-compile-test',
     template: `
 
+<!--
     <cory-mat-loading [cory-visible]="true"></cory-mat-loading>
-
+-->
     <div style="margin: 40px;">
             <mat-card>
-                    <h2>Some helper URL links</h2>
+                    <h1>Some helper URL links</h1>
 
-                    <a href="https://pages.corifeus.com/angular-compile" target="p3x-corifeus-pages">pages.corifeus.com</a>
+                    <a class="mat-title" href="https://pages.corifeus.com/angular-compile" target="p3x-corifeus-pages">Corifeus.com Wiki</a>                    
                     <br/>
                     <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L54" target="p3x-corifeus-pages-github">How it works from the code in GitHub</a>
                     <br/>
