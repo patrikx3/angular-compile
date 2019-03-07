@@ -16,7 +16,7 @@ import {
 import { CommonModule } from '@angular/common';
 //import { BrowserModule } from '@angular/platform-browser';
 
-let SingletonDefaultModule: NgModule;
+//let SingletonDefaultModule: NgModule;
 
 import { cloneDeep } from 'lodash';
 //import { CorifeusMaterialModule } from 'corifeus-web-material';
@@ -136,9 +136,12 @@ export class CompileAttribute implements OnChanges {
 
         if (this.module !== undefined) {
             module = cloneDeep(this.module);
-        } else if (SingletonDefaultModule !== undefined && SingletonDefaultModule !== null) {
+        }
+        /*
+        else if (SingletonDefaultModule !== undefined && SingletonDefaultModule !== null) {
             module = cloneDeep(SingletonDefaultModule);
         }
+        */
         module.imports = module.imports || [];
         module.imports.push( CommonModule );
         if (this.imports !== undefined) {

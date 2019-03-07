@@ -11,6 +11,7 @@ import {
     CompileModule,
 } from '../../../src';
 
+import { MatDividerModule } from '@angular/material'
 
 
 export const routes: Routes = [
@@ -25,6 +26,7 @@ export const routes: Routes = [
   //     BrowserModule,
 ///        CompileModule,
         CorifeusMaterialModule,
+        MatDividerModule,
 //        CorifeusModule,
         RouterModule.forRoot(routes),
 
