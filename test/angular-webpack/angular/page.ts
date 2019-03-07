@@ -72,9 +72,11 @@ import {
 
                     <a class="mat-title" href="https://pages.corifeus.com/angular-compile">Corifeus.com Wiki</a>                    
                     <br/>
-                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L54">How it works from the code in GitHub</a>
+                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts">How it works from the code in GitHub, some examples</a>
+
                     <br/>
-                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L135">How the actual Angular Compile looks like</a>
+                    <br/>
+                    Go ahead and inspect the elements and click away!!!
 
                     <br/>
                     <br/>
