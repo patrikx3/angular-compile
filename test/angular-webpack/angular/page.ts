@@ -74,7 +74,7 @@ import {
                     <br/>
                     <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L54">How it works from the code in GitHub</a>
                     <br/>
-                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L115">How the actual Angular Compile looks like</a>
+                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L135">How the actual Angular Compile looks like</a>
 
                     <br/>
                     <br/>
@@ -133,7 +133,7 @@ import {
                     <br/>
 
                     <h3>Router Link with p3x-angular-compile</h3>
-                    <div [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule"></div>
+                    <span [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule"></span>
                     
             </mat-card>
         </div>
