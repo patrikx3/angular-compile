@@ -28,10 +28,9 @@ import { cloneDeep } from 'lodash';
 @Component({
     selector: '[p3x-compile]',
     template: `
-        <span *ngIf="html !== undefined && html !== null && html.trim() !== '' && dynamicComponent !== undefined && dynamicModule !== undefined">
-        <ng-container *ngComponentOutlet="dynamicComponent;
-                            ngModuleFactory: dynamicModule;"></ng-container>
-        </span>
+        <ng-container *ngIf="html !== undefined && html !== null && html.trim() !== '' && dynamicComponent !== undefined && dynamicModule !== undefined">
+            <ng-container *ngComponentOutlet="dynamicComponent; ngModuleFactory: dynamicModule;"></ng-container>
+        </ng-container>
     `
 })
 @Injectable()
