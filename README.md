@@ -11,7 +11,7 @@
 
 
  
-# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.3.7-15  
+# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.3.8-0  
 
   
 🙏 This is an open-source project. Star this repository, if you like it, or even donate to maintain the servers and the development. Thank you so much!
@@ -106,7 +106,7 @@ export class Module { };
  *ngIf="isEnabled" 
 
  <!--- Required -->
- [p3x-compile]="data"
+ [p3x-compile]="template"
 
  <!--- Required -->
  [p3x-compile-ctx]="this"
@@ -137,7 +137,7 @@ export class Page {
         ]
     }
 
-    data: string = "<div (click)="context.alert()">It is working</div>";
+    template: string = "<button mat-button mat-raised-button (click)="context.alert()">Dynamic template</button>";
 
     handleCompileErrorHandler(error: Error) {
         console.error(error)
@@ -267,7 +267,7 @@ If you want very small bundle, use ```gzip```.
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.3.7-15 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.3.8-0 
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) 
 
