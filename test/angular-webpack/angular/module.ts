@@ -13,6 +13,7 @@ import {
 
 import { MatDividerModule } from '@angular/material'
 
+import "../assets/style.scss";
 
 export const routes: Routes = [
     {

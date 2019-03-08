@@ -57,88 +57,71 @@ import {
 @Component({
     selector: 'p3x-compile-test',
     template: `
-
-<!--
-    <cory-mat-loading [cory-visible]="true"></cory-mat-loading>
--->
-    <div style="margin: 40px;">
-            <mat-card>
-                    <div style="float: right">
-                        <cory-mat-theme-button ></cory-mat-theme-button>
-                        <cory-mat-translation-button></cory-mat-translation-button>                    
-                    </div>
-
-                    <h1>Some helper URL links</h1>
-
-                    <a class="mat-title" href="https://pages.corifeus.com/angular-compile">Corifeus.com Wiki</a>                    
-                    <br/>
-                    <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts">How it works from the code in GitHub, some examples</a>
-
-                    <br/>
-                    <br/>
-                    Go ahead and inspect the elements and click away!!!
-
-                    <br/>
-                    <br/>
-                    <mat-divider></mat-divider>
-            
-                    <h3>Data1</h3>
-                    <div [p3x-compile]="data1" [p3x-compile-ctx]="this"></div>
-
-                    <br/>
-                    <br/>
-                    <mat-divider></mat-divider>
-
-                    <h3>Data2</h3>
-                    <div [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
-
-                    <br/>
-                    <br/>
-                    <mat-divider></mat-divider>
-
-                    <h3>Data3</h3>
-                    <div [p3x-compile]="data3" [p3x-compile-ctx]="this"></div>
-
-
-                    <br/>
-                    <br/>
-                    <mat-divider></mat-divider>
-                    <br/>
-
-                    Hidden is working? If show, below should say "Click me via a service!"
-                    <br/>
-                    <div *ngIf="false" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
-                    <br/>
-                    If there was no "Click me via a service!" above, it works.
-
-                    <br/>
-                    <br/>
-                    <mat-divider></mat-divider>
-
-                    <h3>Data2 - This always visible</h3>
-                    <div *ngIf="true" [p3x-compile]="data2" [p3x-compile-ctx]="this"></div>
-
-
-                    <br/>
-                    <br/>
-                    <mat-divider></mat-divider>
-
-                    <h3>Pure Router Link with JIT Angular</h3>
-                    <button mat-button mat-raised-button color="primary" (click)="randomRouterLink()">Generate new router link</button>
-                    &nbsp;
-                    <span [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this"></span>
-          <!--          <div>{{ dataRouterLink }}</div> -->
-
-                    <br/>
-                    <br/>
-                    <mat-divider></mat-divider>
-                    <br/>
-
-                    <h3>Router Link with p3x-angular-compile</h3>
-                    <span [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule"></span>
-                    
-            </mat-card>
+<div style="margin-top: 10px; margin-bottom: 10px; max-width: 700px; margin-left: auto; margin-right: auto; padding-left: 10px; padding-right: 10px;">
+    <mat-card>
+        <div style="float: right">
+            <cory-mat-theme-button ></cory-mat-theme-button>
+            <cory-mat-translation-button></cory-mat-translation-button>                    
         </div>
+    
+        <h1>P3X Angular Compile Example</h1>
+    
+        <a class="mat-title" href="https://pages.corifeus.com/angular-compile">Corifeus.com Wiki</a>                    
+        <br/>
+        <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts">How it works from the code in GitHub, some examples</a>
+    
+        <br/>
+        <br/>
+        <strong>Go ahead and inspect the elements and click away!!!</strong>
+    
+        <br/>
+        <br/>
+        <mat-divider></mat-divider>
+    
+        <h3>Template 1</h3>
+        <div [p3x-compile]="data1" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></div>
+    
+        <br/>
+        <br/>
+        <mat-divider></mat-divider>
+    
+        <h3>Template 2</h3>
+        <div [p3x-compile]="data2" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></div>
+    
+        <br/>
+        <br/>
+        <mat-divider></mat-divider>
+    
+        <h3>Template 3</h3>
+        <div [p3x-compile]="data3" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></div>
+    
+        <br/>
+        <br/>
+        <mat-divider></mat-divider>
+    
+        <h3>Template 4 - Re-use the same context</h3>
+        <div *ngIf="true" [p3x-compile]="data2" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></div>
+    
+    
+        <br/>
+        <br/>
+        <mat-divider></mat-divider>
+    
+        <h3>Pure Router Link with JIT Angular</h3>
+        <button mat-button mat-raised-button color="primary" (click)="randomRouterLink()">Generate new router link</button>
+        &nbsp;
+        <span [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></span>
+    
+        <br/>
+        <br/>
+        <mat-divider></mat-divider>
+        <br/>
+    
+        <h3>Router Link with p3x-angular-compile</h3>
+        <div [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
+        
+    </mat-card>
+</div>
     `
 })
 @Injectable()
