@@ -10,7 +10,7 @@ import {
     NgModule,
     Compiler,
     NgModuleFactory,
-    Inject,
+  //  Inject,
 } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
@@ -79,6 +79,28 @@ export class CompileAttribute implements OnChanges {
 
     @Input('p3x-compile-imports')
     imports: Array<Type<any> | ModuleWithProviders | any[]>;
+
+    constructor(
+        //  private container: ViewContainerRef,
+        // private service: CompileService
+        private compiler: Compiler,
+        // @Inject('config') private config:CompileServiceConfig
+    ) {
+    }
+
+    /*
+    // not requires, since ngOnChanges does it first time change
+    ngOnInit() {
+        //console.log('ng init')
+       // this.update();
+    }
+     */
+
+    ngOnChanges(changes: SimpleChanges) {
+        //console.log('ng one changes')
+        this.update();
+    }
+
 
     update() {
         try {
@@ -175,29 +197,5 @@ export class CompileAttribute implements OnChanges {
         }
 
         return DynamicComponent;
-    }
-
-    /*
-
-    // not requires, since ngOnChanges does it first time change
-
-    ngOnInit() {
-        //console.log('ng init')
-       // this.update();
-    }
-     */
-
-    ngOnChanges(changes: SimpleChanges) {
-        //console.log('ng one changes')
-        this.update();
-    }
-
-    constructor(
-        //  private container: ViewContainerRef,
-        // private service: CompileService
-        private compiler: Compiler,
-       // @Inject('config') private config:CompileServiceConfig
-    ) {
-        
     }
 }
