@@ -60,8 +60,9 @@ import {
 <div style="margin-top: 10px; margin-bottom: 10px; max-width: 700px; margin-left: auto; margin-right: auto; padding-left: 10px; padding-right: 10px;">
     <mat-card>
         <div style="float: right">
-            <cory-mat-theme-button ></cory-mat-theme-button>
             <cory-mat-translation-button></cory-mat-translation-button>                    
+            <br/>
+            <cory-mat-theme-button ></cory-mat-theme-button>
         </div>
     
         <h1>P3X Angular Compile Example</h1>
