@@ -2,7 +2,7 @@
   "compilerOptions": {
     "skipLibCheck": true,
     "baseUrl": "./",
-    "target": "es5",
+    "target": "es2015",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
@@ -11,13 +11,10 @@
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
     "lib": [
-      "es5",
-      "es6",
-      "dom",
-      "es2015.collection",
-      "es2015.promise",
-      "es2015.core"
+      "es2018",
+      "dom"
     ],
+
     "paths": {
       "*": [ "node_modules/@types/*", "*"]
     }
@@ -29,7 +26,7 @@
   "exclude": [
     "node_modules",
     "src/angular/bundle.aot.ts",
-    "test/angular-karma",
+    "test/angular-karma-disabled",
     "test/angular-webpack/angular/bundle.aot.ts",
     "build/browser"
   ]

@@ -52,5 +52,8 @@ module.exports = (grunt) => {
    //cori-test:angular-protractor
    // cori-test:angular-karma
 
-
+    grunt.registerTask('test-connect', [
+        'connect:cory-angular',
+        'watch:cory-wait'
+    ])
 }

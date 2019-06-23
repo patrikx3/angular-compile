@@ -11,7 +11,7 @@ import {
     CompileModule,
 } from '../../../src';
 
-import { MatDividerModule } from '@angular/material'
+import { MatDividerModule } from '@angular/material/divider'
 
 import "../assets/style.scss";
 
