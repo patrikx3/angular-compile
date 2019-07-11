@@ -2,7 +2,7 @@ import {
     Component,
     Input,
     Injectable,
- //   OnInit,
+    //   OnInit,
     OnChanges,
     SimpleChanges,
     Type,
@@ -10,15 +10,15 @@ import {
     NgModule,
     Compiler,
     NgModuleFactory,
-  //  Inject,
+    //  Inject,
 } from '@angular/core';
 
-import { CommonModule } from '@angular/common';
+import {CommonModule} from '@angular/common';
 //import { BrowserModule } from '@angular/platform-browser';
 
 //let SingletonDefaultModule: NgModule;
 
-import { cloneDeep } from 'lodash';
+import {cloneDeep} from 'lodash';
 //import { CorifeusMaterialModule } from 'corifeus-web-material';
 
 const reverse = function (str: string) {
@@ -29,7 +29,7 @@ const random = () => {
     return (Math.floor(Math.random() * (99999999999999999 - 10000000000000000)) + 10000000000000000).toString(16)
 }
 
-let currentIdTime : number;
+let currentIdTime: number;
 let currentId = 0;
 const nextId = () => {
 
@@ -66,7 +66,7 @@ export class CompileAttribute implements OnChanges {
     html: string;
 
     @Input('p3x-compile-ctx')
-    context:  any;
+    context: any;
 
     @Input('p3x-compile-error-handler')
     errorHandler: Function = undefined;
@@ -75,7 +75,7 @@ export class CompileAttribute implements OnChanges {
     dynamicModule: NgModuleFactory<any> | any;
 
     @Input('p3x-compile-module')
-    module:  NgModule;
+    module: NgModule;
 
     @Input('p3x-compile-imports')
     imports: Array<Type<any> | ModuleWithProviders | any[]>;
@@ -105,7 +105,7 @@ export class CompileAttribute implements OnChanges {
     update() {
         try {
             if (this.html === undefined || this.html === null || this.html.trim() === '') {
-    //            this.container.clear();
+                //            this.container.clear();
                 this.dynamicComponent = undefined;
                 this.dynamicModule = undefined;
                 return;
@@ -153,8 +153,8 @@ export class CompileAttribute implements OnChanges {
         */
     }
 
-    private createComponentModule (componentType: any) {
-        let module : NgModule = {};
+    private createComponentModule(componentType: any) {
+        let module: NgModule = {};
 
         if (this.module !== undefined) {
             module = cloneDeep(this.module);
@@ -165,7 +165,7 @@ export class CompileAttribute implements OnChanges {
         }
         */
         module.imports = module.imports || [];
-        module.imports.push( CommonModule );
+        module.imports.push(CommonModule);
         if (this.imports !== undefined) {
             module.imports = module.imports.concat(this.imports)
         }
@@ -179,14 +179,16 @@ export class CompileAttribute implements OnChanges {
         module.entryComponents = [
             componentType
         ];
+
         @NgModule(module)
         class RuntimeComponentModule {
         }
+
         return RuntimeComponentModule;
     }
 
 
-    private createNewComponent (html:string, context: any) {
+    private createNewComponent(html: string, context: any) {
 
         @Component({
             selector: nextId(),

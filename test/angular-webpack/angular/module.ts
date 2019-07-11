@@ -2,16 +2,16 @@ import {
     NgModule,
 } from '@angular/core';
 
-import { RouterModule, Routes } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 
-import { CorifeusMaterialModule } from 'corifeus-web-material'
+import {CorifeusMaterialModule} from 'corifeus-web-material'
 
-import {Page } from './page';
+import {Page} from './page';
 import {
     CompileModule,
 } from '../../../src';
 
-import { MatDividerModule } from '@angular/material/divider'
+import {MatDividerModule} from '@angular/material/divider'
 
 import "../assets/style.scss";
 
@@ -24,7 +24,7 @@ export const routes: Routes = [
 
 @NgModule({
     imports: [
-  //     BrowserModule,
+        //     BrowserModule,
 ///        CompileModule,
         CorifeusMaterialModule,
         MatDividerModule,
@@ -36,8 +36,8 @@ export const routes: Routes = [
     declarations: [
         Page,
     ],
-    providers: [
-    ],
-    bootstrap: [ Page ]
+    providers: [],
+    bootstrap: [Page]
 })
-export class Module { };
+export class Module {
+};

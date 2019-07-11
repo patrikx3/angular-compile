@@ -10,7 +10,6 @@ import {
 } from '@angular/core';
 
 
-
 import {
     MatButtonModule,
 } from '@angular/material';
@@ -110,20 +109,18 @@ export class Page implements OnInit, OnDestroy {
     dataMaterial: string = `
     <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLink()">Generate new router link</button>
     `
-    dataMaterialModule : any =  {
+    dataMaterialModule: any = {
         //                schemas: [CUSTOM_ELEMENTS_SCHEMA],
         //                declarations: [],
-                        imports: [
-                            MatButtonModule
-                        ],
-                        exports: [
-        
-                        ]
-        
-                    }
+        imports: [
+            MatButtonModule
+        ],
+        exports: []
+
+    }
 
     constructor(
-    //    private compileHtmlService: CompileService
+        //    private compileHtmlService: CompileService
     ) {
     }
 
@@ -158,7 +155,7 @@ export class Page implements OnInit, OnDestroy {
         let counter = 0;
         let randomString = '';
         let randomString2 = '';
-        
+
         while (counter < 10) {
             counter++;
             randomString += this.getRandomChar();

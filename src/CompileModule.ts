@@ -1,13 +1,12 @@
-
 //import { CompileService, CompileServiceConfig,    } from "./CompileService";
-import { CompileAttribute} from "./CompileAttribute";
+import {CompileAttribute} from "./CompileAttribute";
 
 import {
     NgModule,
     //ModuleWithProviders,
 } from '@angular/core';
 
-import { CommonModule } from '@angular/common';
+import {CommonModule} from '@angular/common';
 
 /*
 import { BrowserModule } from '@angular/platform-browser';
@@ -39,8 +38,7 @@ export class CompileServiceConfig {
     exports: [
         CompileAttribute,
     ],
-    entryComponents: [
-    ]
+    entryComponents: []
 })
 export class CompileModule {
 }

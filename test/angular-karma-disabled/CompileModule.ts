@@ -1,11 +1,12 @@
 // you need unlinked npm-s!!!
-import { TestBed } from '@angular/core/testing';
-import { inject } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
+import {inject} from '@angular/core/testing';
 
-import { CommonModule } from '@angular/common';
-import { BrowserModule }  from '@angular/platform-browser';
+import {CommonModule} from '@angular/common';
+import {BrowserModule} from '@angular/platform-browser';
 
-import {CompileAttribute  } from '../../src/CompileAttribute'
+import {CompileAttribute} from '../../src/CompileAttribute'
+
 describe('CompileModule', () => {
     let attribute: CompileAttribute;
     beforeEach(() => {
@@ -17,9 +18,7 @@ describe('CompileModule', () => {
             declarations: [
                 CompileAttribute
             ],
-            providers: [
-
-            ],
+            providers: [],
         });
     });
 
@@ -28,7 +27,7 @@ describe('CompileModule', () => {
         attribute = _attribute;
     }));
 */
-    it ('CompileAttribute', (/*done*/) => {
+    it('CompileAttribute', (/*done*/) => {
 //        expect(service instanceof CompileService).toBeTruthy();
         /*
         setTimeout(()=> {

@@ -6,7 +6,7 @@ describe('CompileHtml', () => {
 
     const clicker = (button, counter) => {
         const total = 5;
-        for(let i =0; i < total - 1; i++) {
+        for (let i = 0; i < total - 1; i++) {
             button.click();
             browser.waitForAngular();
         }
