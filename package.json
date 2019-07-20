@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2019.10.117",
+    "version": "2019.10.120",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
@@ -10,7 +10,7 @@
         "opencollective": false,
         "reponame": "angular-compile",
         "build": true,
-        "angular": "8.1.1"
+        "angular": "8.1.2"
     },
     "description": "🆖 Angular Dynamic Compile component, that turns a string into a compiled component",
     "main": "dist/index.js",
@@ -39,12 +39,12 @@
     },
     "homepage": "https://pages.corifeus.com/angular-compile",
     "devDependencies": {
-        "corifeus-builder-angular": "^2019.10.304",
-        "corifeus-web": "^2019.10.404",
-        "corifeus-web-material": "^2019.10.403"
+        "corifeus-builder-angular": "^2019.10.314",
+        "corifeus-web": "^2019.10.411",
+        "corifeus-web-material": "^2019.10.413"
     },
     "dependencies": {
-        "lodash": "^4.17.14"
+        "lodash": "^4.17.15"
     },
     "engines": {
         "node": ">=10.16.0"
