@@ -14,6 +14,7 @@ import {
 import {MatDividerModule} from '@angular/material/divider'
 
 import "../assets/style.scss";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 export const routes: Routes = [
     {
@@ -24,13 +25,10 @@ export const routes: Routes = [
 
 @NgModule({
     imports: [
-        //     BrowserModule,
-///        CompileModule,
+        BrowserAnimationsModule,
         CorifeusMaterialModule,
         MatDividerModule,
-//        CorifeusModule,
         RouterModule.forRoot(routes),
-
         CompileModule
     ],
     declarations: [
