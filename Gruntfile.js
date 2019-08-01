@@ -29,7 +29,7 @@ module.exports = (grunt) => {
 
     grunt.registerTask('default',  builder.config.task.build.angular);
 
-    grunt.registerTask('travis',  [ 'cory-ensure-protractor',
+    grunt.registerTask('travis',  [
         'cory-npm',
         'cory-npm-angular',
         'clean',
