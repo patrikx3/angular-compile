@@ -11,7 +11,7 @@
 
 
  
-# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.10.135  
+# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.10.138  
 
   
 **Note about versioning:** Versions are cut in Major.Minor.Patch schema. Major is always the current year. Minor is either 4 (January - June) or 10 (July - December). Patch is incremental by every build. If there is a breaking change, it should be noted in the readme.
@@ -26,7 +26,7 @@
    
 ### Built on Node 
 ``` 
-v12.7.0
+v12.8.0
 ```   
    
 The ```async``` and ```await``` keywords are required.
@@ -271,7 +271,7 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
   
 ---
   
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.10.135 
+[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2019.10.138 
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software) 
 
