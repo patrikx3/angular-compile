@@ -11,7 +11,7 @@
 
 
  
-# 🆖 Angular Dynamic Compile component, that turns a string into a compiled component v2019.10.151  
+# 🆖 Angular Dynamic Compile - Convert strings to Angular components (v2019.10.151)
 
   
 
@@ -20,13 +20,8 @@
 
 ### Node Version Requirement 
 ``` 
->=10.16.0 
-```  
-   
-### Built on Node 
+>=10.16.0 (built on v12.10.0)
 ``` 
-v12.10.0
-```   
    
 The ```async``` and ```await``` keywords are required.
 
@@ -49,7 +44,7 @@ https://nodejs.org/en/download/package-manager/
 
 
 # Use case
-Dynamic compile components by a string template for Angular. You can provide a context, that you can use with anything (response to events / clicking etc..) 
+Dynamically compile standard strings to fully functional Angular components. Supports imports, exports, and standard context.
 
 ## NPM 
 
@@ -77,11 +72,8 @@ import { CompileModule} from "p3x-angular-compile"
 // the module settings
 @NgModule({
     imports: [
-        // multiple directives in a shared module like this
-        CorifeusWebMaterialModule,
-        
-        // usually it is enough
-        CompileModule,
+        CorifeusWebMaterialModule, // Optional
+        CompileModule, // Required
     ],
     declarations: [
         Page,
@@ -93,7 +85,7 @@ import { CompileModule} from "p3x-angular-compile"
 export class Module { };
 ```
 
-#### The template    
+#### Template    
 ```html
  <span 
  
@@ -106,7 +98,7 @@ export class Module { };
  <!--- Required -->
  [p3x-compile-ctx]="this"
 
- <!--- Not required, if no handler, it throws the error (before, it was swallowing and showing on console.error) -->
+ <!--- Not required, will just throw the component's exception if not provided -->
  [p3x-compile-error-handler]="handleCompileErrorHandler"
 
  <!--- Not required -->
@@ -115,9 +107,9 @@ export class Module { };
 </span>
 ```
 
-#### The code
+#### Code
 ```typescript
-// a page example
+// A page example
 export class Page {
     
     isEnabled: boolean = true;
@@ -178,7 +170,7 @@ export interface CompileOptions {
 -->
 
 ### Options
-[Reference for the Angular module settings.](
+[Reference for the Angular module settings which are available.](
 https://github.com/angular/angular/blob/master/packages/core/src/metadata/ng_module.ts)
 
 <!--
