@@ -1,7 +1,7 @@
 
-@license p3x-angular-compile v2019.10.152
+@license p3x-angular-compile v2019.10.153
   
-🆖 Angular Dynamic Compile component, that turns a string into a compiled component
+🆖 Angular Dynamic Compile - Convert strings to Angular components
 
 https://pages.corifeus.com/angular-compile
 
