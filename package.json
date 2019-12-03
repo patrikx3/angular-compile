@@ -1,16 +1,16 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2019.10.160",
+    "version": "2019.10.163",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
         "type": "p3x",
         "code": "Logico",
-        "nodejs": "v12.13.0",
+        "nodejs": "v12.13.1",
         "opencollective": false,
         "reponame": "angular-compile",
         "build": true,
-        "angular": "8.2.12"
+        "angular": "8.2.14"
     },
     "description": "🆖 Angular Dynamic Compile - Convert strings to Angular components",
     "main": "dist/index.js",
@@ -39,9 +39,9 @@
     },
     "homepage": "https://pages.corifeus.com/angular-compile",
     "devDependencies": {
-        "corifeus-builder-angular": "^2019.10.394",
-        "corifeus-web": "^2019.10.456",
-        "corifeus-web-material": "^2019.10.474"
+        "corifeus-builder-angular": "^2019.10.397",
+        "corifeus-web": "^2019.10.459",
+        "corifeus-web-material": "^2019.10.477"
     },
     "dependencies": {
         "lodash": "^4.17.15"
