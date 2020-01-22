@@ -1,31 +1,39 @@
 {
-  "compilerOptions": {
-    "skipLibCheck": true,
-    "declaration": true,
-    "baseUrl": "./",
-    "target": "es2015",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "noImplicitAny": true,
-    "outDir": "./dist",
-    "suppressImplicitAnyIndexErrors": true,
-    "lib": [
-      "es2018",
-      "dom"
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "declaration": true,
+        "baseUrl": "./",
+        "target": "es2015",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": true,
+        "outDir": "./dist",
+        "suppressImplicitAnyIndexErrors": true,
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "paths": {
+            "*": [
+                "node_modules/@types/*",
+                "*"
+            ]
+        }
+    },
+    "includes": [
+        "src/**/*"
     ],
+    "exclude": [
+        "node_modules",
+        "test"
+    ],
+    "angularCompilerOptions": {
+        "strictMetadataEmit": true,
+        "skipTemplateCodegen": true,
 
-    "paths": {
-      "*": [ "node_modules/@types/*", "*"]
+        "annotateForClosureCompiler": true
     }
-  },
-  "includes": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "test"
-  ]
 }
