@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "skipLibCheck": true,
+    "declaration": true,
     "baseUrl": "./",
     "target": "es2015",
     "module": "esnext",
