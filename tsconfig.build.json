@@ -3,7 +3,7 @@
         "skipLibCheck": true,
         "declaration": true,
         "baseUrl": "./",
-        "target": "es2015",
+        "target": "es2018",
         "module": "esnext",
         "moduleResolution": "node",
         "sourceMap": true,
