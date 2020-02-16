@@ -12,7 +12,7 @@ import {
 
 import {
     MatButtonModule,
-} from '@angular/material';
+} from '@angular/material/button';
 
 
 @Component({
@@ -21,67 +21,67 @@ import {
 <div style="margin-top: 10px; margin-bottom: 10px; max-width: 700px; margin-left: auto; margin-right: auto; padding-left: 10px; padding-right: 10px;">
     <mat-card>
         <div style="float: right">
-            <cory-mat-translation-button></cory-mat-translation-button>                    
+            <cory-mat-translation-button></cory-mat-translation-button>
             <br/>
             <cory-mat-theme-button ></cory-mat-theme-button>
         </div>
-    
+
         <h1>P3X Angular Compile Example</h1>
-    
-        <a class="mat-title" href="https://pages.corifeus.com/angular-compile">Corifeus.com Wiki</a>                    
+
+        <a class="mat-title" href="https://pages.corifeus.com/angular-compile">Corifeus.com Wiki</a>
         <br/>
         <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts">How it works from the code in GitHub, some examples</a>
-    
+
         <br/>
         <br/>
         <strong>Go ahead and inspect the elements and click away!!!</strong>
-    
+
         <br/>
         <br/>
         <mat-divider></mat-divider>
-    
+
         <h3>Template 1</h3>
         <div [p3x-compile]="data1" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></div>
-    
+
         <br/>
         <br/>
         <mat-divider></mat-divider>
-    
+
         <h3>Template 2</h3>
         <div [p3x-compile]="data2" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></div>
-    
+
         <br/>
         <br/>
         <mat-divider></mat-divider>
-    
+
         <h3>Template 3</h3>
         <div [p3x-compile]="data3" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></div>
-    
+
         <br/>
         <br/>
         <mat-divider></mat-divider>
-    
+
         <h3>Template 4 - Re-use the same context</h3>
         <div *ngIf="true" [p3x-compile]="data2" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></div>
-    
-    
+
+
         <br/>
         <br/>
         <mat-divider></mat-divider>
-    
+
         <h3>Pure Router Link with JIT Angular</h3>
         <button mat-button mat-raised-button color="primary" (click)="randomRouterLink()">Generate new router link</button>
         &nbsp;
         <span [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this" class="p3x-angular-compile-element"></span>
-    
+
         <br/>
         <br/>
         <mat-divider></mat-divider>
         <br/>
-    
+
         <h3>Router Link with p3x-angular-compile</h3>
         <div [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
-        
+
     </mat-card>
 </div>
     `
