@@ -31,7 +31,7 @@ function random() {
 
 let currentIdTime: number;
 let currentId = 0;
-function nextId() : string{
+function nextId() : string {
 
     const now = Date.now();
     if (currentIdTime !== now) {
@@ -190,8 +190,10 @@ export class CompileAttribute implements OnChanges {
 
     private createNewComponent(html: string, context: any) {
 
+        const selector : string = nextId()
+
         @Component({
-            selector: nextId(),
+            selector: selector,
             template: html
         })
         class DynamicComponent {
