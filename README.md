@@ -69,7 +69,23 @@ https://angular-compile.corifeus.com
 
 https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L115
 
+## IMPORTANT
+
+
+Make sure Ivy is disabled in the `tsconfig.json`:
+```json
+"angularCompilerOptions": {
+  "enableIvy": false
+}
+```
+
+When you work with P3X Angular Compile, you have to disable AOT as well, so like this:
+```bash
+ng serve --aot=false
+```
+
 ## Usage
+
 
 ```typescript
 import { CompileModule} from "p3x-angular-compile"
