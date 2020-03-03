@@ -39,9 +39,9 @@
     },
     "homepage": "https://pages.corifeus.com/angular-compile",
     "devDependencies": {
-        "corifeus-builder-angular": "^2020.4.136",
-        "corifeus-web": "^2020.4.119",
-        "corifeus-web-material": "^2020.4.121"
+        "corifeus-builder-angular": "^2020.4.137",
+        "corifeus-web": "^2020.4.120",
+        "corifeus-web-material": "^2020.4.123"
     },
     "dependencies": {
         "lodash": "^4.17.15"
