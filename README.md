@@ -219,7 +219,7 @@ The templates are cached.
 npm install -g yarn
 git clone https://github.com/patrikx3/angular-compile.git
 cd angular-compile
-yarn install
+npm install
 grunt run|default
 ```
 
