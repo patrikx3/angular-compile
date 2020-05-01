@@ -11,24 +11,24 @@
 
 
 
-# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2020.4.168
+# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2020.4.172
 
 
 
 **Bugs are evident™ - MATRIX️**
     
 
-### Node Version Requirement
+### NodeJs LTS Version Requirement
 ```
 >=12.13.0
 ```
 
-### Built on Node
+### Built on NodeJs
 ```
-v12.16.2
+v12.16.3
 ```
 
-The ```async``` and ```await``` keywords are required.
+The ```async``` and ```await``` keywords are required. Only the latest LTS variant is supported.
 
 Install NodeJs:
 https://nodejs.org/en/download/package-manager/
@@ -37,7 +37,7 @@ https://nodejs.org/en/download/package-manager/
 # Built on Angular
 
 ```text
-9.1.2
+9.1.4
 ```
 
 
@@ -201,11 +201,11 @@ The templates are cached.
 <!--
 
 ### Deployed example
-[Corifeus Pages (JIT + AOT at once)](https://pages.corifeus.com)
+[Corifeus Pages (JIT + AOT at once)](https://corifeus.com)
 
 #### For now, until there is no options in Angular to use JIT, I just use AOT, so I don't use this component  
 
-[Corifeus Pages (AOT)](https://pages.corifeus.com)
+[Corifeus Pages (AOT)](https://corifeus.com)
 
   
 [https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts](https://github.com/patrikx3/corifeus-app-web-pages/blob/master/src/angular/modules/cory-page.ts)
@@ -264,7 +264,7 @@ It is not working out of the box (the default is either JIT or AOT, not both), b
 The solution can be architect with the ```@angular/compiler``` and the ```awesome-typescript-loader``` together. A miracle!
 
 Example here (since I am using Angular 5 not, it is not AOT + JIT anymore, but if you are on Angular 4, you can do it):
-[More info about AOT + JIT](https://pages.corifeus.com/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
+[More info about AOT + JIT](https://corifeus.com/github/corifeus-builder-angular/artifacts/readme/skeleton.html)
 
 -->
 
@@ -286,7 +286,7 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://pages.corifeus.com/angular-compile) Build v2020.4.168
+[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2020.4.172
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 

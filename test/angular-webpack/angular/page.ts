@@ -28,7 +28,7 @@ import {
 
         <h1>P3X Angular Compile Example</h1>
 
-        <a class="mat-title" href="https://pages.corifeus.com/angular-compile">Corifeus.com Wiki</a>
+        <a class="mat-title" href="https://corifeus.com/angular-compile">Corifeus.com Wiki</a>
         <br/>
         <a href="https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts">How it works from the code in GitHub, some examples</a>
 
