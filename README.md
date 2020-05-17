@@ -11,7 +11,7 @@
 
 
 
-# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2020.4.176
+# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2020.4.184
 
 
 
@@ -37,7 +37,7 @@ https://nodejs.org/en/download/package-manager/
 # Built on Angular
 
 ```text
-9.1.4
+9.1.7
 ```
 
 
@@ -286,7 +286,7 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2020.4.176
+[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2020.4.184
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 
@@ -301,4 +301,3 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
 
 
 [//]: #@corifeus-footer:end
-
