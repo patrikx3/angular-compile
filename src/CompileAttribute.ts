@@ -78,7 +78,7 @@ export class CompileAttribute implements OnChanges {
     module: NgModule;
 
     @Input('p3x-compile-imports')
-    imports: Array<Type<any> | ModuleWithProviders | any[]>;
+    imports: Array<Type<any> | ModuleWithProviders<any> | any[]>;
 
     constructor(
         //  private container: ViewContainerRef,
