@@ -1,0 +1,8 @@
+@import "../mixins";
+
+.cory-mat-theme-light-deeppurple-amber {
+    $primary: mat-palette($mat-deep-purple);
+    $accent: mat-palette($mat-amber, A200, A100, A400);
+    @include cory-mat-theme('light', $primary, $accent);
+}
+

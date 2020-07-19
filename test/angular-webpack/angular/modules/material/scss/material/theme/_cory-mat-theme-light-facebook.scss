@@ -1,0 +1,56 @@
+@import "../mixins";
+
+/*
+
+Color	Hex	RGB
+#3b5998	(59,89,152)
+#8b9dc3	(139,157,195)
+#dfe3ee	(223,227,238)
+#f7f7f7	(247,247,247)
+#ffffff	(255,255,255)
+ */
+.cory-mat-theme-light-facebook {
+
+    $fb-dark: #3b5998;
+    $fb-blue: #8b9dc3;
+    $fb-medium: #dfe3ee;
+    $fb-light: #f7f7f7;
+
+    $mat-facebook: (
+        50: $fb-medium,
+        100: lighten($fb-dark, 20%),
+        200: lighten($fb-dark, 15%),
+        300: lighten($fb-dark, 10%),
+        400: lighten($fb-dark, 5%),
+        500: $fb-dark,
+        600: darken($fb-dark, 5%),
+        700: darken($fb-dark, 10%),
+        800: darken($fb-dark, 15%),
+        900: darken($fb-dark, 25%),
+        A100: $fb-blue,
+        A200: darken($fb-blue, 10%),
+        A400: darken($fb-blue, 20%),
+        A700: darken($fb-blue, 30%),
+        contrast: (
+            50: $fb-light,
+            100: white,
+            200: white,
+            300: white,
+            400: white,
+            500: white,
+            600: $fb-light,
+            700: $fb-light,
+            800: $fb-light,
+            900: $fb-light,
+            A100: $fb-light,
+            A200: $fb-light,
+            A400: $fb-light,
+            A700: $fb-light,
+        )
+    );
+
+    $primary: mat-palette($mat-facebook);
+    $accent: mat-palette($mat-facebook, A100, 400, A200);
+    @include cory-mat-theme('light', $primary, $accent);
+}
+

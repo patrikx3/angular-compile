@@ -4,7 +4,7 @@ import {
 
 import {RouterModule, Routes} from '@angular/router';
 
-import {CorifeusMaterialModule} from 'corifeus-web-material'
+import {CorifeusMaterialModule} from './modules/material'
 
 import {Page} from './page';
 import {

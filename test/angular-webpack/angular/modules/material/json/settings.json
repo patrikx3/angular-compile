@@ -1,0 +1,24 @@
+{
+    "cookie": {
+        "theme": "cory-layout-theme"
+    },
+    "themes": {
+        "material": [
+            "cory-mat-theme-light-indigo-pink",
+            "cory-mat-theme-light-forest",
+            "cory-mat-theme-light-beach",
+            "cory-mat-theme-light-facebook",
+            "cory-mat-theme-light-deeppurple-amber",
+            "cory-mat-theme-dark-wood",
+            "cory-mat-theme-dark-matrix",
+            "cory-mat-theme-dark-pink-bluegray",
+            "cory-mat-theme-dark-purple-green"
+        ]
+    },
+    "translations": {
+        "interface": {
+            "en": "The user interface is English.",
+            "hu": "A felhasználói felület Magyar."
+        }
+    }
+}

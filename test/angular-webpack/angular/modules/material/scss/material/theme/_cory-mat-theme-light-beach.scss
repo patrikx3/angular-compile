@@ -1,0 +1,9 @@
+@import "../mixins";
+
+.cory-mat-theme-light-beach {
+    $primary: mat-palette($mat-orange, 800, 700, 900);
+    $accent: mat-palette($mat-brown, 800, 700, 900);
+    @include cory-mat-theme('light', $primary, $accent);
+
+}
+

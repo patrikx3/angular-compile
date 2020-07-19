@@ -5,8 +5,7 @@ if (process.env === 'production') {
     enableProdMode();
 }
 
-import 'corifeus-web-material/src/bundle'
-
+import './modules/material/bundle'
 
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 

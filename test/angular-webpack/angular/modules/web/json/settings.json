@@ -1,0 +1,22 @@
+{
+    "server": {
+        "url": ""
+    },
+    "cookie": {
+        "language": "cory-layout-language",
+        "token": "corifeus-token"
+    },
+    "header": {
+        "token": "Authorization"
+    },
+    "translations": {
+        "language": {
+            "en": "English",
+            "hu": "Magyar"
+        },
+        "display": {
+            "en": "The user interface is English.",
+            "hu": "A felhasználói felület Magyar."
+        }
+    }
+}
