@@ -1,16 +1,16 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2020.10.102",
+    "version": "2020.10.111",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
         "type": "p3x",
         "code": "Logico",
-        "nodejs": "v12.18.2",
+        "nodejs": "v12.18.3",
         "opencollective": false,
         "reponame": "angular-compile",
         "build": true,
-        "angular": "10.0.1"
+        "angular": "10.0.9"
     },
     "description": "🆖 Angular Dynamic Compile - Convert strings to Angular components",
     "main": "dist/index.js",
@@ -39,26 +39,26 @@
     },
     "homepage": "https://corifeus.com/angular-compile",
     "devDependencies": {
-        "corifeus-builder-angular": "^2020.4.253",
-        "@angular/router": "=10.0.4",
-        "@types/node": "^14.0.23",
+        "corifeus-builder-angular": "^2020.10.109",
+        "@angular/router": "=10.0.9",
+        "@types/node": "^14.0.27",
         "@types/js-cookie": "^2.2.6",
         "@types/tinycolor2": "^1.4.2",
         "js-cookie": "^2.2.1",
         "tinycolor2": "^1.4.1",
-        "@angular/animations": "=10.0.4",
-        "@angular/cdk": "^10.0.2",
-        "@angular/material": "^10.0.2",
+        "@angular/animations": "=10.0.9",
+        "@angular/cdk": "^10.1.3",
+        "@angular/material": "^10.1.3",
         "@fortawesome/fontawesome-free": "^5.14.0",
-        "@types/lodash": "^4.14.157",
+        "@types/lodash": "^4.14.159",
         "corifeus-web": "^2020.4.253",
         "hammerjs": "^2.0.8",
-        "lodash": "^4.17.19",
+        "lodash": "^4.17.20",
         "material-design-icons": "^3.0.1",
         "roboto-fontface": "^0.10.0"
     },
     "dependencies": {
-        "lodash": "^4.17.19"
+        "lodash": "^4.17.20"
     },
     "engines": {
         "node": ">=12.13.0"
