@@ -2,7 +2,7 @@
 
 import 'core-js/es6';
 import 'core-js/es7/reflect.js';
-import 'zone.js/dist/zone.js';
+import 'zone.js';
 
 if (process.env.ENV === 'production') {
     // Production
