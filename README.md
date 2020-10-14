@@ -67,7 +67,7 @@ yarn add p3x-angular-compile
 
 https://angular-compile.corifeus.com  
 
-https://github.com/patrikx3/angular-compile/blob/master/test/angular-webpack/angular/page.ts#L115
+https://github.com/patrikx3/angular-compile/blob/master/src/app/app.component.ts
 
 ## IMPORTANT
 
@@ -239,6 +239,7 @@ The templates are cached.
 [https://github.com/patrikx3/angular-compile/blob/master/src/app/app.component.ts](https://github.com/patrikx3/angular-compile/blob/master/src/app/app.component.ts)
 
   -->
+
 
 
 ## Dev environment end test
