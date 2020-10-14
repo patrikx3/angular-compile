@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2020.10.126",
+    "version": "2020.10.127",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
@@ -11,13 +11,20 @@
         "reponame": "angular-compile",
         "build": true,
         "cdn": true,
-        "angular": "10.1.5"
+        "angular": "10.1.5",
+        "publish-location": "./dist/angular-compile"
     },
     "description": "🆖 Angular Dynamic Compile - Convert strings to Angular components",
-    "main": "dist/index.js",
-    "typings": "dist/index",
     "scripts": {
-        "test": "grunt travis"
+        "ng": "ng",
+        "start": "ng serve --aot=false",
+        "build": "ng build",
+        "test": "grunt",
+        "lint": "ng lint",
+        "e2e": "ng e2e",
+        "build-lib": "ng build --prod --project angular-compile && cp README.md ./dist/angular-compile && cp LICENSE ./dist/angular-compile && node node_modules/corifeus-builder/src/utils/angular/post-lib-build.js",
+        "build-app-info": "Have to disable AOT for this build",
+        "build-app": "ng build --prod --source-map=false --extract-css=true --output-hashing=all --configuration=production --deploy-url=/ --base-href=/ --aot=false --build-optimizer=false --optimization=true"
     },
     "repository": {
         "type": "git",
@@ -39,27 +46,43 @@
         "url": "https://github.com/patrikx3/angular-compile/issues"
     },
     "homepage": "https://corifeus.com/angular-compile",
-    "devDependencies": {
-        "corifeus-builder-angular": "^2020.10.132",
-        "@angular/router": "=10.1.5",
-        "@types/node": "^14.11.8",
-        "@types/js-cookie": "^2.2.6",
-        "@types/tinycolor2": "^1.4.2",
-        "js-cookie": "^2.2.1",
-        "tinycolor2": "^1.4.2",
-        "@angular/animations": "=10.1.5",
-        "@angular/cdk": "^10.2.4",
-        "@angular/material": "^10.2.4",
-        "@fortawesome/fontawesome-free": "^5.15.1",
-        "@types/lodash": "^4.14.162",
-        "corifeus-web": "^2020.4.253",
-        "hammerjs": "^2.0.8",
-        "lodash": "^4.17.20",
-        "material-design-icons": "^3.0.1",
-        "roboto-fontface": "^0.10.0"
-    },
     "dependencies": {
-        "lodash": "^4.17.20"
+        "@angular/animations": "~10.1.5",
+        "@angular/cdk": "^10.2.4",
+        "@angular/common": "~10.1.5",
+        "@angular/compiler": "~10.1.5",
+        "@angular/core": "~10.1.5",
+        "@angular/forms": "~10.1.5",
+        "@angular/material": "^10.2.4",
+        "@angular/platform-browser": "~10.1.5",
+        "@angular/platform-browser-dynamic": "~10.1.5",
+        "@angular/router": "~10.1.5",
+        "rxjs": "~6.6.3",
+        "tslib": "^2.0.3",
+        "zone.js": "~0.11.1"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "~0.1001.6",
+        "@angular/cli": "~10.1.6",
+        "@angular/compiler-cli": "~10.1.5",
+        "@types/jasmine": "~3.5.14",
+        "@types/jasminewd2": "~2.0.8",
+        "@types/node": "^14.11.8",
+        "codelyzer": "^6.0.1",
+        "corifeus-builder": "^2020.10.123",
+        "jasmine-core": "~3.6.0",
+        "jasmine-spec-reporter": "~6.0.0",
+        "karma": "~5.2.3",
+        "karma-chrome-launcher": "~3.1.0",
+        "karma-coverage-istanbul-reporter": "~3.0.3",
+        "karma-jasmine": "~4.0.1",
+        "karma-jasmine-html-reporter": "^1.5.4",
+        "lodash": "^4.17.20",
+        "ng-packagr": "^10.1.2",
+        "protractor": "~7.0.0",
+        "ts-node": "~9.0.0",
+        "tslint": "~6.1.3",
+        "typescript": "~4.0.3"
     },
     "engines": {
         "node": ">=12.13.0"

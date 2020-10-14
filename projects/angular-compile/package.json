@@ -1,0 +1,18 @@
+{
+    "name": "p3x-angular-compile",
+    "version": "0.0.1",
+    "peerDependencies": {
+        "@angular/common": "^10.1.5",
+        "@angular/core": "^10.1.5",
+        "lodash": "^4.17.20"
+    },
+    "corifeus": {
+        "install": false
+    },
+    "devDependencies": {
+        "corifeus-builder": "^2020.10.116"
+    },
+    "dependencies": {
+        "tslib": "^2.0.0"
+    }
+}

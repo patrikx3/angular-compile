@@ -1,59 +1,43 @@
+const utils = require('corifeus-utils');
+const path = require('path')
+const fs = require('fs').promises
+
 module.exports = (grunt) => {
 
-    grunt.option('cory-loader-off', true);
-
-    //node node_modules/protractor/bin/webdriver-manager update
-    const builder = require('corifeus-builder-angular');
-/*
- webdriver-manager/selenium/update-config.json
- node_modules/protractor/bin/webdriver-manager update
-
- */
+    const builder = require(`corifeus-builder`);
     const loader = new builder.loader(grunt);
-    loader.angular({
-        root: builder.config.folder.test.angularWebpack.root,
+    loader.js({
         replacer: {
             type: 'p3x',
             npmio: true,
         },
-        config: {
-            clean: {
-                'cory-publish': [
-                    'dist'
-                ]
-            }
-        }
     });
 
-    grunt.registerTask('run', builder.config.task.run.angular);
 
-    grunt.registerTask('default',  builder.config.task.build.angular);
+    grunt.registerTask('publish', async function () {
+        const done = this.async();
 
-    grunt.registerTask('travis',  [
-        'cory-npm',
-        'cory-npm-angular',
-        'clean',
-        'copy:cory-build',
-        'cory:license',
-        'cory-build-jit',
-        'cory-replace' ]
-    );
+        try {
+            await builder.utils.spawn({
+                grunt: grunt,
+                gruntThis: this,
+            }, {
+                cmd: 'npm',
+                args: [
+                    'run',
+                    'build-lib',
+                ]
+            });
+            done()
+        } catch (e) {
+            done(e)
+        }
 
-    grunt.registerTask('aot', builder.config.task.build.angularAot);
+    });
 
-    grunt.registerTask('aot-jit', builder.config.task.build.angularAotJit);
 
-    grunt.registerTask('aot-test', ['webpack:cory-build-aot', 'cory-test-connect']);
+    const defaultTask = ['cory-raw-npm-angular'].concat(builder.config.task.build.js.concat(['cory-angular-hook-lib']))
+    grunt.registerTask('default', defaultTask );
 
-    grunt.registerTask('coverage', 'karma:cory-angular');
 
-    grunt.registerTask('publish', ['cory-replace', 'cory-npm', 'cory-publish-angular']);
-
-   //cori-test:angular-protractor
-   // cori-test:angular-karma
-
-    grunt.registerTask('test-connect', [
-        'connect:cory-angular',
-        'watch:cory-wait'
-    ])
 }

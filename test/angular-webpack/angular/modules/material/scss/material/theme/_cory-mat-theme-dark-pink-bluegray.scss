@@ -1,9 +1,0 @@
-@import "../mixins";
-
-.cory-mat-theme-dark-pink-bluegray {
-    $primary: mat-palette($mat-pink, 700, 500, 900);
-    $accent: mat-palette($mat-blue-grey, A200, A100, A400);
-
-    @include cory-mat-theme('dark', $primary, $accent);
-}
-

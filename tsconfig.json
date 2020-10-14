@@ -1,40 +1,27 @@
 {
+    "compileOnSave": false,
     "compilerOptions": {
-        "skipLibCheck": true,
+        "resolveJsonModule": true,
         "baseUrl": "./",
-        "target": "es2018",
-        "module": "esnext",
-        "moduleResolution": "node",
+        "outDir": "./dist/out-tsc",
         "sourceMap": true,
-        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "downlevelIteration": true,
         "experimentalDecorators": true,
-        "noImplicitAny": true,
-        "suppressImplicitAnyIndexErrors": true,
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "es2020",
         "lib": [
             "es2018",
             "dom"
         ],
         "paths": {
-            "*": [
-                "node_modules/@types/*",
-                "*"
+            "angular-compile": [
+                "dist/angular-compile/angular-compile",
+                "dist/angular-compile"
             ]
         }
-    },
-    "includes": [
-        "src/angular/**/*",
-        "test/angular-webpack/**/*"
-    ],
-    "exclude": [
-        "node_modules",
-        "src/angular/bundle.aot.ts",
-        "test/angular-karma-disabled",
-        "test/angular-webpack/angular/bundle.aot.ts",
-        "build/browser"
-    ],
-    "angularCompilerOptions-save": {
-        "annotationsAs": "decorators",
-        "preserveWhitespaces": false
     },
     "angularCompilerOptions": {
         "enableIvy": false

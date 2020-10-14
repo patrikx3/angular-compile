@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+$workspace-primary: mat-palette($mat-green);
+$workspace-accent: mat-palette($mat-purple, A200, A100, A400);
+$workspace-warn: mat-palette($mat-red);
+$workspace-theme: mat-light-theme($workspace-primary, $workspace-accent, $workspace-warn);
+
+@include mat-core-theme($workspace-theme);
+@include mat-divider-theme($workspace-theme);
+@include mat-card-theme($workspace-theme);
+
+@include mat-toolbar-theme(mat-light-theme(
+        mat-palette($mat-blue, 900),
+        mat-palette($mat-blue-grey, 200),
+        mat-palette($mat-green)
+));
+
+
+@include mat-button-theme(mat-light-theme(
+        mat-palette($mat-blue, 800),
+        mat-palette($mat-orange, 900),
+        mat-palette($mat-green)
+));
+
+a.mat-button {
+    padding: 0;
+}
