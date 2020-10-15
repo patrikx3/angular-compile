@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2020.10.140",
+    "version": "2020.10.142",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
@@ -67,6 +67,7 @@
         "@angular/compiler-cli": "~10.1.6",
         "@types/jasmine": "~3.5.14",
         "@types/jasminewd2": "~2.0.8",
+        "@types/lodash": "^4.14.162",
         "@types/node": "^14.11.8",
         "codelyzer": "^6.0.1",
         "corifeus-builder": "^2020.10.129",

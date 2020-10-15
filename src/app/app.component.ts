@@ -26,10 +26,10 @@ export class AppComponent {
     compileForm: string = ``
 
     dataMaterialDefault: string = `
-    <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLink()">Generate new router link</button>
+    <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLinkJit()">Generate new router link</button>
     `
     dataMaterial: string = `
-    <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLink()">Generate new router link</button>
+    <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLinkJit()">Generate new router link</button>
     `
     dataMaterialModule: any = {
         //                schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -73,17 +73,26 @@ export class AppComponent {
         return this.chars[Math.floor(Math.random() * (62 - 0)) + 0]
     }
 
-    randomRouterLink() {
+    randomRouterLinkPure() {
         let counter = 0;
         let randomString = '';
-        let randomString2 = '';
 
         while (counter < 10) {
             counter++;
             randomString += this.getRandomChar();
-            randomString2 += this.getRandomChar();
         }
         this.dataRouterLink = `<a  mat-button color="accent" href="javascript:void(0)" routerLink="${randomString}">${randomString}</a>`
+
+    }
+
+    randomRouterLinkJit() {
+        let counter = 0;
+        let randomString2 = '';
+
+        while (counter < 10) {
+            counter++;
+            randomString2 += this.getRandomChar();
+        }
         this.dataMaterial = `
 ${this.dataMaterialDefault} &nbsp; <a  mat-button color="accent" href="javascript:void(0)" routerLink="${randomString2}">${randomString2}</a>
 `
@@ -92,7 +101,8 @@ ${this.dataMaterialDefault} &nbsp; <a  mat-button color="accent" href="javascrip
     ngOnInit() {
         this.update1();
         this.update2();
-        this.randomRouterLink()
+        this.randomRouterLinkPure()
+        this.randomRouterLinkJit()
         /*
                 let is = false;
                 let newData = '<span>123</span>';

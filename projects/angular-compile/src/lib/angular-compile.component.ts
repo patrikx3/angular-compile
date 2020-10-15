@@ -14,7 +14,7 @@ import {
 import {CommonModule} from '@angular/common';
 //import { BrowserModule } from '@angular/platform-browser';
 //let SingletonDefaultModule: NgModule;
-import {cloneDeep} from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 
 //import { CorifeusMaterialModule } from 'corifeus-web-material';
 
