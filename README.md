@@ -51,16 +51,12 @@ https://nodejs.org/en/download/package-manager/
 # Use case
 Dynamically compile standard strings to fully functional Angular components. Supports imports, exports, and standard context.
 
-## NPM 
-
-It is an ```ESNEXT``` bundle by default.
-  
 ## Install
   
 ```bash
-npm install --save p3x-angular-compile
+npm install --save p3x-angular-compile lodash
 # or
-yarn add p3x-angular-compile
+yarn add p3x-angular-compile lodash
 ```
 
 ## Check out how it works and code
@@ -92,7 +88,8 @@ Make sure AOT is disabled in the `angular.json`:
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             
-            // make sure it is false
+            "aot-info": "make sure it is false",
+
             "aot": false,
             "assets": [
               "src/favicon.ico",
