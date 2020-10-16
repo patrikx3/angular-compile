@@ -26,10 +26,10 @@ export class AppComponent {
     compileForm: string = ``
 
     dataMaterialDefault: string = `
-    <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLinkJit()">Generate new router link</button>
+    <button mat-button mat-flat-button color="primary" (click)="context.randomRouterLinkJit()">Generate new router link</button>
     `
     dataMaterial: string = `
-    <button mat-button mat-raised-button color="primary" (click)="context.randomRouterLinkJit()">Generate new router link</button>
+    <button mat-button mat-flat-button color="primary" (click)="context.randomRouterLinkJit()">Generate new router link</button>
     `
     dataMaterialModule: any = {
         //                schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -49,7 +49,7 @@ export class AppComponent {
     private update1() {
         this.counter1++;
         this.data1 = `
-<div>P3X Angular Compile</div><a mat-button color="accent" id="button-container" href="javascript:void(0);" (click)="context.update1()">Click me via a angular compile!</a>
+<div>P3X Angular Compile</div><button mat-button mat-flat-button color="accent" id="button-container" href="javascript:void(0);" (click)="context.update1()">Click me via a angular compile!</button>
 <div id="counter-container">{{ context.counter1}}</div>
 `;
     }
@@ -61,7 +61,7 @@ export class AppComponent {
     private update2() {
         this.counter2++;
         this.data2 = `
-<div>Attribute</div><a  mat-button color="accent" id="button-attribute" href="javascript:void(0);" (click)="context.update2()">Click me via an other attribute!</a>
+<div>Attribute</div><button  mat-button mat-flat-button color="accent" id="button-attribute" href="javascript:void(0);" (click)="context.update2()">Click me via an other attribute!</button>
 <div id="counter-attribute">{{ context.counter2}}</div>
 `;
 

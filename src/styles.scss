@@ -22,18 +22,18 @@ $workspace-theme: mat-light-theme($workspace-primary, $workspace-accent, $worksp
 @include mat-card-theme($workspace-theme);
 
 @include mat-toolbar-theme(mat-light-theme(
-        mat-palette($mat-blue, 900),
+        mat-palette($mat-blue-grey, 700),
         mat-palette($mat-blue-grey, 200),
         mat-palette($mat-green)
 ));
 
 
 @include mat-button-theme(mat-light-theme(
-        mat-palette($mat-blue, 800),
+        mat-palette($mat-cyan, 900),
         mat-palette($mat-orange, 900),
         mat-palette($mat-green)
 ));
 
 a.mat-button {
-    padding: 0;
+    //padding: 0;
 }
