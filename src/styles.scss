@@ -29,10 +29,27 @@ $workspace-theme: mat-light-theme($workspace-primary, $workspace-accent, $worksp
 
 
 @include mat-button-theme(mat-light-theme(
-        mat-palette($mat-cyan, 900),
         mat-palette($mat-orange, 900),
-        mat-palette($mat-green)
+        mat-palette($mat-indigo, 500),
+        mat-palette($mat-red, 500)
 ));
+
+
+.p3x-ng-compile-template-intent:before {
+}
+.p3x-ng-compile-template-intent {
+    color: mat-color($mat-grey, 500);
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.p3x-ng-compile-template {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
 
 a.mat-button {
     //padding: 0;
