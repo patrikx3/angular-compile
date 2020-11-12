@@ -1,0 +1,10 @@
+{
+    "reject": [
+        "core-js",
+        "reflect-metadata",
+        "rxjs",
+        "tslib",
+        "zone.js",
+        "typescript"
+    ]
+}
