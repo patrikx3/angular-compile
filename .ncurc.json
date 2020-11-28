@@ -5,6 +5,8 @@
         "rxjs",
         "tslib",
         "zone.js",
-        "typescript"
+        "typescript",
+        "karma",
+        "ng-packagr"
     ]
 }

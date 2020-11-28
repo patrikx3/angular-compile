@@ -51,7 +51,7 @@ function nextId(): string {
 @Component({
     selector: '[p3x-compile]',
     template: `
-        <ng-container *ngIf="html !== undefined && html !== null && html.trim() !== ''">
+        <ng-container *ngIf="renderComponent">
             <ng-container *ngComponentOutlet="dynamicComponent; ngModuleFactory: dynamicModule;"></ng-container>
         </ng-container>
     `
@@ -93,6 +93,10 @@ export class CompileAttribute implements OnChanges {
        // this.update();
     }
      */
+
+    get renderComponent() {
+        return typeof this.html === 'string' && this.html.trim() !== ''
+    }
 
     ngOnChanges(changes: SimpleChanges) {
         //console.log('ng one changes')
