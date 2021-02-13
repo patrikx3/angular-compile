@@ -23,3 +23,5 @@
 /index.ts
 
 # need to allow ts for awesome=typscript-loader
+
+/.github
