@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2021.4.104",
+    "version": "2021.4.107",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
@@ -71,7 +71,7 @@
         "@types/lodash": "^4.14.168",
         "@types/node": "^14.14.27",
         "codelyzer": "^6.0.1",
-        "corifeus-builder": "^2021.4.115",
+        "corifeus-builder": "^2021.4.118",
         "jasmine-core": "~3.6.0",
         "jasmine-spec-reporter": "~6.0.0",
         "karma": "~5.2.3",
