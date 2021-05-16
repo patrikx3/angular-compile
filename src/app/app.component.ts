@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {version} from '../../package.json';
+import packageInfo from '../../package.json';
 
 import { MatButtonModule } from "@angular/material/button";
 
@@ -9,7 +9,7 @@ import { MatButtonModule } from "@angular/material/button";
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-    version = version
+    version = packageInfo.version
 
     data1: string;
     data2: string = 'init';
