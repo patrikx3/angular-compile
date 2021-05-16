@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2021.4.127",
+    "version": "2021.4.128",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
@@ -69,7 +69,6 @@
         "@angular/compiler-cli": "~12.0.0",
         "@types/jasmine": "~3.7.4",
         "@types/jasminewd2": "~2.0.9",
-        "@types/lodash": "^4.14.169",
         "@types/node": "^15.3.0",
         "codelyzer": "^6.0.2",
         "corifeus-builder": "^2021.4.132",
@@ -80,7 +79,6 @@
         "karma-coverage-istanbul-reporter": "~3.0.3",
         "karma-jasmine": "~4.0.1",
         "karma-jasmine-html-reporter": "^1.6.0",
-        "lodash": "^4.17.21",
         "ng-packagr": "^12.0.0",
         "protractor": "~7.0.0",
         "ts-node": "~9.1.1",

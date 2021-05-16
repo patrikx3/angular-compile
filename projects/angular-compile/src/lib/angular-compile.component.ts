@@ -14,7 +14,7 @@ import {
 import {CommonModule} from '@angular/common';
 //import { BrowserModule } from '@angular/platform-browser';
 //let SingletonDefaultModule: NgModule;
-import cloneDeep from 'lodash/cloneDeep';
+//import cloneDeep from 'lodash/cloneDeep';
 
 //import { CorifeusMaterialModule } from 'corifeus-web-material';
 
@@ -159,7 +159,7 @@ export class CompileAttribute implements OnChanges {
         let module: NgModule = {};
 
         if (this.module !== undefined) {
-            module = cloneDeep(this.module);
+            module = Object.assign({}, this.module);
         }
         /*
         else if (SingletonDefaultModule !== undefined && SingletonDefaultModule !== null) {
