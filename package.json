@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2021.4.128",
+    "version": "2021.4.129",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
@@ -83,18 +83,18 @@
         "protractor": "~7.0.0",
         "ts-node": "~9.1.1",
         "typescript": "~4.2.4",
-        "webpack-bundle-analyzer": "^4.4.1",
+        "webpack-bundle-analyzer": "^4.4.2",
         "eslint": "^7.26.0",
         "eslint-plugin-import": "2.23.2",
-        "eslint-plugin-jsdoc": "34.6.1",
+        "eslint-plugin-jsdoc": "34.7.0",
         "eslint-plugin-prefer-arrow": "1.2.3",
         "@angular-eslint/builder": "^12.0.0",
         "@angular-eslint/eslint-plugin": "^12.0.0",
         "@angular-eslint/eslint-plugin-template": "^12.0.0",
         "@angular-eslint/schematics": "12.0.0",
         "@angular-eslint/template-parser": "^12.0.0",
-        "@typescript-eslint/eslint-plugin": "4.23.0",
-        "@typescript-eslint/parser": "4.23.0"
+        "@typescript-eslint/eslint-plugin": "4.24.0",
+        "@typescript-eslint/parser": "4.24.0"
     },
     "engines": {
         "node": ">=12.13.0"
