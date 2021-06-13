@@ -11,6 +11,20 @@ module.exports = (grunt) => {
             type: 'p3x',
             npmio: true,
         },
+        config: {
+            htmlmin: {
+                dist: {
+                    options: {                                 // Target options
+                        removeComments: true,
+                        collapseWhitespace: true,
+                        minifyCSS: true,
+                    },
+                    files: {
+                        './dist/angular-compile-workspace/index.html': './dist/angular-compile-workspace/index.html'
+                    }
+                }
+            },
+        }
     });
 
 
@@ -57,7 +71,7 @@ module.exports = (grunt) => {
     });
 
 
-    const defaultTask = builder.config.task.build.js.concat(['cory-angular-hook-lib', 'cory-raw-npm-angular', 'build'])
+    const defaultTask = builder.config.task.build.js.concat(['cory-angular-hook-lib', 'cory-raw-npm-angular', 'build', 'htmlmin:dist'])
     grunt.registerTask('default', defaultTask );
 
 
