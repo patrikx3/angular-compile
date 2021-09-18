@@ -11,14 +11,14 @@
 
 
 
-# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2021.10.111
+# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2021.10.115
 
 
 
 **Bugs are evident™ - MATRIX️**
     
 
-### NodeJs LTS Version Requirement
+### Version requirement
 ```txt
 >=12.13.0
 ```
@@ -28,14 +28,13 @@
 v14.17.6
 ```
 
-Only the latest LTS variant is supported.
 
 
 
 # Built on Angular
 
 ```text
-12.2.5
+12.2.6
 ```
 
 
@@ -305,7 +304,7 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2021.10.111
+[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2021.10.115
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 
