@@ -11,7 +11,7 @@
 
 
 
-# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2021.10.119
+# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2021.10.123
 
 
 
@@ -44,6 +44,12 @@ v14.17.6
                         
 [//]: #@corifeus-header:end
 
+
+# WARNING
+Angular has changed, so it stricts many things for dynamic compilation. The only solution right now, is to simple copy the code into your code and it will work (like on https://angular-compile.corifeus.com/).  
+  
+The code you just copy into your project is here:  
+https://github.com/patrikx3/angular-compile/tree/master/projects/angular-compile/src/lib
 
 # Use case
 Dynamically compile standard strings to fully functional Angular components. Supports imports, exports, and standard context.
@@ -304,7 +310,7 @@ All my domains ([patrikx3.com](https://patrikx3.com) and [corifeus.com](https://
 
 ---
 
-[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2021.10.119
+[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2021.10.123
 
 [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 
