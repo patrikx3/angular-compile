@@ -74,7 +74,7 @@
         "@typescript-eslint/eslint-plugin": "5.3.1",
         "@typescript-eslint/parser": "5.3.1",
         "codelyzer": "^6.0.2",
-        "corifeus-builder": "^2021.10.176",
+        "corifeus-builder": "^2021.10.181",
         "eslint": "^8.2.0",
         "eslint-plugin-import": "2.25.3",
         "eslint-plugin-jsdoc": "37.0.3",
