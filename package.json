@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2022.4.126",
+    "version": "2022.4.129",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
@@ -74,7 +74,7 @@
         "@typescript-eslint/eslint-plugin": "5.27.0",
         "@typescript-eslint/parser": "5.27.0",
         "codelyzer": "^6.0.2",
-        "corifeus-builder": "^2022.4.127",
+        "corifeus-builder": "^2022.4.130",
         "eslint": "^8.16.0",
         "eslint-plugin-import": "2.26.0",
         "eslint-plugin-jsdoc": "39.3.2",
