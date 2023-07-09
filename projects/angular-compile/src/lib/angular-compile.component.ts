@@ -178,9 +178,6 @@ export class CompileAttribute implements OnChanges {
         } else {
             module.declarations.push(componentType);
         }
-        module.entryComponents = [
-            componentType
-        ];
 
         @NgModule(module)
         class RuntimeComponentModule {
