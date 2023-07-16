@@ -5,9 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "outputCapture": "std",
             "type": "node",
             "request": "launch",
-            "name": "npm run dev",
+            "name": "npm run start",
             "args": [
                 "run",
                 "start"
