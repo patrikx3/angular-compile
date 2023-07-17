@@ -1,12 +1,12 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2023.10.119",
+    "version": "2023.10.124",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
         "type": "p3x",
         "code": "Logico",
-        "nodejs": "v18.16.1",
+        "nodejs": "v20.4.0",
         "opencollective": false,
         "reponame": "angular-compile",
         "build": true,
@@ -74,7 +74,7 @@
         "@typescript-eslint/eslint-plugin": "6.0.0",
         "@typescript-eslint/parser": "6.0.0",
         "codelyzer": "^6.0.2",
-        "corifeus-builder": "^2023.10.121",
+        "corifeus-builder": "^2023.10.125",
         "eslint": "^8.45.0",
         "eslint-plugin-import": "2.27.5",
         "eslint-plugin-jsdoc": "46.4.4",
