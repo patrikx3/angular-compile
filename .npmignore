@@ -25,3 +25,4 @@
 # need to allow ts for awesome=typscript-loader
 
 /.github
+/.vscode
