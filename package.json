@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2023.10.134",
+    "version": "2023.10.137",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
@@ -71,10 +71,10 @@
         "@types/jasmine": "~5.1.4",
         "@types/jasminewd2": "~2.0.13",
         "@types/node": "^20.10.3",
-        "@typescript-eslint/eslint-plugin": "6.13.1",
-        "@typescript-eslint/parser": "6.13.1",
+        "@typescript-eslint/eslint-plugin": "6.13.2",
+        "@typescript-eslint/parser": "6.13.2",
         "codelyzer": "^6.0.2",
-        "corifeus-builder": "^2023.10.139",
+        "corifeus-builder": "^2023.10.142",
         "eslint": "^8.55.0",
         "eslint-plugin-import": "2.29.0",
         "eslint-plugin-jsdoc": "46.9.0",
