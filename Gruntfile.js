@@ -56,11 +56,10 @@ module.exports = (grunt) => {
                 grunt: grunt,
                 gruntThis: this,
             }, {
-                cmd: 'npm',
-                args: [
-                    'run',
-                    'build-app',
-                ]
+                cmd: process.platform === 'win32' ? 'cmd' : 'npm', // Use cmd for Windows
+                args: process.platform === 'win32'
+                    ? ['/c', 'npm', 'run', 'build-app'] // Correctly pass the command in Windows
+                    : ['run', 'build-app'], // For non-Windows platforms
             });
             done()
         } catch (e) {

@@ -54,7 +54,8 @@ function nextId(): string {
         <ng-container *ngIf="renderComponent">
             <ng-container *ngComponentOutlet="dynamicComponent; ngModuleFactory: dynamicModule;"></ng-container>
         </ng-container>
-    `
+    `,
+    standalone: false
 })
 @Injectable()
 export class CompileAttribute implements OnChanges {
@@ -192,9 +193,10 @@ export class CompileAttribute implements OnChanges {
         const selector: string = nextId()
 
         @Component({
-            selector: selector,
-            template: html
-        })
+    selector: selector,
+    template: html,
+    standalone: false
+})
         class DynamicComponent {
             context: any = context;
         }
