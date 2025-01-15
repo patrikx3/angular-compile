@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2025.4.104",
+    "version": "2025.4.107",
     "corifeus": {
         "prefix": "p3x-",
         "publish": true,
@@ -69,7 +69,7 @@
         "@angular/cli": "^19.0.7",
         "@angular/compiler-cli": "^19.0.6",
         "@types/node": "^22.10.6",
-        "corifeus-builder": "^2025.4.105",
+        "corifeus-builder": "^2025.4.109",
         "mkdirp": "^3.0.1",
         "ncp": "^2.0.0",
         "ts-node": "~10.9.2",
