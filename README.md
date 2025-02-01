@@ -1,12 +1,12 @@
 [//]: #@corifeus-header
 
-  [![NPM](https://img.shields.io/npm/v/p3x-angular-compile.svg)](https://www.npmjs.com/package/p3x-angular-compile)  [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://paypal.me/patrikx3) [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Corifeus @ Facebook](https://img.shields.io/badge/Facebook-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)  [![Uptime ratio (90 days)](https://network.corifeus.com/public/api/uptime-shield/31ad7a5c194347c33e5445dbaf8.svg)](https://network.corifeus.com/status/31ad7a5c194347c33e5445dbaf8)
+  [![NPM](https://img.shields.io/npm/v/p3x-angular-compile.svg)](https://www.npmjs.com/package/p3x-angular-compile)  [![Donate for PatrikX3 / P3X](https://img.shields.io/badge/Donate-PatrikX3-003087.svg)](https://paypal.me/patrikx3) [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Corifeus @ Facebook](https://img.shields.io/badge/Facebook-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)  [![Uptime ratio (90 days)](https://network.corifeus.com/public/api/uptime-shield/31ad7a5c194347c33e5445dbaf8.svg)](https://network.corifeus.com/status/31ad7a5c194347c33e5445dbaf8)
 
 
 
 
 
-# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2025.4.120
+# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2025.4.123
 
 
   
@@ -22,7 +22,7 @@
 ### 🛠️ Built on NodeJs version
 
 ```txt
-v22.13.0
+v22.13.1
 ```
 
 
@@ -31,7 +31,7 @@ v22.13.0
 # 📦 Built on Angular
 
 ```text
-19.1.1
+19.1.4
 ```
 
 
@@ -339,10 +339,9 @@ All my domains, including [patrikx3.com](https://patrikx3.com), [corifeus.eu](ht
 ---
 
 
-[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2025.4.120
+[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2025.4.123
 
- [![NPM](https://img.shields.io/npm/v/p3x-angular-compile.svg)](https://www.npmjs.com/package/p3x-angular-compile)  [![Donate for Corifeus / P3X](https://img.shields.io/badge/Donate-Corifeus-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
-
+ [![NPM](https://img.shields.io/npm/v/p3x-angular-compile.svg)](https://www.npmjs.com/package/p3x-angular-compile)  [![Donate for PatrikX3 / P3X](https://img.shields.io/badge/Donate-PatrikX3-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 
 
 
