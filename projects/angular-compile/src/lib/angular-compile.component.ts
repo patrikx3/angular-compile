@@ -51,10 +51,10 @@ function nextId(): string {
 @Component({
     selector: '[p3x-compile]',
     template: `
-        <ng-container *ngIf="renderComponent">
-            <ng-container *ngComponentOutlet="dynamicComponent; ngModuleFactory: dynamicModule;"></ng-container>
-        </ng-container>
-    `,
+        @if (renderComponent) {
+          <ng-container *ngComponentOutlet="dynamicComponent; ngModuleFactory: dynamicModule;"></ng-container>
+        }
+        `,
     standalone: false
 })
 @Injectable()

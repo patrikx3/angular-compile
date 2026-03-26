@@ -1,65 +1,67 @@
 <div style="margin-top: 8px; margin-bottom: 18px; max-width: 700px; margin-left: auto; margin-right: auto; padding-left: 10px; padding-right: 10px;">
-    <mat-toolbar color="primary" style="border-top-left-radius: 6px; border-top-right-radius: 6px;">
-        P3X Angular Compile v{{ version }}
-    </mat-toolbar>
-    <mat-card appearance="outlined" style="border-radius: 0; padding: 10px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;">
+  <mat-toolbar color="primary" style="border-top-left-radius: 6px; border-top-right-radius: 6px;">
+    P3X Angular Compile v{{ version }}
+  </mat-toolbar>
+  <mat-card appearance="outlined" style="border-radius: 0; padding: 10px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;">
 
 
 
 
-        <a mat-button mat-stroked-button color="primary" target="_blank" class="mat-headline-6" href="https://corifeus.com/angular-compile">Corifeus.com Wiki</a>
-        <a mat-button mat-stroked-button color="primary" target="_blank" href="https://github.com/patrikx3/angular-compile/blob/master/src/app/app.component.ts">How it works from the code in GitHub, some examples</a>
+    <a mat-button mat-stroked-button color="primary" target="_blank" class="mat-headline-6" href="https://corifeus.com/angular-compile">Corifeus.com Wiki</a>
+    <a mat-button mat-stroked-button color="primary" target="_blank" href="https://github.com/patrikx3/angular-compile/blob/master/src/app/app.component.ts">How it works from the code in GitHub, some examples</a>
 
-        <br/>
-        <strong>Go ahead and inspect the elements and click away!!!</strong>
-
-        <br/>
-        <mat-divider></mat-divider>
-        <br/>
-
-        <div class="mat-h1">Template 1</div>
-        <div [p3x-compile]="data1" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
-
-        <br/>
-        <mat-divider></mat-divider>
-        <br/>
-
-        <div class="mat-h1">Template 2</div>
-        <div [p3x-compile]="data2" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
-
-        <br/>
-        <mat-divider></mat-divider>
-        <br/>
-        <div class="mat-h1">Template 3</div>
-        <div [p3x-compile]="data3" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
-
-        <br/>
-        <mat-divider></mat-divider>
-        <br/>
-        <div class="mat-h1">Template 4 - Re-use the same context</div>
-        <div *ngIf="true" [p3x-compile]="data2" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
-
-
-        <br/>
-        <br/>
-        <mat-divider></mat-divider>
-        <br/>
-
-        <div class="mat-h1">Pure Router Link with JIT Angular</div>
-        <button mat-button mat-flat-button color="accent" (click)="randomRouterLinkPure()">Generate new router link</button>
-        &nbsp;
-        <span [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></span>
-
-        <br/>
-        <br/>
-        <mat-divider></mat-divider>
-        <br/>
-
-        <div class="mat-h1">Router Link with p3x-angular-compile</div>
-        <div [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
-
-    </mat-card>
     <br/>
+    <strong>Go ahead and inspect the elements and click away!!!</strong>
+
+    <br/>
+    <mat-divider></mat-divider>
+    <br/>
+
+    <div class="mat-h1">Template 1</div>
+    <div [p3x-compile]="data1" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
+
+    <br/>
+    <mat-divider></mat-divider>
+    <br/>
+
+    <div class="mat-h1">Template 2</div>
+    <div [p3x-compile]="data2" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
+
+    <br/>
+    <mat-divider></mat-divider>
+    <br/>
+    <div class="mat-h1">Template 3</div>
+    <div [p3x-compile]="data3" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
+
+    <br/>
+    <mat-divider></mat-divider>
+    <br/>
+    <div class="mat-h1">Template 4 - Re-use the same context</div>
+    @if (true) {
+      <div [p3x-compile]="data2" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
+    }
+
+
+    <br/>
+    <br/>
+    <mat-divider></mat-divider>
+    <br/>
+
+    <div class="mat-h1">Pure Router Link with JIT Angular</div>
+    <button mat-button mat-flat-button color="accent" (click)="randomRouterLinkPure()">Generate new router link</button>
+    &nbsp;
+    <span [p3x-compile]="dataRouterLink" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></span>
+
+    <br/>
+    <br/>
+    <mat-divider></mat-divider>
+    <br/>
+
+    <div class="mat-h1">Router Link with p3x-angular-compile</div>
+    <div [p3x-compile]="dataMaterial" [p3x-compile-ctx]="this" [p3x-compile-module]="dataMaterialModule" class="p3x-angular-compile-element"></div>
+
+  </mat-card>
+  <br/>
 </div>
 
 
