@@ -6,7 +6,7 @@
 
 
 
-# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2026.4.101
+# 🆖 Angular Dynamic Compile - Convert strings to Angular components v2026.4.102
 
 
   
@@ -31,7 +31,7 @@ v24.14.1
 # 📦 Built on Angular
 
 ```text
-21.2.6
+21.2.9
 ```
 
 
@@ -109,11 +109,31 @@ ng build --aot=false --build-optimizer=false
 
 ## Usage
 
+`CompileAttribute` is now a **standalone component**. You can use it either directly in a standalone component or via the legacy `CompileModule` NgModule — both paths are fully supported.
+
+### Standalone (Angular 16+)
 
 ```typescript
-import { CompileModule} from "p3x-angular-compile"
+import { Component } from '@angular/core';
+import { CompileAttribute } from 'p3x-angular-compile';
 
-// the module settings
+@Component({
+  selector: 'my-page',
+  standalone: true,
+  imports: [CompileAttribute],
+  template: `<span [p3x-compile]="template" [p3x-compile-ctx]="this"></span>`,
+})
+export class Page {
+  template = '<button (click)="context.alert()">Dynamic template</button>';
+  alert() { alert('ok'); }
+}
+```
+
+### Legacy NgModule (unchanged)
+
+```typescript
+import { CompileModule } from 'p3x-angular-compile';
+
 @NgModule({
     imports: [
         CorifeusWebMaterialModule, // Optional
@@ -336,7 +356,7 @@ All my domains, including [patrikx3.com](https://patrikx3.com), [corifeus.eu](ht
 **🚨 Important Changes:** Any breaking changes are prominently noted in the readme to keep you informed.
 
 
-[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2026.4.101
+[**P3X-ANGULAR-COMPILE**](https://corifeus.com/angular-compile) Build v2026.4.102
 
  [![NPM](https://img.shields.io/npm/v/p3x-angular-compile.svg)](https://www.npmjs.com/package/p3x-angular-compile)  [![Donate for PatrikX3 / P3X](https://img.shields.io/badge/Donate-PatrikX3-003087.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZVM4V6HVZJW6)  [![Contact Corifeus / P3X](https://img.shields.io/badge/Contact-P3X-ff9900.svg)](https://www.patrikx3.com/en/front/contact) [![Like Corifeus @ Facebook](https://img.shields.io/badge/LIKE-Corifeus-3b5998.svg)](https://www.facebook.com/corifeus.software)
 

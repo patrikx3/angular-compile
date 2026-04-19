@@ -1,5 +1,36 @@
 @use '@angular/material' as mat;
-/* You can add global styles to this file, and also import other style files */
+
+/* ---------------------------------------------------------------------------
+   Material 3 theme — angular-compile demo.
+
+   Adobe-Color-style harmony:
+     primary  : spring-green  (fresh / "dynamic compile")
+     tertiary : magenta       (complementary accent — ~180° on HSL wheel)
+
+   Dark theme, no per-component overrides — M3 derives secondary, surface,
+   and on-colors automatically, giving consistent contrast across the app.
+--------------------------------------------------------------------------- */
+
+$workspace-theme: mat.define-theme((
+    color: (
+        theme-type: dark,
+        primary: mat.$spring-green-palette,
+        tertiary: mat.$magenta-palette,
+    ),
+    density: (
+        scale: 0,
+    ),
+));
+
+html {
+    @include mat.all-component-themes($workspace-theme);
+    @include mat.elevation-classes();
+    @include mat.app-background();
+}
+
+/* ---------------------------------------------------------------------------
+   Global page styles
+--------------------------------------------------------------------------- */
 
 html, body {
     height: 100%;
@@ -7,106 +38,22 @@ html, body {
 
 body {
     margin: 0;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: rgba(0, 0, 0, 0.87) !important;
+    color: mat.get-theme-color($workspace-theme, on-surface);
+    background-color: mat.get-theme-color($workspace-theme, surface);
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-
-// TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
-//  The following line adds:
-//    1. Default typography styles for all components
-//    2. Styles for typography hierarchy classes (e.g. .mat-headline-1)
-//  If you specify typography styles for the components you use elsewhere, you should delete this line.
-//  If you don't need the default component typographies but still want the hierarchy styles,
-//  you can delete this line and instead use:
-//    `@include mat.legacy-typography-hierarchy(mat.define-typography-config());`
-@include mat.all-component-typographies();
-@include mat.elevation-classes();
-@include mat.app-background();
-
-// The following mixins include base theme styles that are only needed once per application. These
-// theme styles do not depend on the color, typography, or density settings in your theme. However,
-// these styles may differ depending on the theme's design system. Currently all themes use the
-// Material 2 design system, but in the future it may be possible to create theme based on other
-// design systems, such as Material 3.
-//
-// Please note: you do not need to include the 'base' mixins, if you include the corresponding
-// 'theme' mixin elsewhere in your Sass. The full 'theme' mixins already include the base styles.
-//
-// To learn more about "base" theme styles visit our theming guide:
-// https://material.angular.io/guide/theming#theming-dimensions
-//
-// TODO(v17): Please move these @include statements to the preferred place in your Sass, and pass
-// your theme to them. This will ensure the correct values for your app are included.
-//@include mat.all-component-bases(__<<ngM2ThemingMigrationEscapedComment1>>__);
-
-$workspace-primary: mat.m2-define-palette(mat.$m2-green-palette);
-$workspace-accent: mat.m2-define-palette(mat.$m2-purple-palette, 700, 900, 600);
-$workspace-warn: mat.m2-define-palette(mat.$m2-red-palette);
-$workspace-theme: mat.m2-define-dark-theme(mat.m2-define-dark-theme((
-    color: (
-        primary: $workspace-primary,
-        accent: $workspace-accent,
-        warn: $workspace-warn,
-      ),
-      typography: mat.m2-define-typography-config(),
-      density: 0,
-)));
-
-@include mat.elevation-classes();
-@include mat.app-background();
-@include mat.divider-theme($workspace-theme);
-@include mat.card-theme($workspace-theme);
-
-@include mat.toolbar-theme(mat.m2-define-dark-theme((
-    color: (
-        primary: mat.m2-define-palette(mat.$m2-blue-grey-palette, 700),
-        accent: mat.m2-define-palette(mat.$m2-blue-grey-palette, 800),
-        warn: mat.m2-define-palette(mat.$m2-green-palette),
-      ),
-      typography: mat.m2-define-typography-config(),
-      density: 0,
-)));
-
-
-@include mat.button-theme(mat.m2-define-dark-theme((
-    color: (
-        primary:  mat.m2-define-palette(mat.$m2-orange-palette, 900),
-        accent:  mat.m2-define-palette(mat.$m2-indigo-palette, 900),
-        warn: mat.m2-define-palette(mat.$m2-red-palette, 500)
-      ),
-      typography: mat.m2-define-typography-config(),
-      density: 0,
-)));
-
-@include mat.fab-theme(mat.m2-define-dark-theme((
-    color: (
-        primary:   mat.m2-define-palette(mat.$m2-orange-palette, 900),
-        accent:   mat.m2-define-palette(mat.$m2-indigo-palette, 500),
-        warn:  mat.m2-define-palette(mat.$m2-red-palette, 500)
-      ),
-      typography: mat.m2-define-typography-config(),
-      density: 0,
-)));
-
-
-@include mat.icon-theme(mat.m2-define-dark-theme((
-    color: (
-        primary:   mat.m2-define-palette(mat.$m2-orange-palette, 900),
-        accent:   mat.m2-define-palette(mat.$m2-indigo-palette, 500),
-        warn:  mat.m2-define-palette(mat.$m2-red-palette, 500)
-      ),
-      typography: mat.m2-define-typography-config(),
-      density: 0,
-)));
-
-
-
-.p3x-ng-compile-template-intent:before {
+/* Breathing room between adjacent MDC buttons — M3 renders them block-width
+   inside flow containers, so siblings otherwise touch. */
+.mat-mdc-button,
+.mat-mdc-outlined-button,
+.mat-mdc-unelevated-button,
+.mat-mdc-raised-button {
+    margin: 4px;
 }
+
 .p3x-ng-compile-template-intent {
-    color: mat.m2-get-color-from-palette(mat.$m2-grey-palette, 500);
+    color: mat.get-theme-color($workspace-theme, tertiary);
     padding: 8px;
     font-size: 18px;
     font-weight: bold;
@@ -117,8 +64,4 @@ $workspace-theme: mat.m2-define-dark-theme(mat.m2-define-dark-theme((
     font-size: 18px;
     font-weight: bold;
     display: inline-block;
-}
-
-a.mat-mdc-button {
-    //padding: 0;
 }
