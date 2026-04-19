@@ -1,21 +1,19 @@
 @use '@angular/material' as mat;
 
 /* ---------------------------------------------------------------------------
-   Material 3 theme — angular-compile demo.
-
-   Adobe-Color-style harmony:
-     primary  : spring-green  (fresh / "dynamic compile")
-     tertiary : magenta       (complementary accent — ~180° on HSL wheel)
-
-   Dark theme, no per-component overrides — M3 derives secondary, surface,
-   and on-colors automatically, giving consistent contrast across the app.
+   Material 3 theme — shared across both P3X demo apps so they feel tonally
+   consistent. Adobe-Color complementary pair (~180° on HSL wheel) — the
+   canonical dev-tool blue/orange combo (GitHub, VS Code, etc.):
+     primary  : azure   (network / tech / trust)
+     tertiary : orange  (warm accent)
+   Dark theme, `mat.define-theme` (M3) — no M2 `m2-define-*` calls.
 --------------------------------------------------------------------------- */
 
 $workspace-theme: mat.define-theme((
     color: (
         theme-type: dark,
-        primary: mat.$spring-green-palette,
-        tertiary: mat.$magenta-palette,
+        primary: mat.$azure-palette,
+        tertiary: mat.$orange-palette,
     ),
     density: (
         scale: 0,
@@ -25,22 +23,29 @@ $workspace-theme: mat.define-theme((
 html {
     @include mat.all-component-themes($workspace-theme);
     @include mat.elevation-classes();
-    @include mat.app-background();
 }
 
 /* ---------------------------------------------------------------------------
-   Global page styles
+   Global page styles — explicit dark grey so no light surface token can
+   leak through outside the content area.
 --------------------------------------------------------------------------- */
 
 html, body {
     height: 100%;
+    background-color: #212121;
 }
 
 body {
     margin: 0;
-    color: mat.get-theme-color($workspace-theme, on-surface);
-    background-color: mat.get-theme-color($workspace-theme, surface);
+    color: rgba(255, 255, 255, 0.87);
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* M3 `color="primary"` on the toolbar resolves to a light tone in dark
+   mode; force the surface dark to match the page. */
+.mat-toolbar {
+    background-color: #2a2a2a;
+    color: rgba(255, 255, 255, 0.87);
 }
 
 /* Breathing room between adjacent MDC buttons — M3 renders them block-width
