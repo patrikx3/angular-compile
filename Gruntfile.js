@@ -1,4 +1,3 @@
-const utils = require('corifeus-utils');
 const path = require('path')
 const fs = require('fs').promises
 
