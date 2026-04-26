@@ -32,7 +32,7 @@ html {
 
 html, body {
     height: 100%;
-    background-color: #212121;
+    background-color: #0a0a0a !important;
 }
 
 body {
@@ -41,11 +41,16 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-/* M3 `color="primary"` on the toolbar resolves to a light tone in dark
-   mode; force the surface dark to match the page. */
+/* Toolbar + card + outlined containers — all on the same near-black
+   surface so there's no visible step or line between them. */
 .mat-toolbar {
-    background-color: #2a2a2a;
+    background-color: #262626 !important;
     color: rgba(255, 255, 255, 0.87);
+    box-shadow: none !important;
+}
+
+.mat-mdc-card {
+    background-color: #161616 !important;
 }
 
 /* Breathing room between adjacent MDC buttons — M3 renders them block-width
