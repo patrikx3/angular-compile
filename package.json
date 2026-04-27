@@ -1,6 +1,6 @@
 {
     "name": "p3x-angular-compile",
-    "version": "2026.4.107",
+    "version": "2026.4.113",
     "corifeus": {
         "icon": "fas fa-cogs",
         "prefix": "p3x-",
@@ -70,7 +70,7 @@
         "@angular/cli": "^21.2.8",
         "@angular/compiler-cli": "^21.2.10",
         "@types/node": "^25.6.0",
-        "corifeus-builder": "^2026.4.149",
+        "corifeus-builder": "^2026.4.151",
         "mkdirp": "^3.0.1",
         "ncp": "^2.0.0",
         "ts-node": "~10.9.2",
