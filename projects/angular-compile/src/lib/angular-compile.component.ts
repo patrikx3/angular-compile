@@ -1,15 +1,13 @@
 import {
-    Compiler,
-    Component,
-    inject,
-    Injectable,
-    Input,
-    ModuleWithProviders,
-    NgModule,
-    NgModuleFactory,
-    OnChanges,
-    SimpleChanges,
-    Type,
+  Component,
+  Injectable,
+  Input,
+  ModuleWithProviders,
+  NgModule,
+  OnChanges,
+  SimpleChanges,
+  Type,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import { CommonModule, NgComponentOutlet } from '@angular/common';
 
@@ -44,10 +42,11 @@ function nextId(): string {
     selector: '[p3x-compile]',
     template: `
         @if (renderComponent) {
-          <ng-container *ngComponentOutlet="dynamicComponent; ngModuleFactory: dynamicModule;"></ng-container>
+          <ng-container *ngComponentOutlet="dynamicComponent; ngModule: dynamicModule;"></ng-container>
         }
     `,
     standalone: true,
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [CommonModule, NgComponentOutlet],
 })
 @Injectable()
@@ -63,15 +62,13 @@ export class CompileAttribute implements OnChanges {
     errorHandler: Function | undefined = undefined;
 
     dynamicComponent: any;
-    dynamicModule: NgModuleFactory<any> | any;
+    dynamicModule: Type<any> | undefined;
 
     @Input('p3x-compile-module')
     module: NgModule | undefined;
 
     @Input('p3x-compile-imports')
     imports: Array<Type<any> | ModuleWithProviders<any> | any[]> | undefined;
-
-    private readonly compiler = inject(Compiler);
 
     get renderComponent() {
         return typeof this.html === 'string' && this.html.trim() !== '';
@@ -90,9 +87,7 @@ export class CompileAttribute implements OnChanges {
             }
 
             this.dynamicComponent = this.createNewComponent(this.html, this.context);
-            this.dynamicModule = this.compiler.compileModuleSync(
-                this.createComponentModule(this.dynamicComponent),
-            );
+            this.dynamicModule = this.createComponentModule(this.dynamicComponent);
         } catch (e) {
             if (this.errorHandler === undefined) {
                 throw e;

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import packageInfo from '../../package.json';
 
 import { MatButtonModule } from "@angular/material/button";
@@ -7,6 +7,7 @@ import { MatButtonModule } from "@angular/material/button";
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent {
